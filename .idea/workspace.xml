@@ -5,127 +5,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/DeleteUserMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/GetUserMethods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/PostUserMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/mappers/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/mappers/UserPreferenceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/models/UserPreference.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/components/FooterMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/components/ModelItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/components/NewsItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/components/WeValuePrivacyAd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/components/compare/CondidateBlock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/components/compare/ModelSpecs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/pages/BrandModelsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/pages/CompareModelsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/pages/ModelInfoPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/pages/NewsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/pages/localizationSample/WikipediaHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/pages/localizationSample/WikipediaLocalePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CarinaDescriptionPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ChartsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ContactUsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MapsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/UIElementsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/WebViewPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/WelcomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CarinaDescriptionPageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ChartsPageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ContactUsPageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/LoginPageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MapsPageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/UIElementsPageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/WebViewPageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/WelcomePageBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CarinaDescriptionPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/PreferencesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/SaucePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/WelcomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/soap/AddIntegerMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/soap/LookupCityMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/utils/ConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/utils/MobileContextUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale_de_DE.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale_en_US.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale_es_ES.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale_hu_HU.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale_ja_JP.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale_ru_RU.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/L10N/locale_zh_CN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/_database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/_email.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/_testdata.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/agent.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/browserstack/android/Google_Nexus_6.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/browserstack/ios/iPhone_12.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/browserstack/osx/big_sur.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/browserstack/win/win_10_Edge.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/crypto.key" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mappers/UserPreferenceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/APISampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/AutoDownloadTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/CryptoSampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/DBSampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/DataprovidersSampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/HelloWorld.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/IOSPreferencesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/IOSSafariTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MobileSampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/PageOpeningStrategySampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/ProxySampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/SoapSampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebLocalizationSample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebMultipleBrowserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebSampleSingleDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebSampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/DataproviderRetryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/DataproviderRetryTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/DataproviderRetryTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/XlsDataproviderRetryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/soap/addinteger/rq.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/soap/addinteger/rs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/soap/lookupcity/rq.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/soap/lookupcity/rs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/soap/soap.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/users/_delete/rq.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/users/_delete/rs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/users/_get/rs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/users/_get/rs.schema" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/users/_post/rq.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/users/_post/rs.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/api/users/user.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/GSMArenaNews.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/android.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/autodownload.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/helloWorld.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/ios-preferences.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/ios-safari.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/ios.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/proxy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/regression/dataprovider-multiply-classes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/regression/dataprovider-retry.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/regression/xls-dataprovider-retry.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/soap.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/test-params.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/web-localization.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/web-multiple-browser.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/web-single-driver.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/xls/demo.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/AboutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/BasketPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MorePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/AboutPageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/BasketPageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/HomePageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MorePageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/PopUpResetPageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ProductPageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/AboutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/BasketPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/MorePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/PopUpResetPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/TestsDemoMobileApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina-master/.github/ISSUE_TEMPLATE/bug-report.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina-master/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CarinaDescriptionPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ChartsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ContactUsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MapsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/UIElementsPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/WebViewPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/WelcomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CarinaDescriptionPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ChartsPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ContactUsPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/LoginPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MapsPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/UIElementsPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/WebViewPageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/WelcomePageBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CarinaDescriptionPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/LoginPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/PreferencesPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/SaucePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/WelcomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/_database.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/_testdata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_testdata.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/agent.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mappers/UserPreferenceMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/APISampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/AutoDownloadTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/CryptoSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/DBSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/DataprovidersSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/IOSPreferencesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/IOSSafariTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MobileSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/SoapSampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebSampleSingleDriver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/DataproviderRetryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/DataproviderRetryTest1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/DataproviderRetryTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/regression/dataprovider/XlsDataproviderRetryTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_delete/rq.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_delete/rs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_get/rs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_get/rs.schema" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_post/rq.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/_post/rs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/api/users/user.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,6 +85,31 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="marianna" />
+                    <option name="lastUsedInstant" value="1659085099" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1659085098" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -152,6 +128,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>

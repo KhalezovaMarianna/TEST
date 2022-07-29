@@ -1,0 +1,10 @@
+/.idea/
+/main/java/com/qaprosoft/carina/demo/gui/
+/main/java/com/qaprosoft/carina/demo/db/
+/main/java/com/qaprosoft/carina/demo/api/
+/main/java/com/qaprosoft/carina/demo/soap/
+/main/java/com/qaprosoft/carina/demo/utils/
+/main/resources/L10N/
+
+/reports/
+/target/
