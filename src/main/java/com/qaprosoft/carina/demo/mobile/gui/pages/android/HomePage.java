@@ -4,7 +4,6 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.MyPhotoPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.HomePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
