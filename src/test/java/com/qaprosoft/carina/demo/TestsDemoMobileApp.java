@@ -167,6 +167,7 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         Assert.assertTrue(basketPageBase.oneProductInCart(), "cart hasn't one product");
 
 
+
     }
 
 }

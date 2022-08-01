@@ -13,6 +13,9 @@ public class CartPage extends AbstractPage {
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
     ExtendedWebElement homeBtn;
 
+    @FindBy(xpath = "//*[@id=\"totalp\"]")
+    ExtendedWebElement amountCart;
+
     public CartPage(WebDriver driver) {
         super(driver);
     }
@@ -24,5 +27,14 @@ public class CartPage extends AbstractPage {
     public HomePage goToHome(){
         homeBtn.click();
         return new HomePage(getDriver());
+    }
+
+    public boolean comparisonTitleAmount(){
+        double sum = Double.parseDouble(amountCart.format().getText());
+        System.out.println(sum);
+        if(sum>0){
+        return true;
+    }
+        return false;
     }
 }

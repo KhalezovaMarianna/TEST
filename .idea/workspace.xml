@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="add web test Menu Buttons Work Correctly">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="add web test Sliding window">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/SignUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/TestsDemoMobileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/TestsDemoMobileApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +78,8 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyWebTest.testSlidingWindow">
-    <configuration name="MyWebTest.testModelSpecs" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.MyWebTest.signUpForm">
+    <configuration name="MyWebTest.signUpForm" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +89,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
-      <option name="METHOD_NAME" value="testModelSpecs" />
+      <option name="METHOD_NAME" value="signUpForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyWebTest.testAddProductOnTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
+      <option name="METHOD_NAME" value="testAddProductOnTheCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,31 +169,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestsDemoMobileApp.testRemoveItemFromCart" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.TestsDemoMobileApp" />
-      <option name="METHOD_NAME" value="testRemoveItemFromCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MyWebTest.signUpForm" />
+        <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
         <item itemvalue="TestNG.MyWebTest.testSlidingWindow" />
         <item itemvalue="TestNG.MyWebTest.testOpen" />
         <item itemvalue="TestNG.TestsDemoMobileApp.testOpenPages" />
-        <item itemvalue="TestNG.TestsDemoMobileApp.testRemoveItemFromCart" />
-        <item itemvalue="TestNG.MyWebTest.testModelSpecs" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659089459387</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add web test Sliding window">
+      <created>1659347110805</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659347110805</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,6 +219,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="correct structure of project" />
     <MESSAGE value="add web test Menu Buttons Work Correctly" />
-    <option name="LAST_COMMIT_MESSAGE" value="add web test Menu Buttons Work Correctly" />
+    <MESSAGE value="add web test Sliding window" />
+    <option name="LAST_COMMIT_MESSAGE" value="add web test Sliding window" />
   </component>
 </project>

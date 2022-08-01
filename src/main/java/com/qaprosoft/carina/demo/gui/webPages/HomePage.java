@@ -34,6 +34,9 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]//div[1]/img")
     ExtendedWebElement firstSlideImg;
 
+    @FindBy(xpath = "//*[@id=\"tbodyid\"]/div[%S]/div/div/h4/a")
+    ExtendedWebElement product;
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -81,5 +84,9 @@ public class HomePage extends AbstractPage {
     public boolean ImgReturned() {
         firstSlideImg.isElementPresent();
         return true;
+    }
+    public ProductPage productOpened(int index){
+        product.format(String.valueOf(index)).click();
+        return new ProductPage(getDriver());
     }
 }
