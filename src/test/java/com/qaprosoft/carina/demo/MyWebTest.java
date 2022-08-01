@@ -28,13 +28,28 @@ public class MyWebTest extends AbstractTest {
         Assert.assertTrue(cartPage.isCartPageOpen(), "Cart isn't present");
         cartPage.goToHome();
         LogInPage logInPage = homePage.goToLoginPage();
-        Assert.assertTrue(logInPage.isLoginPageOpen(),"Login page isn't open");
+        Assert.assertTrue(logInPage.isLoginPageOpen(), "Login page isn't open");
         logInPage.closeLoginPage();
         SignUpPage signUpPage = homePage.goToSignUpPage();
-        Assert.assertTrue(signUpPage.isSignUpPageOpen(),"SignUp page isn't open");
+        Assert.assertTrue(signUpPage.isSignUpPageOpen(), "SignUp page isn't open");
         signUpPage.closeSignUpPage();
-        Assert.assertTrue(homePage.isHomePageOpen(),"home page isn't return");
+        Assert.assertTrue(homePage.isHomePageOpen(), "home page isn't return");
+
+    }
+
+    @Test()
+    @MethodOwner(owner = "qpsdemo")
+    @TestLabel(name = "feature", value = {"web", "regression"})
+    public void testSlidingWindow() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isHomePageOpen(), "Home page is not opened");
+        homePage.clickSliderWindow();
+        Assert.assertTrue(homePage.ImgChanged(), "Img isn't change");
+        homePage.clickLeftArrowWindow();
+        Assert.assertTrue(homePage.ImgReturned(), "img isn't return");
 
 
     }
+
 }

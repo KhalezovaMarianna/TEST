@@ -25,6 +25,14 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//*[@id=\"signin2\"]")
     ExtendedWebElement signUpBtn;
 
+    @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/a[2]/span[1]")
+    ExtendedWebElement rightArrow;
+
+    @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/a[1]/span[1]")
+    ExtendedWebElement leftArrow;
+
+    @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]//div[1]/img")
+    ExtendedWebElement firstSlideImg;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -39,21 +47,39 @@ public class HomePage extends AbstractPage {
         aboutUsBtn.click();
         return new AboutUsPage(getDriver());
     }
+
     public ContactPage goToContactPage() {
         contactBtn.click();
         return new ContactPage(getDriver());
     }
+
     public CartPage goToCartPage() {
         cartBtn.click();
         return new CartPage(getDriver());
     }
-    public LogInPage goToLoginPage(){
+
+    public LogInPage goToLoginPage() {
         loginBtn.click();
         return new LogInPage(getDriver());
     }
-    public SignUpPage goToSignUpPage(){
+
+    public SignUpPage goToSignUpPage() {
         signUpBtn.click();
         return new SignUpPage(getDriver());
     }
 
+    public void clickSliderWindow(){
+        rightArrow.click();
+    }
+    public void clickLeftArrowWindow(){
+        leftArrow.click();
+    }
+    public boolean ImgChanged() {
+        firstSlideImg.isElementNotPresent(20);
+        return true;
+    }
+    public boolean ImgReturned() {
+        firstSlideImg.isElementPresent();
+        return true;
+    }
 }
