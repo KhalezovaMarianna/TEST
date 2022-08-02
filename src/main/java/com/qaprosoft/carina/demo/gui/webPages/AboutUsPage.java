@@ -5,7 +5,7 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class AboutUsPage extends AbstractPage {
+public class AboutUsPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"videoModalLabel\"]")
     ExtendedWebElement aboutUsPage;
@@ -17,11 +17,12 @@ public class AboutUsPage extends AbstractPage {
         super(driver);
     }
 
-    public boolean isAboutPageOpen(){
-        aboutUsPage.isElementPresent();
-        return true;
+    @Override
+    public boolean isOpened() {
+        return aboutUsPage.isElementPresent();
     }
-    public HomePage closeAboutUsPage(){
+
+    public HomePage closeAboutUsPage() {
         closeBtn.click();
         return new HomePage(getDriver());
     }

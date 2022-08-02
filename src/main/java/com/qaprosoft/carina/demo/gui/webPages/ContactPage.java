@@ -5,7 +5,7 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class ContactPage extends AbstractPage {
+public class ContactPage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"exampleModalLabel\"]")
     ExtendedWebElement newMessageForm;
 
@@ -15,9 +15,9 @@ public class ContactPage extends AbstractPage {
     public ContactPage(WebDriver driver) {
         super(driver);
     }
-    public boolean isContactPageOpen(){
-        newMessageForm.isElementPresent();
-        return true;
+    @Override
+    public boolean isOpened(){
+        return newMessageForm.isElementPresent();
     }
     public HomePage closeContactPage(){
         closeBtn.click();

@@ -6,7 +6,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class LogInPage extends AbstractPage {
+public class LogInPage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"logInModalLabel\"]")
     ExtendedWebElement loginPage;
     @FindBy(xpath = "//*[@id=\"logInModal\"]/div/div/div[1]/button")
@@ -25,23 +25,26 @@ public class LogInPage extends AbstractPage {
         super(driver);
     }
 
-    public boolean isLoginPageOpen() {
-        loginPage.isElementPresent();
-        return true;
+    @Override
+    public boolean isOpened() {
+
+        return loginPage.isElementPresent();
     }
 
     public HomePage closeLoginPage() {
         closeBtn.click();
         return new HomePage(getDriver());
     }
+
     public void typeUsername(String email) {
         usernameForm.type(email);
     }
+
     public void typePassword(String password) {
         passwordForm.type(password);
     }
 
-    public HomePage login(){
+    public HomePage login() {
         String email = "1234@mail.ru";
         String password = "12345";
         typeUsername(email);

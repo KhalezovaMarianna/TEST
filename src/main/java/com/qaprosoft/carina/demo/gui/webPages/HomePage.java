@@ -5,7 +5,7 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends AbstractPage {
+public class HomePage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"cat\"]")
     ExtendedWebElement categories;
@@ -44,9 +44,11 @@ public class HomePage extends AbstractPage {
         super(driver);
     }
 
-    public boolean isHomePageOpen() {
-        categories.isElementPresent();
-        return true;
+    @Override
+    public boolean isOpened() {
+
+        return categories.isElementPresent();
+
     }
 
     public AboutUsPage goToAboutPage() {
@@ -74,26 +76,29 @@ public class HomePage extends AbstractPage {
         return new SignUpPage(getDriver());
     }
 
-    public void clickSliderWindow(){
+    public void clickRightArrowWindow() {
         rightArrow.click();
     }
-    public void clickLeftArrowWindow(){
+
+    public void clickLeftArrowWindow() {
         leftArrow.click();
     }
-    public boolean ImgChanged() {
-        firstSlideImg.isElementNotPresent(20);
-        return true;
+
+    public boolean imgChanged() {
+
+        return firstSlideImg.isElementNotPresent(20);
     }
-    public boolean ImgReturned() {
-        firstSlideImg.isElementPresent();
-        return true;
-    }
-    public ProductPage productOpened(int index){
+
+    //    public boolean ImgReturned() {
+//        firstSlideImg.isElementPresent();
+//        return true;
+//    }
+    public ProductPage productOpened(int index) {
         product.format(String.valueOf(index)).click();
         return new ProductPage(getDriver());
     }
-    public boolean userLogIn(){
-        loginHomePage.isElementPresent();
-        return true;
+
+    public boolean userLogIn() {
+        return loginHomePage.isElementPresent();
     }
 }

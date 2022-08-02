@@ -4,8 +4,9 @@ import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebEleme
 import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+import org.testng.annotations.Test;
 
-public class CartPage extends AbstractPage {
+public class CartPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"page-wrapper\"]")
     ExtendedWebElement cartPage;
@@ -19,22 +20,22 @@ public class CartPage extends AbstractPage {
     public CartPage(WebDriver driver) {
         super(driver);
     }
-    public boolean isCartPageOpen(){
-        cartPage.isElementPresent();
-        return true;
+
+    @Override
+    public boolean isOpened() {
+        return cartPage.isElementPresent();
     }
 
-    public HomePage goToHome(){
+    public HomePage goToHome() {
         homeBtn.click();
         return new HomePage(getDriver());
     }
 
-    public boolean comparisonTitleAmount(){
+    public boolean comparisonTitleAmount() {
         double sum = Double.parseDouble(amountCart.format().getText());
-        System.out.println(sum);
-        if(sum>0){
-        return true;
-    }
+        if (sum > 0) {
+            return true;
+        }
         return false;
     }
 }

@@ -5,7 +5,7 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class ProductPage extends AbstractPage {
+public class ProductPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"tbodyid\"]//a")
     ExtendedWebElement addToCartBtn;
@@ -17,9 +17,9 @@ public class ProductPage extends AbstractPage {
         super(driver);
     }
 
-    public boolean isProductPageOpen() {
-        addToCartBtn.isElementPresent();
-        return true;
+    @Override
+    public boolean isOpened() {
+        return addToCartBtn.isElementPresent();
     }
 
     public void addToCart() {
