@@ -37,6 +37,9 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/div[%S]/div/div/h4/a")
     ExtendedWebElement product;
 
+    @FindBy(xpath = "//*[@id=\"nameofuser\"]")
+    ExtendedWebElement loginHomePage;
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -88,5 +91,9 @@ public class HomePage extends AbstractPage {
     public ProductPage productOpened(int index){
         product.format(String.valueOf(index)).click();
         return new ProductPage(getDriver());
+    }
+    public boolean userLogIn(){
+        loginHomePage.isElementPresent();
+        return true;
     }
 }

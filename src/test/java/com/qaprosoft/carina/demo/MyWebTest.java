@@ -14,7 +14,7 @@ import java.util.Set;
 public class MyWebTest extends AbstractTest {
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
+    @MethodOwner(owner = "marianna_khalezova")
     @TestLabel(name = "feature", value = {"web", "regression"})
     public void testMenuButtonsWorkCorrectly() {
         HomePage homePage = new HomePage(getDriver());
@@ -40,7 +40,7 @@ public class MyWebTest extends AbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
+    @MethodOwner(owner = "marianna_khalezova")
     @TestLabel(name = "feature", value = {"web", "regression"})
     public void testSlidingWindow() {
         HomePage homePage = new HomePage(getDriver());
@@ -54,7 +54,7 @@ public class MyWebTest extends AbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
+    @MethodOwner(owner = "marianna_khalezova")
     @TestLabel(name = "feature", value = {"web", "regression"})
     public void testAddProductOnTheCart() {
         HomePage homePage = new HomePage(getDriver());
@@ -72,7 +72,7 @@ public class MyWebTest extends AbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
+    @MethodOwner(owner = "marianna_khalezova")
     @TestLabel(name = "feature", value = {"web", "regression"})
     public void RegistrationForm() {
         HomePage homePage = new HomePage(getDriver());
@@ -83,10 +83,19 @@ public class MyWebTest extends AbstractTest {
         signUpPage.signUp();
         Assert.assertEquals(getDriver().switchTo().alert().getText(),"This user already exist.","Sign up successful.");
 
-
+    }
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    @TestLabel(name = "feature", value = {"web", "regression"})
+    public void testLogIn() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isHomePageOpen(), "Home page is not opened");
+        LogInPage logInPage = homePage.goToLoginPage();
+        logInPage.login();
+        Assert.assertTrue(homePage.userLogIn(),"user isn't login");
 
 
     }
-
 
 }
