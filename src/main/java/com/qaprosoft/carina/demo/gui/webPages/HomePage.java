@@ -1,5 +1,6 @@
 package com.qaprosoft.carina.demo.gui.webPages;
 
+import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
 import org.apache.commons.lang3.StringUtils;
@@ -94,7 +95,7 @@ public class HomePage extends BaseDemoblazePage {
     }
 
     public String userLogIn() {
-        String user = StringUtils.substring(welcomeText.format("1234@mail.ru").getText(), 8);
+        String user = StringUtils.substring(welcomeText.format(R.TESTDATA.get("TEST_EMAIL")).getText(), 8);
         return user;
     }
 }
