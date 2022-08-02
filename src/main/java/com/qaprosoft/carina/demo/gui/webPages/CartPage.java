@@ -1,10 +1,9 @@
 package com.qaprosoft.carina.demo.gui.webPages;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.core.gui.AbstractPage;
+import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-import org.testng.annotations.Test;
 
 public class CartPage extends BaseDemoblazePage {
 

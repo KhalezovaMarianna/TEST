@@ -1,7 +1,8 @@
 package com.qaprosoft.carina.demo.gui.webPages;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.core.gui.AbstractPage;
+import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -37,8 +38,8 @@ public class HomePage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/div[%S]/div/div/h4/a")
     ExtendedWebElement product;
 
-    @FindBy(xpath = "//*[@id=\"nameofuser\"]")
-    ExtendedWebElement loginHomePage;
+    @FindBy(xpath = "//a[text()=\"Welcome %s\"]")
+    ExtendedWebElement welcomeText;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -46,9 +47,7 @@ public class HomePage extends BaseDemoblazePage {
 
     @Override
     public boolean isOpened() {
-
         return categories.isElementPresent();
-
     }
 
     public AboutUsPage goToAboutPage() {
@@ -89,16 +88,15 @@ public class HomePage extends BaseDemoblazePage {
         return firstSlideImg.isElementNotPresent(20);
     }
 
-    //    public boolean ImgReturned() {
-//        firstSlideImg.isElementPresent();
-//        return true;
-//    }
     public ProductPage productOpened(int index) {
         product.format(String.valueOf(index)).click();
         return new ProductPage(getDriver());
     }
 
-    public boolean userLogIn() {
-        return loginHomePage.isElementPresent();
+    public String userLogIn() {
+        String user = StringUtils.substring(welcomeText.format("1234@mail.ru").getText(), 8);
+        return user;
     }
 }
+
+

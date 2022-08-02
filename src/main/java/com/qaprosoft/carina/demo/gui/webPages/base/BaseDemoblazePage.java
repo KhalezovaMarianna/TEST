@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.gui.webPages;
+package com.qaprosoft.carina.demo.gui.webPages.base;
 
 import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;

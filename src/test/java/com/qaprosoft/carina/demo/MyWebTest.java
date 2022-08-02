@@ -1,6 +1,7 @@
 package com.qaprosoft.carina.demo;
 
 import com.qaprosoft.carina.core.foundation.AbstractTest;
+import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.gui.webPages.*;
 import org.testng.Assert;
@@ -60,7 +61,6 @@ public class MyWebTest extends AbstractTest {
         Assert.assertTrue(cartPage.isOpened(), "cart isn't opened");
         Assert.assertTrue(cartPage.comparisonTitleAmount(), "Product isn't added");
 
-
     }
 
     @Test()
@@ -84,9 +84,9 @@ public class MyWebTest extends AbstractTest {
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         LogInPage logInPage = homePage.goToLoginPage();
         logInPage.login();
-        Assert.assertTrue(homePage.userLogIn(), "user isn't login");
-
-
+        //Assert.assertTrue(homePage.userLogIn(), "user isn't login");
+    homePage.userLogIn();
+    Assert.assertEquals(R.TESTDATA.get("TEST_EMAIL"), homePage.userLogIn(), "abuyz");
     }
 
 }
