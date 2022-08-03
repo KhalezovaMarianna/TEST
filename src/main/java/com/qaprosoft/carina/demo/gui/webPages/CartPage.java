@@ -10,6 +10,9 @@ public class CartPage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"page-wrapper\"]")
     ExtendedWebElement cartPage;
 
+    @FindBy(xpath = "//*[@id=\"tbodyid\"]/tr[1]/td[4]/a")
+    ExtendedWebElement deleteBtn;
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
     ExtendedWebElement homeBtn;
 
@@ -41,6 +44,11 @@ public class CartPage extends BaseDemoblazePage {
     }
     public String getProductCount(){
         return productCount.getText();
+    }
+    public void deleteAllProducts(){
+        if(deleteBtn.isElementPresent()){
+            deleteBtn.click();
+        }
     }
 
 }

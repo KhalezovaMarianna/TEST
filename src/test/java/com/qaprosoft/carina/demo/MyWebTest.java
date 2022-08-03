@@ -63,6 +63,9 @@ public class MyWebTest extends BaseTest {
         getDriver().switchTo().alert().accept();
         CartPage cartPage = productPage.openCart();
         Assert.assertEquals(cartPage.getCartTotal(),cartPage.getProductCount(),"Product isn't true on cart");
+        cartPage.deleteAllProducts();
+        cartPage.goToHome();
+        Assert.assertTrue(homePage.isOpened(),"home page isn't opened");
 
     }
 

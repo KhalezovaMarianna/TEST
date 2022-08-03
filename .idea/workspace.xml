@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="fixing bugs, change method comparison">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="created services">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/PageOpeningStrategySampleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/ProxySampleTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebLocalizationSample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebMultipleBrowserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebSampleTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +75,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyWebTest">
+  <component name="RunManager" selected="TestNG.MyWebTest.testAddProductOnTheCart">
     <configuration name="MyWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -171,9 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
         <item itemvalue="TestNG.MyWebTest" />
         <item itemvalue="TestNG.MyWebTest.testLogIn" />
-        <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
         <item itemvalue="TestNG.MyWebTest.testMenuButtonsWorkCorrectly" />
         <item itemvalue="TestNG.MyWebTest.testSlidingWindow" />
       </list>
@@ -258,7 +254,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659511868646</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="created services">
+      <created>1659527752523</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1659527752523</updated>
+    </task>
+    <task id="LOCAL-00012" summary="created services">
+      <created>1659527766349</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1659527766349</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -281,6 +291,7 @@
     <MESSAGE value="fixing bugs" />
     <MESSAGE value="added components" />
     <MESSAGE value="fixing bugs, change method comparison" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs, change method comparison" />
+    <MESSAGE value="created services" />
+    <option name="LAST_COMMIT_MESSAGE" value="created services" />
   </component>
 </project>
