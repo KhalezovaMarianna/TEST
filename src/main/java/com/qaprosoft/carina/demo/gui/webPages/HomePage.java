@@ -12,21 +12,6 @@ public class HomePage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"cat\"]")
     ExtendedWebElement categories;
 
-    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[2]/a")
-    ExtendedWebElement contactBtn;
-
-    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[3]/a")
-    ExtendedWebElement aboutUsBtn;
-
-    @FindBy(xpath = "//*[@id=\"cartur\"]")
-    ExtendedWebElement cartBtn;
-
-    @FindBy(xpath = "//*[@id=\"login2\"]")
-    ExtendedWebElement loginBtn;
-
-    @FindBy(xpath = "//*[@id=\"signin2\"]")
-    ExtendedWebElement signUpBtn;
-
     @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/a[2]/span[1]")
     ExtendedWebElement rightArrow;
 
@@ -49,31 +34,6 @@ public class HomePage extends BaseDemoblazePage {
     @Override
     public boolean isOpened() {
         return categories.isElementPresent();
-    }
-
-    public AboutUsPage goToAboutPage() {
-        aboutUsBtn.click();
-        return new AboutUsPage(getDriver());
-    }
-
-    public ContactPage goToContactPage() {
-        contactBtn.click();
-        return new ContactPage(getDriver());
-    }
-
-    public CartPage goToCartPage() {
-        cartBtn.click();
-        return new CartPage(getDriver());
-    }
-
-    public LogInPage goToLoginPage() {
-        loginBtn.click();
-        return new LogInPage(getDriver());
-    }
-
-    public SignUpPage goToSignUpPage() {
-        signUpBtn.click();
-        return new SignUpPage(getDriver());
     }
 
     public void clickRightArrowWindow() {

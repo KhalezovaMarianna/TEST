@@ -4,6 +4,7 @@ import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.gui.webPages.*;
+import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,20 +15,21 @@ public class MyWebTest extends AbstractTest {
     public void testMenuButtonsWorkCorrectly() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
+        HeaderMenu headerMenu = homePage.getHeader();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        ContactPage contactPage = homePage.goToContactPage();
+        ContactPage contactPage = headerMenu.goToContactPage();
         Assert.assertTrue(contactPage.isOpened(), "Contact page isn't open");
         contactPage.closePage();
-        AboutUsPage aboutUsPage = homePage.goToAboutPage();
+        AboutUsPage aboutUsPage = headerMenu.goToAboutPage();
         Assert.assertTrue(aboutUsPage.isOpened(), "About page isn't opened");
         aboutUsPage.closePage();
-        CartPage cartPage = homePage.goToCartPage();
+        CartPage cartPage = headerMenu.goToCartPage();
         Assert.assertTrue(cartPage.isOpened(), "Cart isn't present");
         cartPage.goToHome();
-        LogInPage logInPage = homePage.goToLoginPage();
+        LogInPage logInPage = headerMenu.goToLoginPage();
         Assert.assertTrue(logInPage.isOpened(), "Login page isn't opened");
         logInPage.closePage();
-        SignUpPage signUpPage = homePage.goToSignUpPage();
+        SignUpPage signUpPage = headerMenu.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "SignUp page isn't opened");
         signUpPage.closeSignUpPage();
         Assert.assertTrue(homePage.isOpened(), "home page isn't return");
@@ -57,7 +59,8 @@ public class MyWebTest extends AbstractTest {
         ProductPage productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
         productPage.addToCart();
-        CartPage cartPage = productPage.openCart();
+        HeaderMenu headerMenu = homePage.getHeader();
+        CartPage cartPage = headerMenu.goToCartPage();
         Assert.assertTrue(cartPage.isOpened(), "cart isn't opened");
         Assert.assertTrue(cartPage.comparisonTitleAmount(), "Product isn't added");
 
@@ -69,7 +72,8 @@ public class MyWebTest extends AbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        SignUpPage signUpPage = homePage.goToSignUpPage();
+        HeaderMenu headerMenu = homePage.getHeader();
+        SignUpPage signUpPage = headerMenu.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "sign Up page isn't open");
         signUpPage.typeName(R.TESTDATA.get("TEST_EMAIL"));
         signUpPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
@@ -84,11 +88,11 @@ public class MyWebTest extends AbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        LogInPage logInPage = homePage.goToLoginPage();
+        HeaderMenu headerMenu = homePage.getHeader();
+        LogInPage logInPage = headerMenu.goToLoginPage();
         logInPage.typeUsername(R.TESTDATA.get("TEST_EMAIL"));
         logInPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
         homePage = logInPage.clickLoginBtn();
-      //  homePage.isUserLoggedIn();
         Assert.assertEquals(R.TESTDATA.get("TEST_EMAIL"), homePage.getUserName(), "User isn't true");
     }
 
