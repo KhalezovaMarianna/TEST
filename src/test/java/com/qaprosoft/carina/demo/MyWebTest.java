@@ -43,9 +43,9 @@ public class MyWebTest extends AbstractTest {
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         homePage.clickRightArrowWindow();
-        Assert.assertTrue(homePage.isImgChanged(), "Img isn't changed");
+        Assert.assertTrue(homePage.showImage(2), "Img isn't changed");
         homePage.clickLeftArrowWindow();
-        Assert.assertTrue(homePage.isImgChanged(), "Img isn't returned");
+        Assert.assertTrue(homePage.showImage(1), "Img isn't returned");
 
     }
 
@@ -59,16 +59,16 @@ public class MyWebTest extends AbstractTest {
         ProductPage productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
         productPage.addToCart();
-        HeaderMenu headerMenu = homePage.getHeader();
-        CartPage cartPage = headerMenu.goToCartPage();
-        Assert.assertTrue(cartPage.isOpened(), "cart isn't opened");
-        Assert.assertTrue(cartPage.comparisonTitleAmount(), "Product isn't added");
+        Assert.assertEquals(getDriver().switchTo().alert().getText(), "Product added", "product added successful.");
+        getDriver().switchTo().alert().accept();
+        CartPage cartPage = productPage.openCart();
+        Assert.assertEquals(cartPage.getCartTotal(),cartPage.getProductCount(),"Product isn't true on cart");
 
     }
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
-    public void RegistrationForm() {
+    public void testRegistrationForm() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");

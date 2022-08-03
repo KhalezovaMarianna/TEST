@@ -16,6 +16,12 @@ public class CartPage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"totalp\"]")
     ExtendedWebElement amountCart;
 
+    @FindBy(xpath = "//*[@id=\"totalp\"]")
+    ExtendedWebElement totalPrice;
+
+    @FindBy(xpath = "//*[@id=\"tbodyid\"]//td[3]")
+    ExtendedWebElement productCount;
+
     public CartPage(WebDriver driver) {
         super(driver);
     }
@@ -30,11 +36,11 @@ public class CartPage extends BaseDemoblazePage {
         return new HomePage(getDriver());
     }
 
-    public boolean comparisonTitleAmount() {
-        double sum = Double.parseDouble(amountCart.format().getText());
-        if (sum > 0) {
-            return true;
-        }
-        return false;
+    public String getCartTotal() {
+        return totalPrice.getText();
     }
+    public String getProductCount(){
+        return productCount.getText();
+    }
+
 }

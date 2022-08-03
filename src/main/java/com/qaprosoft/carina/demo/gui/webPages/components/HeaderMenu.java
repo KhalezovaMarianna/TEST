@@ -38,7 +38,7 @@ public class HeaderMenu extends AbstractUIObject {
         return new ContactPage(getDriver());
     }
     public CartPage goToCartPage() {
-        cartBtn.click();
+        cartBtn.clickByJs();
         return new CartPage(getDriver());
     }
 

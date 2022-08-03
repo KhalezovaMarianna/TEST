@@ -18,8 +18,8 @@ public class HomePage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/a[1]/span[1]")
     ExtendedWebElement leftArrow;
 
-    @FindBy(xpath = "///*[@id=\"carouselExampleIndicators\"]/div/div[1]/img")
-    ExtendedWebElement firstSlideImg;
+    @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/div/div[%s]/img")
+    ExtendedWebElement slideImg;
 
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/div[%S]/div/div/h4/a")
     ExtendedWebElement product;
@@ -44,8 +44,8 @@ public class HomePage extends BaseDemoblazePage {
         leftArrow.click();
     }
 
-    public boolean isImgChanged() {
-        return firstSlideImg.isElementNotPresent(20);
+    public boolean showImage(int index) {
+        return slideImg.format(index).isElementPresent();
     }
 
     public ProductPage productOpenedByIndex(int index) {
@@ -54,7 +54,7 @@ public class HomePage extends BaseDemoblazePage {
     }
 
     public String getUserName() {
-        return StringUtils.substring(welcomeText.format(R.TESTDATA.get("TEST_EMAIL")).getText(), 8);
+        return StringUtils.substringAfter(welcomeText.format(R.TESTDATA.get("TEST_EMAIL")).getText(), " ");
     }
 }
 
