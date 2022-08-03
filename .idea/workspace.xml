@@ -7,41 +7,13 @@
     <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="fixing bugs">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/DeleteUserMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/GetUserMethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/PostUserMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/mappers/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/mappers/UserPreferenceMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/models/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/db/models/UserPreference.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/AboutUsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/BaseDemoblazePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/base/BaseDemoblazePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/LogInPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/SignUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/soap/AddIntegerMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/soap/LookupCityMethod.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/utils/ConnectionFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/utils/MobileContextUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale_de_DE.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale_en_US.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale_es_ES.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale_hu_HU.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale_ja_JP.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale_ru_RU.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/L10N/locale_zh_CN.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/_testdata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_testdata.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/browserstack/android/Google_Nexus_6.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/browserstack/ios/iPhone_12.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/browserstack/osx/big_sur.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/browserstack/win/win_10_Edge.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/api.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +80,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyWebTest.testLogIn">
+  <component name="RunManager" selected="TestNG.MyWebTest.testSlidingWindow">
     <configuration name="MyWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -200,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MyWebTest.testLogIn" />
+        <item itemvalue="TestNG.MyWebTest.testSlidingWindow" />
         <item itemvalue="TestNG.MyWebTest" />
+        <item itemvalue="TestNG.MyWebTest.testLogIn" />
         <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
         <item itemvalue="TestNG.MyWebTest.signUpForm" />
-        <item itemvalue="TestNG.MyWebTest.testSlidingWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659435025638</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixing bugs">
+      <created>1659444464841</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659444464841</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixing bugs">
+      <created>1659444544700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659444544700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -30,7 +30,7 @@ public class LogInPage extends BaseDemoblazePage {
         return loginPage.isElementPresent();
     }
 
-    public HomePage closeLoginPage() {
+    public HomePage closePage() {
         closeBtn.click();
         return new HomePage(getDriver());
     }
@@ -43,11 +43,7 @@ public class LogInPage extends BaseDemoblazePage {
         passwordForm.type(password);
     }
 
-    public HomePage login() {
-        String email = "1234@mail.ru";
-        String password = "12345";
-        typeUsername(email);
-        typePassword(password);
+    public HomePage clickLoginBtn() {
         loginBtn.click();
         return new HomePage(getDriver());
     }

@@ -17,16 +17,16 @@ public class MyWebTest extends AbstractTest {
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         ContactPage contactPage = homePage.goToContactPage();
         Assert.assertTrue(contactPage.isOpened(), "Contact page isn't open");
-        contactPage.closeContactPage();
+        contactPage.closePage();
         AboutUsPage aboutUsPage = homePage.goToAboutPage();
         Assert.assertTrue(aboutUsPage.isOpened(), "About page isn't opened");
-        aboutUsPage.closeAboutUsPage();
+        aboutUsPage.closePage();
         CartPage cartPage = homePage.goToCartPage();
         Assert.assertTrue(cartPage.isOpened(), "Cart isn't present");
         cartPage.goToHome();
         LogInPage logInPage = homePage.goToLoginPage();
         Assert.assertTrue(logInPage.isOpened(), "Login page isn't opened");
-        logInPage.closeLoginPage();
+        logInPage.closePage();
         SignUpPage signUpPage = homePage.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "SignUp page isn't opened");
         signUpPage.closeSignUpPage();
@@ -41,9 +41,9 @@ public class MyWebTest extends AbstractTest {
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         homePage.clickRightArrowWindow();
-        Assert.assertTrue(homePage.imgChanged(), "Img isn't changed");
+        Assert.assertTrue(homePage.isImgChanged(), "Img isn't changed");
         homePage.clickLeftArrowWindow();
-        Assert.assertFalse(homePage.imgChanged(), "Img isn't returned");
+        Assert.assertTrue(homePage.isImgChanged(), "Img isn't returned");
 
     }
 
@@ -53,8 +53,8 @@ public class MyWebTest extends AbstractTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        int amount = (int) (Math.random() * 10);
-        ProductPage productPage = homePage.productOpened(amount);
+        int index = (int) (Math.random() * 10);
+        ProductPage productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
         productPage.addToCart();
         CartPage cartPage = productPage.openCart();
@@ -71,7 +71,9 @@ public class MyWebTest extends AbstractTest {
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         SignUpPage signUpPage = homePage.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "sign Up page isn't open");
-        signUpPage.signUp();
+        signUpPage.typeName(R.TESTDATA.get("TEST_EMAIL"));
+        signUpPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
+        signUpPage.clickSignUpBtn();
         Assert.assertEquals(getDriver().switchTo().alert().getText(), "This user already exist.", "Sign up successful.");
 
     }
@@ -83,10 +85,11 @@ public class MyWebTest extends AbstractTest {
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         LogInPage logInPage = homePage.goToLoginPage();
-        logInPage.login();
-        //Assert.assertTrue(homePage.userLogIn(), "user isn't login");
-    homePage.userLogIn();
-    Assert.assertEquals(R.TESTDATA.get("TEST_EMAIL"), homePage.userLogIn(), "abuyz");
+        logInPage.typeUsername(R.TESTDATA.get("TEST_EMAIL"));
+        logInPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
+        homePage = logInPage.clickLoginBtn();
+      //  homePage.isUserLoggedIn();
+        Assert.assertEquals(R.TESTDATA.get("TEST_EMAIL"), homePage.getUserName(), "User isn't true");
     }
 
 }

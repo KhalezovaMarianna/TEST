@@ -2,7 +2,6 @@ package com.qaprosoft.carina.demo.gui.webPages;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -43,11 +42,7 @@ public class SignUpPage extends BaseDemoblazePage {
         passwordForm.type(password);
     }
 
-    public void signUp() {
-        String email = "test@mail.ru";
-        String password = RandomStringUtils.randomAlphabetic(10);
-        typeName(email);
-        typePassword(password);
+    public void clickSignUpBtn() {
         signUpBtn.click();
     }
 }

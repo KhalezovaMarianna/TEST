@@ -22,7 +22,7 @@ public class AboutUsPage extends BaseDemoblazePage {
         return aboutUsPage.isElementPresent();
     }
 
-    public HomePage closeAboutUsPage() {
+    public HomePage closePage() {
         closeBtn.click();
         return new HomePage(getDriver());
     }

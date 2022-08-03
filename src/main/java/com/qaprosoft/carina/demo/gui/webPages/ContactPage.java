@@ -19,7 +19,7 @@ public class ContactPage extends BaseDemoblazePage {
     public boolean isOpened(){
         return newMessageForm.isElementPresent();
     }
-    public HomePage closeContactPage(){
+    public HomePage closePage(){
         closeBtn.click();
         return new HomePage(getDriver());
     }
