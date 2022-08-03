@@ -8,7 +8,7 @@ import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class MyWebTest extends AbstractTest {
+public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")

@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added components">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="fixing bugs, change method comparison">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/HeaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/HeaderMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/PageOpeningStrategySampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/ProxySampleTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebLocalizationSample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebMultipleBrowserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/WebSampleTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,6 +280,7 @@
     <MESSAGE value="add test login" />
     <MESSAGE value="fixing bugs" />
     <MESSAGE value="added components" />
-    <option name="LAST_COMMIT_MESSAGE" value="added components" />
+    <MESSAGE value="fixing bugs, change method comparison" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs, change method comparison" />
   </component>
 </project>
