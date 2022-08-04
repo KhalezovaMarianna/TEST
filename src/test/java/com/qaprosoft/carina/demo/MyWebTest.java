@@ -1,8 +1,10 @@
 package com.qaprosoft.carina.demo;
 
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.gui.webPages.*;
+import com.qaprosoft.carina.demo.gui.webPages.components.FooterMenu;
 import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -129,6 +131,19 @@ public class MyWebTest extends BaseTest {
         contactPage.typeMessage(R.TESTDATA.get("TEST_MESSAGE"));
         contactPage.sendMessage();
         Assert.assertTrue(homePage.isOpened(),"Message isn't send");
+
+
+    }
+
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    public void testFooterIsFull(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        FooterMenu footerMenu = homePage.getFooter();
+        Assert.assertTrue(footerMenu.equalTextAboutUs(),"about us isn't found");
+        Assert.assertTrue(footerMenu.equalTextGetInTouch(),"get in touch isn't find");
+        Assert.assertTrue((footerMenu.equalTextlabel()),"label isn't find");
 
 
     }

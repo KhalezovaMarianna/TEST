@@ -56,6 +56,11 @@ public class HomePage extends BaseDemoblazePage {
     public String getUserName() {
         return StringUtils.substringAfter(welcomeText.format(R.TESTDATA.get("TEST_EMAIL")).getText(), " ");
     }
+
+    public ResultPage sdfk(){
+        categories.getText();
+        return new ResultPage(getDriver());
+    }
 }
 
 
