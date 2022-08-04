@@ -1,6 +1,5 @@
 package com.qaprosoft.carina.demo;
 
-import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.gui.webPages.*;
@@ -62,10 +61,10 @@ public class MyWebTest extends BaseTest {
         Assert.assertEquals(getDriver().switchTo().alert().getText(), "Product added", "product added successful.");
         getDriver().switchTo().alert().accept();
         CartPage cartPage = productPage.openCart();
-        Assert.assertEquals(cartPage.getCartTotal(),cartPage.getProductCount(),"Product isn't true on cart");
+        Assert.assertEquals(cartPage.getCartTotal(), cartPage.getProductPrice(), "Product isn't true on cart");
         cartPage.deleteAllProducts();
         cartPage.goToHome();
-        Assert.assertTrue(homePage.isOpened(),"home page isn't opened");
+        Assert.assertTrue(homePage.isOpened(), "home page isn't opened");
 
     }
 
@@ -97,6 +96,41 @@ public class MyWebTest extends BaseTest {
         logInPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
         homePage = logInPage.clickLoginBtn();
         Assert.assertEquals(R.TESTDATA.get("TEST_EMAIL"), homePage.getUserName(), "User isn't true");
+    }
+
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    public void testPlacingOrder() {
+        ProductPage productPage = openingService.openProductByIndex();
+        CartPage cartPage = productPage.openCart();
+        Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
+        PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
+        placeOrderPage.fillingNameForm(R.TESTDATA.get("TEST_NAME"));
+        placeOrderPage.fillingCartForm(R.TESTDATA.get("TEST_CARD"));
+        PopUpOrderPage popUpOrderPage = placeOrderPage.sendOrder();
+        Assert.assertTrue(popUpOrderPage.isOpened(), "Order isn't successful");
+        HomePage homePage = popUpOrderPage.closePage();
+        Assert.assertTrue(homePage.isOpened(),"home page isn't open");
+        HeaderMenu headerMenu = homePage.getHeader();
+        headerMenu.goToCartPage();
+        Assert.assertTrue(cartPage.isCartEmpty(),"cart isn't empty");
+
+    }
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    public void testMessageCanBeSend(){
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        HeaderMenu headerMenu = homePage.getHeader();
+        ContactPage contactPage = headerMenu.goToContactPage();
+        Assert.assertTrue(contactPage.isOpened(),"contact page isn't open");
+        contactPage.typeName(R.TESTDATA.get("TEST_NAME"));
+        contactPage.typeEmail(R.TESTDATA.get("TEST_EMAIL"));
+        contactPage.typeMessage(R.TESTDATA.get("TEST_MESSAGE"));
+        contactPage.sendMessage();
+        Assert.assertTrue(homePage.isOpened(),"Message isn't send");
+
+
     }
 
 }

@@ -22,8 +22,9 @@ public class ProductPage extends BaseDemoblazePage {
         return addToCartBtn.isElementPresent();
     }
 
-    public void addToCart() {
+    public ProductPage addToCart() {
         addToCartBtn.click();
+        return new ProductPage(getDriver());
     }
 
     public CartPage openCart() {

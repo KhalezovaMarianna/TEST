@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="created services">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added realization product container">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/base/BaseDemoblazePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/base/BaseDemoblazePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/HeaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/HeaderMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/_testdata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_testdata.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +81,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyWebTest.testAddProductOnTheCart">
+  <component name="RunManager" selected="TestNG.MyWebTest.testMessageCanBeSend">
     <configuration name="MyWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -129,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyWebTest.testMenuButtonsWorkCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyWebTest.testMessageCanBeSend" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -139,7 +145,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
-      <option name="METHOD_NAME" value="testMenuButtonsWorkCorrectly" />
+      <option name="METHOD_NAME" value="testMessageCanBeSend" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,7 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyWebTest.testSlidingWindow" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyWebTest.testPlacingOrder" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -157,7 +163,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
-      <option name="METHOD_NAME" value="testSlidingWindow" />
+      <option name="METHOD_NAME" value="testPlacingOrder" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -167,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
+        <item itemvalue="TestNG.MyWebTest.testMessageCanBeSend" />
+        <item itemvalue="TestNG.MyWebTest.testPlacingOrder" />
         <item itemvalue="TestNG.MyWebTest" />
+        <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
         <item itemvalue="TestNG.MyWebTest.testLogIn" />
-        <item itemvalue="TestNG.MyWebTest.testMenuButtonsWorkCorrectly" />
-        <item itemvalue="TestNG.MyWebTest.testSlidingWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659527766349</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added realization product container">
+      <created>1659542810174</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1659542810174</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -292,6 +305,7 @@
     <MESSAGE value="added components" />
     <MESSAGE value="fixing bugs, change method comparison" />
     <MESSAGE value="created services" />
-    <option name="LAST_COMMIT_MESSAGE" value="created services" />
+    <MESSAGE value="added realization product container" />
+    <option name="LAST_COMMIT_MESSAGE" value="added realization product container" />
   </component>
 </project>
