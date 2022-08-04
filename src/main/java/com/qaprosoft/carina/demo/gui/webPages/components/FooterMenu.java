@@ -29,7 +29,7 @@ public class FooterMenu extends AbstractUIObject {
         String s = "Get in Touch";
         return s.equals(getInTouchText.getText());
     }
-    public  boolean equalTextlabel(){
+    public  boolean equalTextLabel(){
         return label.isElementPresent();
     }
 

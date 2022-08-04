@@ -1,6 +1,5 @@
 package com.qaprosoft.carina.demo;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.gui.webPages.*;
@@ -143,7 +142,7 @@ public class MyWebTest extends BaseTest {
         FooterMenu footerMenu = homePage.getFooter();
         Assert.assertTrue(footerMenu.equalTextAboutUs(),"about us isn't found");
         Assert.assertTrue(footerMenu.equalTextGetInTouch(),"get in touch isn't find");
-        Assert.assertTrue((footerMenu.equalTextlabel()),"label isn't find");
+        Assert.assertTrue((footerMenu.equalTextLabel()),"label isn't find");
 
 
     }
