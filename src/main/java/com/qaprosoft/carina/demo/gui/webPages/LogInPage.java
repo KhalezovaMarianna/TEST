@@ -8,14 +8,19 @@ import org.openqa.selenium.support.FindBy;
 public class LogInPage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"logInModalLabel\"]")
     ExtendedWebElement loginPage;
+
     @FindBy(xpath = "//*[@id=\"logInModal\"]/div/div/div[1]/button")
     ExtendedWebElement closeBtn;
+
     @FindBy(xpath = "//*[@id=\"loginusername\"]")
     ExtendedWebElement usernameForm;
+
     @FindBy(xpath = "//*[@id=\"loginpassword\"]")
     ExtendedWebElement passwordForm;
+
     @FindBy(xpath = "//*[@id=\"logInModal\"]//button[2]")
     ExtendedWebElement loginBtn;
+
 
     public LogInPage(WebDriver driver) {
         super(driver);
@@ -27,7 +32,7 @@ public class LogInPage extends BaseDemoblazePage {
         return loginPage.isElementPresent();
     }
 
-    public HomePage closePage() {
+    public HomePage clickCloseButton() {
         closeBtn.click();
         return new HomePage(getDriver());
     }

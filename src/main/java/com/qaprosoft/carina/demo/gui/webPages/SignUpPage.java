@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class SignUpPage extends BaseDemoblazePage {
+
     @FindBy(xpath = "//*[@id=\"signInModalLabel\"]")
     ExtendedWebElement signUpPage;
 
@@ -14,6 +15,7 @@ public class SignUpPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"sign-password\"]")
     ExtendedWebElement passwordForm;
+
     @FindBy(xpath = "//*[@id=\"signInModal\"]/div/div/div[3]/button[2]")
     ExtendedWebElement signUpBtn;
 
@@ -29,7 +31,7 @@ public class SignUpPage extends BaseDemoblazePage {
         return signUpPage.isElementPresent();
     }
 
-    public HomePage closeSignUpPage() {
+    public HomePage clickCloseButton() {
         closeBtn.click();
         return new HomePage(getDriver());
     }

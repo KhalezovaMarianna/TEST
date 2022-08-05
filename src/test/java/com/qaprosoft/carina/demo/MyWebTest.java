@@ -22,16 +22,16 @@ public class MyWebTest extends BaseTest {
         contactPage.closePage();
         AboutUsPage aboutUsPage = headerMenu.goToAboutPage();
         Assert.assertTrue(aboutUsPage.isOpened(), "About page isn't opened");
-        aboutUsPage.closePage();
+        aboutUsPage.clickCloseButton();
         CartPage cartPage = headerMenu.goToCartPage();
         Assert.assertTrue(cartPage.isOpened(), "Cart isn't present");
         cartPage.goToHome();
         LogInPage logInPage = headerMenu.goToLoginPage();
         Assert.assertTrue(logInPage.isOpened(), "Login page isn't opened");
-        logInPage.closePage();
+        logInPage.clickCloseButton();
         SignUpPage signUpPage = headerMenu.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "SignUp page isn't opened");
-        signUpPage.closeSignUpPage();
+        signUpPage.clickCloseButton();
         Assert.assertTrue(homePage.isOpened(), "home page isn't return");
 
     }
@@ -43,9 +43,9 @@ public class MyWebTest extends BaseTest {
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         homePage.clickRightArrowWindow();
-        Assert.assertTrue(homePage.showImage(2), "Img isn't changed");
+        Assert.assertTrue(homePage.isImageShow(2), "Img isn't changed");
         homePage.clickLeftArrowWindow();
-        Assert.assertTrue(homePage.showImage(1), "Img isn't returned");
+        Assert.assertTrue(homePage.isImageShow(1), "Img isn't returned");
 
     }
 
@@ -59,7 +59,7 @@ public class MyWebTest extends BaseTest {
         pause(2);
         ProductPage productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
-        productPage.addToCart();
+        productPage.clickAddToCartButton();
         Assert.assertEquals(getDriver().switchTo().alert().getText(), "Product added", "product added successful.");
         getDriver().switchTo().alert().accept();
         CartPage cartPage = productPage.openCart();
@@ -107,9 +107,9 @@ public class MyWebTest extends BaseTest {
         CartPage cartPage = productPage.openCart();
         Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
         PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
-        placeOrderPage.fillingNameForm(R.TESTDATA.get("TEST_NAME"));
-        placeOrderPage.fillingCartForm(R.TESTDATA.get("TEST_CARD"));
-        PopUpOrderPage popUpOrderPage = placeOrderPage.sendOrder();
+        placeOrderPage.filledNameForm(R.TESTDATA.get("TEST_NAME"));
+        placeOrderPage.filledCartForm(R.TESTDATA.get("TEST_CARD"));
+        PopUpOrderPage popUpOrderPage = placeOrderPage.clickSendOrderButton();
         Assert.assertTrue(popUpOrderPage.isOpened(), "Order isn't successful");
         HomePage homePage = popUpOrderPage.closePage();
         Assert.assertTrue(homePage.isOpened(),"home page isn't open");
@@ -129,7 +129,7 @@ public class MyWebTest extends BaseTest {
         contactPage.typeName(R.TESTDATA.get("TEST_NAME"));
         contactPage.typeEmail(R.TESTDATA.get("TEST_EMAIL"));
         contactPage.typeMessage(R.TESTDATA.get("TEST_MESSAGE"));
-        contactPage.sendMessage();
+        contactPage.clickSendMessageButton();
         Assert.assertTrue(homePage.isOpened(),"Message isn't send");
 
 

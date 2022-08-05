@@ -13,7 +13,7 @@ public class OpeningService implements IDriverPool {
         int index = (int) (Math.random() * 10);
         ProductPage productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
-        return productPage.addToCart();
+        return productPage.clickAddToCartButton();
     }
 
 }

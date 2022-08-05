@@ -51,7 +51,7 @@ public class ContactPage extends BaseDemoblazePage {
         messageForm.type(message);
     }
 
-    public HomePage sendMessage() {
+    public HomePage clickSendMessageButton() {
         sendBtn.click();
         return new HomePage(getDriver());
     }

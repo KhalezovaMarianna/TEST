@@ -9,6 +9,7 @@ public class PopUpOrderPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "/html/body/div[10]/div[7]/div/button")
     ExtendedWebElement okBtn;
+
     @FindBy(xpath = "//div[10]/h2")
     ExtendedWebElement title;
 

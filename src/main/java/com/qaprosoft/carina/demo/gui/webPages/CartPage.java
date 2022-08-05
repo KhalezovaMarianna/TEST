@@ -9,15 +9,19 @@ public class CartPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"page-wrapper\"]")
     ExtendedWebElement cartPage;
+
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/tr[1]/td[4]/a")
     ExtendedWebElement deleteBtn;
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
     ExtendedWebElement homeBtn;
 
     @FindBy(xpath = "//*[@id=\"totalp\"]")
     ExtendedWebElement amountCart;
+
     @FindBy(xpath = "//*[@id=\"totalp\"]")
     ExtendedWebElement totalPrice;
+
     @FindBy(xpath = "//*[@id=\"tbodyid\"]//td[3]")
     ExtendedWebElement productCount;
 

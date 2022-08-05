@@ -44,7 +44,7 @@ public class HomePage extends BaseDemoblazePage {
         leftArrow.click();
     }
 
-    public boolean showImage(int index) {
+    public boolean isImageShow(int index) {
         return slideImg.format(index).isElementPresent();
     }
 

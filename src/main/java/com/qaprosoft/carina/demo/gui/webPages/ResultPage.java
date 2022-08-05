@@ -13,6 +13,7 @@ public class ResultPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"cat\"]")
     private ExtendedWebElement categories;
+
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/div")
     private List<ProductContainer> resultProducts;
 

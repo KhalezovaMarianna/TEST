@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added tests and components">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="fixing bugs">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/AboutUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/LogInPage.java" afterDir="false" />
@@ -14,9 +16,8 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PopUpOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PopUpOrderPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ResultPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/ProductContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/ProductContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/OpeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/OpeningService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -305,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659615916805</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="fixing bugs">
+      <created>1659682053205</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1659682053205</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -325,13 +333,13 @@
     <MESSAGE value="add web test Sliding window" />
     <MESSAGE value="add web test signUp and add product to cart" />
     <MESSAGE value="add test login" />
-    <MESSAGE value="fixing bugs" />
     <MESSAGE value="added components" />
     <MESSAGE value="fixing bugs, change method comparison" />
     <MESSAGE value="created services" />
     <MESSAGE value="added realization product container" />
     <MESSAGE value="added tests" />
     <MESSAGE value="added tests and components" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests and components" />
+    <MESSAGE value="fixing bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs" />
   </component>
 </project>

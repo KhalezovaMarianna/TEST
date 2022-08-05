@@ -9,6 +9,7 @@ public class ProductPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"tbodyid\"]//a")
     ExtendedWebElement addToCartBtn;
+
     @FindBy(xpath = "//*[@id=\"cartur\"]")
     ExtendedWebElement cartBtn;
 
@@ -21,7 +22,7 @@ public class ProductPage extends BaseDemoblazePage {
         return addToCartBtn.isElementPresent();
     }
 
-    public ProductPage addToCart() {
+    public ProductPage clickAddToCartButton() {
         addToCartBtn.click();
         return new ProductPage(getDriver());
     }
