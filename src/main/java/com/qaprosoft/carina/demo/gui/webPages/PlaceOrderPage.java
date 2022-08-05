@@ -10,13 +10,10 @@ public class PlaceOrderPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"orderModalLabel\"]")
     ExtendedWebElement title;
-
     @FindBy(xpath = "//*[@id=\"name\"]")
     ExtendedWebElement nameForm;
-
     @FindBy(xpath = "//*[@id=\"card\"]")
     ExtendedWebElement creditCardForm;
-
     @FindBy(xpath = "//*[@id=\"orderModal\"]//button[2]")
     ExtendedWebElement purchaseBtn;
 
@@ -37,7 +34,7 @@ public class PlaceOrderPage extends BaseDemoblazePage {
         creditCardForm.type(number);
     }
 
-    public PopUpOrderPage sendOrder(){
+    public PopUpOrderPage sendOrder() {
         purchaseBtn.click();
         return new PopUpOrderPage(getDriver());
     }

@@ -25,11 +25,13 @@ public class FooterMenu extends AbstractUIObject {
         String s = "About Us";
         return s.equals(aboutUsText.getText());
     }
-    public boolean equalTextGetInTouch(){
+
+    public boolean equalTextGetInTouch() {
         String s = "Get in Touch";
         return s.equals(getInTouchText.getText());
     }
-    public  boolean equalTextLabel(){
+
+    public boolean equalTextLabel() {
         return label.isElementPresent();
     }
 

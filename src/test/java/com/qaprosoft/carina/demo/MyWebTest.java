@@ -56,6 +56,7 @@ public class MyWebTest extends BaseTest {
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         int index = (int) (Math.random() * 10);
+        pause(2);
         ProductPage productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
         productPage.addToCart();

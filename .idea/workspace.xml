@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added tests and components">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PlaceOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PopUpOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PopUpOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/ProductContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/ProductContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +84,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyWebTest">
+  <component name="RunManager" selected="TestNG.MyWebTest.testPlacingOrder">
     <configuration name="MyWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -90,24 +102,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyWebTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyWebTest.testFooterIsFull" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -119,6 +113,24 @@
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
       <option name="METHOD_NAME" value="testFooterIsFull" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyWebTest.testMenuButtonsWorkCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
+      <option name="METHOD_NAME" value="testMenuButtonsWorkCorrectly" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -164,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MyWebTest" />
-        <item itemvalue="TestNG.MyWebTest.testFooterIsFull" />
-        <item itemvalue="TestNG.MyWebTest.test" />
-        <item itemvalue="TestNG.MyWebTest.testMessageCanBeSend" />
         <item itemvalue="TestNG.MyWebTest.testPlacingOrder" />
+        <item itemvalue="TestNG.MyWebTest" />
+        <item itemvalue="TestNG.MyWebTest.testMessageCanBeSend" />
+        <item itemvalue="TestNG.MyWebTest.testMenuButtonsWorkCorrectly" />
+        <item itemvalue="TestNG.MyWebTest.testFooterIsFull" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659615143754</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added tests and components">
+      <created>1659615916805</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659615916805</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

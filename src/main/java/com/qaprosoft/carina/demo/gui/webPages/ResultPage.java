@@ -11,9 +11,8 @@ import java.util.List;
 
 public class ResultPage extends BaseDemoblazePage {
 
-@FindBy(xpath = "//*[@id=\"cat\"]")
-private ExtendedWebElement categories;
-
+    @FindBy(xpath = "//*[@id=\"cat\"]")
+    private ExtendedWebElement categories;
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/div")
     private List<ProductContainer> resultProducts;
 
@@ -24,6 +23,7 @@ private ExtendedWebElement categories;
     public int getNumberOfProductFound() {
         return resultProducts.size();
     }
+
     public List<String> getResultProductTitles() {
         List<String> productTitles = new ArrayList<>();
         for (ProductContainer productContainer : resultProducts) {
@@ -36,6 +36,7 @@ private ExtendedWebElement categories;
         System.out.println(resultProducts);
         return resultProducts;
     }
+
     @Override
     public boolean isOpened() {
         return categories.isElementPresent();

@@ -9,7 +9,6 @@ public class ProductPage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//*[@id=\"tbodyid\"]//a")
     ExtendedWebElement addToCartBtn;
-
     @FindBy(xpath = "//*[@id=\"cartur\"]")
     ExtendedWebElement cartBtn;
 

@@ -25,7 +25,7 @@ public class AuthenticationService implements IDriverPool {
         signUpPage.typePassword(PASSWORD);
     }
 
-    public HomePage login(){
+    public HomePage login() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");

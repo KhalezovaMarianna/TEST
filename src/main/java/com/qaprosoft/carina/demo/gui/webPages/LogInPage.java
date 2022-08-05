@@ -10,13 +10,10 @@ public class LogInPage extends BaseDemoblazePage {
     ExtendedWebElement loginPage;
     @FindBy(xpath = "//*[@id=\"logInModal\"]/div/div/div[1]/button")
     ExtendedWebElement closeBtn;
-
     @FindBy(xpath = "//*[@id=\"loginusername\"]")
     ExtendedWebElement usernameForm;
-
     @FindBy(xpath = "//*[@id=\"loginpassword\"]")
     ExtendedWebElement passwordForm;
-
     @FindBy(xpath = "//*[@id=\"logInModal\"]//button[2]")
     ExtendedWebElement loginBtn;
 

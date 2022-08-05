@@ -17,14 +17,14 @@ public class ProductContainer extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public String getProductName(){
+    public String getProductName() {
         return productName.getText();
     }
 
     @Override
     public String toString() {
         return "ProductContainer{" +
-                "productName=" + productName.getText()+
+                "productName=" + productName.getText() +
                 '}';
     }
 }

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class ContactPage extends BaseDemoblazePage {
+
     @FindBy(xpath = "//*[@id=\"exampleModalLabel\"]")
     ExtendedWebElement newMessageForm;
 
@@ -27,24 +28,30 @@ public class ContactPage extends BaseDemoblazePage {
     public ContactPage(WebDriver driver) {
         super(driver);
     }
+
     @Override
-    public boolean isOpened(){
+    public boolean isOpened() {
         return newMessageForm.isElementPresent();
     }
-    public HomePage closePage(){
+
+    public HomePage closePage() {
         closeBtn.click();
         return new HomePage(getDriver());
     }
-    public void typeName(String name){
+
+    public void typeName(String name) {
         nameForm.type(name);
     }
-    public void typeEmail(String email){
+
+    public void typeEmail(String email) {
         emailForm.type(email);
     }
-    public void typeMessage(String message){
+
+    public void typeMessage(String message) {
         messageForm.type(message);
     }
-    public HomePage sendMessage(){
+
+    public HomePage sendMessage() {
         sendBtn.click();
         return new HomePage(getDriver());
     }
