@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public abstract class BaseDemoblazePage extends AbstractPage {
-    @FindBy(xpath = "//*[@id=\"narvbarx\"]")
+    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul")
     private HeaderMenu header;
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private FooterMenu footer;

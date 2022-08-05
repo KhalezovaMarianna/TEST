@@ -23,7 +23,7 @@ public class MyWebTest extends BaseTest {
         AboutUsPage aboutUsPage = headerMenu.goToAboutPage();
         Assert.assertTrue(aboutUsPage.isOpened(), "About page isn't opened");
         aboutUsPage.clickCloseButton();
-        CartPage cartPage = headerMenu.goToCartPage();
+        CartPage cartPage = headerMenu.openCart();
         Assert.assertTrue(cartPage.isOpened(), "Cart isn't present");
         cartPage.goToHome();
         LogInPage logInPage = headerMenu.goToLoginPage();
@@ -62,7 +62,9 @@ public class MyWebTest extends BaseTest {
         productPage.clickAddToCartButton();
         Assert.assertEquals(getDriver().switchTo().alert().getText(), "Product added", "product added successful.");
         getDriver().switchTo().alert().accept();
-        CartPage cartPage = productPage.openCart();
+        HeaderMenu headerMenu = productPage.getHeader();
+        CartPage cartPage = headerMenu.openCart();
+        pause(5);
         Assert.assertEquals(cartPage.getCartTotal(), cartPage.getProductPrice(), "Product isn't true on cart");
         cartPage.deleteAllProducts();
         cartPage.goToHome();
@@ -104,7 +106,8 @@ public class MyWebTest extends BaseTest {
     @MethodOwner(owner = "marianna_khalezova")
     public void testPlacingOrder() {
         ProductPage productPage = openingService.openProductByIndex();
-        CartPage cartPage = productPage.openCart();
+        HeaderMenu headerMenu = productPage.getHeader();
+        CartPage cartPage = headerMenu.openCart();
         Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
         PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
         placeOrderPage.filledNameForm(R.TESTDATA.get("TEST_NAME"));
@@ -113,8 +116,7 @@ public class MyWebTest extends BaseTest {
         Assert.assertTrue(popUpOrderPage.isOpened(), "Order isn't successful");
         HomePage homePage = popUpOrderPage.closePage();
         Assert.assertTrue(homePage.isOpened(),"home page isn't open");
-        HeaderMenu headerMenu = homePage.getHeader();
-        headerMenu.goToCartPage();
+        headerMenu.openCart();
         Assert.assertTrue(cartPage.isCartEmpty(),"cart isn't empty");
 
     }
@@ -138,14 +140,29 @@ public class MyWebTest extends BaseTest {
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
     public void testFooterIsFull(){
+        String aboutUs= "About Us";
+        String getInTouch = "Get in Touch";
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         FooterMenu footerMenu = homePage.getFooter();
-        Assert.assertTrue(footerMenu.equalTextAboutUs(),"about us isn't found");
-        Assert.assertTrue(footerMenu.equalTextGetInTouch(),"get in touch isn't find");
-        Assert.assertTrue((footerMenu.equalTextLabel()),"label isn't find");
+        Assert.assertEquals(footerMenu.getTextAboutUs(), aboutUs,"about us isn't found");
+        Assert.assertEquals(footerMenu.getTextGetInTouch(), getInTouch, "get in touch isn't find");
+        Assert.assertTrue(footerMenu.getTextLabel(),"label isn't find");
 
 
     }
+
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    public void testPlacingOrderIsNotSuccessful() {
+        ProductPage productPage = openingService.openProductByIndex();
+        HeaderMenu headerMenu = productPage.getHeader();
+        CartPage cartPage = headerMenu.openCart();
+        Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
+        PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
+        placeOrderPage.clickSendOrderWithEmptyForms();
+        Assert.assertTrue(placeOrderPage.isOpened(),"order is successful");
+    }
+
 
 }

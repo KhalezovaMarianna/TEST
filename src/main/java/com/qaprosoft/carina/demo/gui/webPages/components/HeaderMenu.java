@@ -1,7 +1,6 @@
 package com.qaprosoft.carina.demo.gui.webPages.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.core.gui.AbstractPage;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
 import com.qaprosoft.carina.demo.gui.webPages.*;
 import org.openqa.selenium.SearchContext;
@@ -15,19 +14,23 @@ public class HeaderMenu extends AbstractUIObject {
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[3]/a")
     ExtendedWebElement aboutUsBtn;
 
-    @FindBy(xpath = "//*[@id=\"cartur\"]")
-    ExtendedWebElement cartBtn;
-
     @FindBy(xpath = "//*[@id=\"login2\"]")
     ExtendedWebElement loginBtn;
 
     @FindBy(xpath = "//*[@id=\"signin2\"]")
     ExtendedWebElement signUpBtn;
 
+    @FindBy(xpath = "//*[@id=\"cartur\"]")
+    ExtendedWebElement cartBtn;
+
     public HeaderMenu(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
+    public CartPage openCart() {
+        cartBtn.click();
+        return new CartPage(getDriver());
+    }
 
     public AboutUsPage goToAboutPage() {
         aboutUsBtn.click();
@@ -38,15 +41,12 @@ public class HeaderMenu extends AbstractUIObject {
         contactBtn.click();
         return new ContactPage(getDriver());
     }
-    public CartPage goToCartPage() {
-        cartBtn.clickByJs();
-        return new CartPage(getDriver());
-    }
 
     public LogInPage goToLoginPage() {
         loginBtn.click();
         return new LogInPage(getDriver());
     }
+
     public SignUpPage goToSignUpPage() {
         signUpBtn.click();
         return new SignUpPage(getDriver());

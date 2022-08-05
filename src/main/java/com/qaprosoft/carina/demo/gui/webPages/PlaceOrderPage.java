@@ -37,6 +37,10 @@ public class PlaceOrderPage extends BaseDemoblazePage {
         creditCardForm.type(number);
     }
 
+    public void clickSendOrderWithEmptyForms(){
+        purchaseBtn.click();
+    }
+
     public PopUpOrderPage clickSendOrderButton() {
         purchaseBtn.click();
         return new PopUpOrderPage(getDriver());
