@@ -163,6 +163,28 @@ public class MyWebTest extends BaseTest {
         placeOrderPage.clickSendOrderWithEmptyForms();
         Assert.assertTrue(placeOrderPage.isOpened(),"order is successful");
     }
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    public void testProductOnTheCart() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
+        int index = (int) (Math.random() * 10);
+        pause(2);
+        ProductPage productPage = homePage.productOpenedByIndex(index);
+        Assert.assertTrue(productPage.isOpened(), "product isn't opened");
+        productPage.clickAddToCartButton();
+        Assert.assertEquals(getDriver().switchTo().alert().getText(), "Product added", "product added successful.");
+        getDriver().switchTo().alert().accept();
+        HeaderMenu headerMenu = productPage.getHeader();
+        CartPage cartPage = headerMenu.openCart();
+        pause(5);
+        Assert.assertEquals(cartPage.getCartTotal(), cartPage.getProductPrice(), "Product isn't true on cart");
+        cartPage.deleteProductByIndex("1");
+        cartPage.goToHome();
+        Assert.assertTrue(homePage.isOpened(), "home page isn't opened");
+
+    }
 
 
 }

@@ -10,7 +10,7 @@ public class CartPage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"page-wrapper\"]")
     ExtendedWebElement cartPage;
 
-    @FindBy(xpath = "//*[@id=\"tbodyid\"]/tr[1]/td[4]/a")
+    @FindBy(xpath = "//*[@id=\"tbodyid\"]/tr[%S]/td[4]/a")
     ExtendedWebElement deleteBtn;
 
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
@@ -54,6 +54,10 @@ public class CartPage extends BaseDemoblazePage {
         while (deleteBtn.isElementPresent()) {
             deleteBtn.click();
         }
+    }
+
+    public void deleteProductByIndex(String index){
+        deleteBtn.format(index).click();
     }
     public PlaceOrderPage clickPlaceOrderBtn(){
         placeOrderBtn.click();

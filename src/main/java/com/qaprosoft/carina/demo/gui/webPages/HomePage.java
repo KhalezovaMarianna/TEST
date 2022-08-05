@@ -12,6 +12,9 @@ public class HomePage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"cat\"]")
     ExtendedWebElement categories;
 
+    @FindBy(css = ".list-group-item")
+    ExtendedWebElement categoryNameTitle;
+
     @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/a[2]/span[1]")
     ExtendedWebElement rightArrow;
 

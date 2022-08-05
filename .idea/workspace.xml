@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="rename methods">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="fixing bugs">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PlaceOrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/base/BaseDemoblazePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/base/BaseDemoblazePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/HeaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/HeaderMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +76,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MyWebTest.testPlacingOrderIsNotSuccessful">
+  <component name="RunManager" selected="TestNG.MyWebTest">
     <configuration name="MyWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -108,24 +105,6 @@
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
       <option name="METHOD_NAME" value="testAddProductOnTheCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyWebTest.testMessageCanBeSend" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
-      <option name="METHOD_NAME" value="testMessageCanBeSend" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -169,13 +148,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyWebTest.testProductOnTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
+      <option name="METHOD_NAME" value="testProductOnTheCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MyWebTest.testPlacingOrderIsNotSuccessful" />
         <item itemvalue="TestNG.MyWebTest" />
+        <item itemvalue="TestNG.MyWebTest.testProductOnTheCart" />
+        <item itemvalue="TestNG.MyWebTest.testPlacingOrderIsNotSuccessful" />
         <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
         <item itemvalue="TestNG.MyWebTest.testPlacingOrder" />
-        <item itemvalue="TestNG.MyWebTest.testMessageCanBeSend" />
       </list>
     </recent_temporary>
   </component>
@@ -314,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659687549236</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="fixing bugs">
+      <created>1659697800115</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1659697800115</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,8 +344,8 @@
     <MESSAGE value="added realization product container" />
     <MESSAGE value="added tests" />
     <MESSAGE value="added tests and components" />
-    <MESSAGE value="fixing bugs" />
     <MESSAGE value="rename methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename methods" />
+    <MESSAGE value="fixing bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing bugs" />
   </component>
 </project>
