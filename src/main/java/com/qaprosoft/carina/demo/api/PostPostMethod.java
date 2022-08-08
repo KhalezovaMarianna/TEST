@@ -12,9 +12,10 @@ import com.qaprosoft.carina.core.foundation.utils.Configuration;
 @Endpoint(url = "${base_url}/api/v1/create", methodType = HttpMethodType.POST)
 @RequestTemplatePath(path = "api/posts/post/rq.json")
 @ResponseTemplatePath(path = "api/posts/post/rs.json")
-@SuccessfulHttpStatus(status = HttpResponseStatusType.CREATED_201)
+@SuccessfulHttpStatus(status = HttpResponseStatusType.OK_200)
 public class PostPostMethod extends AbstractApiMethodV2 {
     public PostPostMethod() {
+        super("api/posts/post/rq.json", "api/posts/post/rs.json", "api/posts/post.properties");
         replaceUrlPlaceholder("base_url", Configuration.getEnvArg("api_url"));
     }
 }

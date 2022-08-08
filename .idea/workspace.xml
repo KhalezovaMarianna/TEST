@@ -4,33 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added enum categories">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added api tests">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/soap/addinteger/rq.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/soap/addinteger/rs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/soap/lookupcity/rq.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/soap/lookupcity/rs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/soap/soap.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/GSMArenaNews.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/android.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/autodownload.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/helloWorld.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/ios-preferences.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/ios-safari.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/ios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/proxy.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/regression/dataprovider-multiply-classes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/regression/dataprovider-retry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/regression/xls-dataprovider-retry.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/soap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/test-params.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/web-localization.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/web-multiple-browser.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/web-single-driver.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/xls/demo.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/PostPostMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/api/PostPostMethod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -346,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659945932102</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="added api tests">
+      <created>1659967426842</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1659967426842</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -376,6 +360,7 @@
     <MESSAGE value="fixing bugs" />
     <MESSAGE value="added deleteProductByIndex method" />
     <MESSAGE value="added enum categories" />
-    <option name="LAST_COMMIT_MESSAGE" value="added enum categories" />
+    <MESSAGE value="added api tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added api tests" />
   </component>
 </project>

@@ -1,4 +1,10 @@
 {
   <#if title??>"title": "${title}",</#if>,
-  "message": "Error Occured! Page Not found, contact rstapi2example@gmail.com"
+  "status": "success",
+  "data": {
+    "name": "test",
+    "salary": "123",
+    "age": "23",
+    "id": 25
+  }
 }
