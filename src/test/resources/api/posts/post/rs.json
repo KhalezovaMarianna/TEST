@@ -2,6 +2,7 @@
   <#if title??>"title": "${title}",</#if>,
   "status": "success",
   "data": {
+    <#if name??>"title": "${name}",</#if>,
     "name": "test",
     "salary": "123",
     "age": "23",

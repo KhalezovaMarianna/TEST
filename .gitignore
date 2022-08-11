@@ -8,3 +8,5 @@
 
 /reports/
 /target/
+/Docker-compose.yml
+/Dockerfile

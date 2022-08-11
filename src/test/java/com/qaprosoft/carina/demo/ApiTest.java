@@ -8,13 +8,13 @@ import org.testng.annotations.Test;
 
 public class ApiTest extends BaseTest {
 
-    @Test
-    @MethodOwner(owner = "Khalezova_Marianna")
-    public void testDelete() {
-        DeletePostMethod deletePostMethod = new DeletePostMethod();
-        deletePostMethod.callAPIExpectSuccess();
-        deletePostMethod.validateResponse();
-    }
+//    @Test
+//    @MethodOwner(owner = "Khalezova_Marianna")
+//    public void testDelete() {
+//        DeletePostMethod deletePostMethod = new DeletePostMethod();
+//        deletePostMethod.callAPIExpectSuccess();
+//        deletePostMethod.validateResponse();
+//    }
 
 
     @Test
@@ -24,15 +24,15 @@ public class ApiTest extends BaseTest {
         putPostMethod.callAPIExpectSuccess();
     }
 
-    @Test
-    @MethodOwner(owner = "Khalezova_Marianna")
-    public void testPost() {
-        PostPostMethod postPostMethod = new PostPostMethod();
-        postPostMethod.setProperties("api/posts/post.properties");
-        postPostMethod.callAPIExpectSuccess();
-        postPostMethod.validateResponse();
-
-    }
+//    @Test
+//    @MethodOwner(owner = "Khalezova_Marianna")
+//    public void testPost() {
+//        PostPostMethod postPostMethod = new PostPostMethod();
+//        postPostMethod.setProperties("api/posts/post.properties");
+//        postPostMethod.callAPIExpectSuccess();
+//        postPostMethod.validateResponse();
+//
+//    }
 
     @Test
     @MethodOwner(owner = "Khalezova_Marianna")

@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="Carina Demo Tests - First Test" parallel="methods">
+
+    <parameter name="suiteOwner" value="qpsdemo"/>
+    <parameter name="jenkinsJobName" value="First-test"/>
+    <parameter name="jenkinsJobType" value="web"/>
+
+    <parameter name="jenkinsEnvironments" value="DEMO"/>
+
+    <test name="First test">
+        <classes>
+            <class name="com.qaprosoft.carina.demo.FirstTest" />
+        </classes>
+    </test>
+
+</suite>
