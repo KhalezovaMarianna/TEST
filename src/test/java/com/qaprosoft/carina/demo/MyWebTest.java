@@ -2,9 +2,12 @@ package com.qaprosoft.carina.demo;
 
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
+import com.qaprosoft.carina.core.foundation.utils.tag.Priority;
+import com.qaprosoft.carina.core.foundation.utils.tag.TestPriority;
 import com.qaprosoft.carina.demo.gui.webPages.*;
 import com.qaprosoft.carina.demo.gui.webPages.components.FooterMenu;
 import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
+import com.zebrunner.agent.core.annotation.TestLabel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,6 +15,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testMenuButtonsWorkCorrectly() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -38,6 +43,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testSlidingWindow() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -51,6 +58,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testAddProductOnTheCart() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -74,6 +83,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testRegistrationForm() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -90,6 +101,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testLogIn() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -104,6 +117,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testPlacingOrder() {
         ProductPage productPage = openingService.openProductByIndex();
         HeaderMenu headerMenu = productPage.getHeader();
@@ -122,6 +137,8 @@ public class MyWebTest extends BaseTest {
     }
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testMessageCanBeSend(){
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -139,6 +156,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testFooterIsFull(){
         String aboutUs= "About Us";
         String getInTouch = "Get in Touch";
@@ -154,6 +173,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testPlacingOrderIsNotSuccessful() {
         ProductPage productPage = openingService.openProductByIndex();
         HeaderMenu headerMenu = productPage.getHeader();
@@ -165,6 +186,8 @@ public class MyWebTest extends BaseTest {
     }
     @Test()
     @MethodOwner(owner = "marianna_khalezova")
+    @TestPriority(Priority.P1)
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testProductOnTheCart() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
