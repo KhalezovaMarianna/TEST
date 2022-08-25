@@ -39,7 +39,12 @@
             <artifactId>carina-core</artifactId>
             <version>${carina-core_version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.zebrunner</groupId>
+            <artifactId>agent-testng</artifactId>
+            <version>1.7.1</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>

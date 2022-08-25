@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added api tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/HelloWorld.java" afterDir="false" />
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="dockerfile, docker-compose and working with docker">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/config/browser.json" beforeDir="false" afterPath="$PROJECT_DIR$/docker/config/browsers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/AboutUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/ApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/posts/post.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/posts/post.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/api/posts/post/rs.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/api/posts/post/rs.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,32 +76,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/test/resources/testng_suites" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
-      <recent name="$PROJECT_DIR$/src/test/resources/api/posts" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.FirstTest.testMenuButtonsWorkCorrectly">
-    <configuration name="ApiTest.testPost" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.ApiTest" />
-      <option name="METHOD_NAME" value="testPost" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.MyWebTest">
     <configuration name="FirstTest.testMenuButtonsWorkCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -138,37 +119,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyWebTest.testAddProductOnTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsDemoMobileApp" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="/Library/Java/JavaVirtualMachines/zulu-11.jdk/Contents/Home" />
-      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
-      <option name="METHOD_NAME" value="testAddProductOnTheCart" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.TestsDemoMobileApp" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyWebTest.testMenuButtonsWorkCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestsDemoMobileApp.testAmountCartAdded" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -177,8 +145,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.MyWebTest" />
-      <option name="METHOD_NAME" value="testMenuButtonsWorkCorrectly" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.TestsDemoMobileApp" />
+      <option name="METHOD_NAME" value="testAmountCartAdded" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestsDemoMobileApp.testOpenPages" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.TestsDemoMobileApp" />
+      <option name="METHOD_NAME" value="testOpenPages" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -187,19 +173,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.FirstTest.testMenuButtonsWorkCorrectly" />
-      <item itemvalue="TestNG.ApiTest.testPost" />
       <item itemvalue="TestNG.MyWebTest" />
-      <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
-      <item itemvalue="TestNG.MyWebTest.testMenuButtonsWorkCorrectly" />
+      <item itemvalue="TestNG.TestsDemoMobileApp" />
+      <item itemvalue="TestNG.TestsDemoMobileApp.testAmountCartAdded" />
+      <item itemvalue="TestNG.TestsDemoMobileApp.testOpenPages" />
+      <item itemvalue="TestNG.FirstTest.testMenuButtonsWorkCorrectly" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FirstTest.testMenuButtonsWorkCorrectly" />
-        <item itemvalue="TestNG.MyWebTest.testAddProductOnTheCart" />
-        <item itemvalue="TestNG.MyWebTest.testMenuButtonsWorkCorrectly" />
         <item itemvalue="TestNG.MyWebTest" />
-        <item itemvalue="TestNG.ApiTest.testPost" />
+        <item itemvalue="TestNG.TestsDemoMobileApp.testOpenPages" />
+        <item itemvalue="TestNG.TestsDemoMobileApp.testAmountCartAdded" />
+        <item itemvalue="TestNG.TestsDemoMobileApp" />
+        <item itemvalue="TestNG.FirstTest.testMenuButtonsWorkCorrectly" />
       </list>
     </recent_temporary>
   </component>
@@ -373,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659969436874</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="dockerfile, docker-compose and working with docker">
+      <created>1660218369036</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1660218369036</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -404,7 +397,8 @@
     <MESSAGE value="added deleteProductByIndex method" />
     <MESSAGE value="added enum categories" />
     <MESSAGE value="added api tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="added api tests" />
+    <MESSAGE value="dockerfile, docker-compose and working with docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="dockerfile, docker-compose and working with docker" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

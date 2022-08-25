@@ -31,7 +31,9 @@ public class FooterMenu extends AbstractUIObject {
     }
 
     public boolean getTextLabel() {
+
         return label.isElementPresent();
     }
+
 
 }

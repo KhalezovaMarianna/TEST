@@ -10,7 +10,7 @@ public class AboutUsPage extends BaseDemoblazePage {
     @FindBy(xpath = "//*[@id=\"videoModalLabel\"]")
     ExtendedWebElement aboutUsPage;
 
-    @FindBy(xpath = "//*[@id=\"videoModal\"]/div/div/div[1]/button/span")
+    @FindBy(xpath = "//*[@id=\"videoModal\"]//div/div[1]/button/span")
     ExtendedWebElement closeBtn;
 
     public AboutUsPage(WebDriver driver) {
