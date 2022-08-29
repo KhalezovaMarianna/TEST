@@ -19,7 +19,7 @@
 
 	<test name="Mobile test">
 		<classes>
-			<class name="com.qaprosoft.carina.demo.TestsDemoMobileApp" />
+			<class name="com.qaprosoft.carina.demo.AndroidOne" />
 		</classes>
 	</test>
 
