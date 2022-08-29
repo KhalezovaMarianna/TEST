@@ -1,7 +1,7 @@
 package com.qaprosoft.carina.demo;
 
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
-import com.qaprosoft.carina.demo.mobile.gui.pages.ios.HomePage;
+import com.qaprosoft.carina.demo.mobile.gui.pages.android.HomePage;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
