@@ -16,13 +16,12 @@ import org.testng.annotations.Test;
 public class FirstTest extends BaseTest{
     @BeforeSuite
     public void setUp() {
-        TestRail.setSuiteId("C44");
+        TestRail.setSuiteId("S17");
         TestRail.setRunName("Best run ever");
         TestRail.setAssignee("Marianna");
     }
     @Test()
-    @TestRailCaseId("10000")
-    @TestRailCaseId({"10001", "10002"})
+    @TestRailCaseId("C44")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
