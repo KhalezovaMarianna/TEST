@@ -16,7 +16,7 @@
         <carina-core_version>7.4.23</carina-core_version>
         <java.version>11</java.version>
         <zebrunner-agent.version>1.7.1</zebrunner-agent.version>
-        <suite>android</suite>
+        <suite>firstTest</suite>
     </properties>
 
     <repositories>
