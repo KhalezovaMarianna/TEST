@@ -8,12 +8,22 @@ import com.qaprosoft.carina.demo.gui.webPages.*;
 import com.qaprosoft.carina.demo.gui.webPages.components.FooterMenu;
 import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
 import com.zebrunner.agent.core.annotation.TestLabel;
+import com.zebrunner.agent.core.annotation.TestRailCaseId;
+import com.zebrunner.agent.core.registrar.TestRail;
 import org.testng.Assert;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class MyWebTest extends BaseTest {
+    @BeforeSuite
+    public void setUp() {
+        TestRail.setSuiteId("S17");
+        TestRail.setRunName("Best run ever");
+        TestRail.setAssignee("Marianna");
+    }
 
     @Test()
+    @TestRailCaseId("C64")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -42,6 +52,7 @@ public class MyWebTest extends BaseTest {
     }
 
     @Test()
+    @TestRailCaseId("C60")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -57,6 +68,7 @@ public class MyWebTest extends BaseTest {
     }
 
     @Test()
+    @TestRailCaseId("C59")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -82,6 +94,7 @@ public class MyWebTest extends BaseTest {
     }
 
     @Test()
+    @TestRailCaseId("C62")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -100,6 +113,7 @@ public class MyWebTest extends BaseTest {
     }
 
     @Test()
+    @TestRailCaseId("C63")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -115,27 +129,28 @@ public class MyWebTest extends BaseTest {
         Assert.assertEquals(R.TESTDATA.get("TEST_EMAIL"), homePage.getUserName(), "User isn't true");
     }
 
+//    @Test()
+//    @MethodOwner(owner = "marianna_khalezova")
+//    @TestPriority(Priority.P1)
+//    @TestLabel(name = "feature", value = {"web", "acceptance"})
+//    public void testPlacingOrder() {
+//        ProductPage productPage = openingService.openProductByIndex();
+//        HeaderMenu headerMenu = productPage.getHeader();
+//        CartPage cartPage = headerMenu.openCart();
+//        Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
+//        PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
+//        placeOrderPage.filledNameForm(R.TESTDATA.get("TEST_NAME"));
+//        placeOrderPage.filledCartForm(R.TESTDATA.get("TEST_CARD"));
+//        PopUpOrderPage popUpOrderPage = placeOrderPage.clickSendOrderButton();
+//        Assert.assertTrue(popUpOrderPage.isOpened(), "Order isn't successful");
+//        HomePage homePage = popUpOrderPage.closePage();
+//        Assert.assertTrue(homePage.isOpened(),"home page isn't open");
+//        headerMenu.openCart();
+//        Assert.assertTrue(cartPage.isCartEmpty(),"cart isn't empty");
+//
+//    }
     @Test()
-    @MethodOwner(owner = "marianna_khalezova")
-    @TestPriority(Priority.P1)
-    @TestLabel(name = "feature", value = {"web", "acceptance"})
-    public void testPlacingOrder() {
-        ProductPage productPage = openingService.openProductByIndex();
-        HeaderMenu headerMenu = productPage.getHeader();
-        CartPage cartPage = headerMenu.openCart();
-        Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
-        PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
-        placeOrderPage.filledNameForm(R.TESTDATA.get("TEST_NAME"));
-        placeOrderPage.filledCartForm(R.TESTDATA.get("TEST_CARD"));
-        PopUpOrderPage popUpOrderPage = placeOrderPage.clickSendOrderButton();
-        Assert.assertTrue(popUpOrderPage.isOpened(), "Order isn't successful");
-        HomePage homePage = popUpOrderPage.closePage();
-        Assert.assertTrue(homePage.isOpened(),"home page isn't open");
-        headerMenu.openCart();
-        Assert.assertTrue(cartPage.isCartEmpty(),"cart isn't empty");
-
-    }
-    @Test()
+    @TestRailCaseId("C56")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -155,6 +170,7 @@ public class MyWebTest extends BaseTest {
     }
 
     @Test()
+    @TestRailCaseId("C58")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -172,6 +188,7 @@ public class MyWebTest extends BaseTest {
     }
 
     @Test()
+    @TestRailCaseId("C55")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -185,6 +202,7 @@ public class MyWebTest extends BaseTest {
         Assert.assertTrue(placeOrderPage.isOpened(),"order is successful");
     }
     @Test()
+    @TestRailCaseId("")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
