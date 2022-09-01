@@ -31,6 +31,26 @@ public class Task1 {
         }
         LOGGER.info(firstStr);
     }
+//    private final String openBracket = "[";
+//    private final String closeBracket = "]";
+//
+//    public String convertString() {
+//        String string = "3[ab2[df4[b]]]";
+//
+//        StringBuilder stringBuilder = new StringBuilder(string);
+//        while (stringBuilder.toString().contains(openBracket)) {
+//            int startIndex = stringBuilder.toString().lastIndexOf(openBracket) - 1;
+//            int endIndex = stringBuilder.toString().indexOf(closeBracket) + 1;
+//            stringBuilder.replace(startIndex, endIndex, openBrackets(stringBuilder.substring(startIndex, endIndex)));
+//        }
+//        return stringBuilder.toString();
+//    }
+//
+//    private String openBrackets(String expression) {
+//        int count = Integer.parseInt(String.valueOf(expression.charAt(0)));
+//        String word = StringUtils.substringBetween(expression, openBracket, closeBracket);
+//        return String.valueOf(word).repeat(Math.max(0, count));
+//    }
 
 }
 
