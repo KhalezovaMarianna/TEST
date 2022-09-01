@@ -2,6 +2,8 @@ package com.qaprosoft.carina.demo.tasks;
 
 
 import org.apache.commons.lang3.StringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -11,6 +13,7 @@ import static java.lang.String.valueOf;
 
 
 public class Task1 {
+    static final Logger LOGGER = LogManager.getLogger(Task1.class);
     public static void main(String[] args) {
         String firstStr = "3[ab2[df]]";
         while (StringUtils.countMatches(firstStr, "]") > 0) {
@@ -26,7 +29,7 @@ public class Task1 {
             String str2 = firstStr.substring(firstStr.lastIndexOf("[") - 1, firstStr.indexOf("]") + 1);
             firstStr = firstStr.replace(str2, finalStr);
         }
-        System.out.println(firstStr);
+        LOGGER.info(firstStr);
     }
 
 }
