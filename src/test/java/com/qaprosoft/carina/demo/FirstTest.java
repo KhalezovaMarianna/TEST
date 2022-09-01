@@ -9,8 +9,10 @@ import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.agent.core.annotation.TestRailCaseId;
 import com.zebrunner.agent.core.annotation.XrayTestKey;
+import com.zebrunner.agent.core.annotation.ZephyrTestCaseKey;
 import com.zebrunner.agent.core.registrar.TestRail;
 import com.zebrunner.agent.core.registrar.Xray;
+import com.zebrunner.agent.core.registrar.Zephyr;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -22,12 +24,18 @@ public class FirstTest extends BaseTest{
 //        TestRail.setRunName("Best run ever");
 //        TestRail.setAssignee("Marianna");
 //    }
+//@BeforeSuite
+//public void setUp() {
+//    Xray.setExecutionKey("QAL-60");
+//}
 @BeforeSuite
 public void setUp() {
-    Xray.setExecutionKey("QAL-60");
+    Zephyr.setTestCycleKey("QAL-60");
+    Zephyr.setJiraProjectKey("QAL");
 }
     @Test()
-    @XrayTestKey("QAL-61")
+    @ZephyrTestCaseKey("QAL-61")
+//    @XrayTestKey("QAL-61")
     @TestRailCaseId("C44")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
