@@ -9,7 +9,9 @@ import com.qaprosoft.carina.demo.gui.webPages.components.FooterMenu;
 import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.agent.core.annotation.TestRailCaseId;
+import com.zebrunner.agent.core.annotation.XrayTestKey;
 import com.zebrunner.agent.core.registrar.TestRail;
+import com.zebrunner.agent.core.registrar.Xray;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -17,12 +19,17 @@ import org.testng.annotations.Test;
 public class MyWebTest extends BaseTest {
     @BeforeSuite
     public void setUp() {
-        TestRail.setSuiteId("S17");
-        TestRail.setRunName("Best run ever");
-        TestRail.setAssignee("Marianna");
+        Xray.setExecutionKey("ZBR-42");
     }
+//    @BeforeSuite
+//    public void setUp() {
+//        TestRail.setSuiteId("S17");
+//        TestRail.setRunName("Best run ever");
+//        TestRail.setAssignee("Marianna");
+//    }
 
     @Test()
+    @XrayTestKey("QAL-61")
     @TestRailCaseId("C64")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
@@ -52,6 +59,8 @@ public class MyWebTest extends BaseTest {
     }
 
     @Test()
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @TestRailCaseId("C60")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
@@ -69,6 +78,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @TestRailCaseId("C59")
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -95,6 +106,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @TestRailCaseId("C62")
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -114,6 +127,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @TestRailCaseId("C63")
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -151,6 +166,8 @@ public class MyWebTest extends BaseTest {
 //    }
     @Test()
     @TestRailCaseId("C56")
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -171,6 +188,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @TestRailCaseId("C58")
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -189,6 +208,8 @@ public class MyWebTest extends BaseTest {
 
     @Test()
     @TestRailCaseId("C55")
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
@@ -203,6 +224,8 @@ public class MyWebTest extends BaseTest {
     }
     @Test()
     @TestRailCaseId("")
+    @XrayTestKey("ZBR-10000")
+    @XrayTestKey({"ZBR-10001", "ZBR-10002"})
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})

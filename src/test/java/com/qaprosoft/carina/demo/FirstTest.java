@@ -8,19 +8,26 @@ import com.qaprosoft.carina.demo.gui.webPages.*;
 import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.agent.core.annotation.TestRailCaseId;
+import com.zebrunner.agent.core.annotation.XrayTestKey;
 import com.zebrunner.agent.core.registrar.TestRail;
+import com.zebrunner.agent.core.registrar.Xray;
 import org.testng.Assert;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class FirstTest extends BaseTest{
-    @BeforeSuite
-    public void setUp() {
-        TestRail.setSuiteId("S17");
-        TestRail.setRunName("Best run ever");
-        TestRail.setAssignee("Marianna");
-    }
+//    @BeforeSuite
+//    public void setUp() {
+//        TestRail.setSuiteId("S17");
+//        TestRail.setRunName("Best run ever");
+//        TestRail.setAssignee("Marianna");
+//    }
+@BeforeSuite
+public void setUp() {
+    Xray.setExecutionKey("QAL-60");
+}
     @Test()
+    @XrayTestKey("QAL-61")
     @TestRailCaseId("C44")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
@@ -29,7 +36,7 @@ public class FirstTest extends BaseTest{
         ProductPage productPage = openingService.openProductByIndex();
         HeaderMenu headerMenu = productPage.getHeader();
         CartPage cartPage = headerMenu.openCart();
-        Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
+        Assert.assertFalse(cartPage.isOpened(), "cart isn't open");
         PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
         placeOrderPage.filledNameForm(R.TESTDATA.get("TEST_NAME"));
         placeOrderPage.filledCartForm(R.TESTDATA.get("TEST_CARD"));
