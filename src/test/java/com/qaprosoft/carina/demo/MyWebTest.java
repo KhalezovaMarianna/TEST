@@ -31,7 +31,7 @@ public class MyWebTest extends BaseTest {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         HeaderMenu headerMenu = homePage.getHeader();
-        Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
+        Assert.assertFalse(homePage.isOpened(), "Home page is not opened");
         ContactPage contactPage = headerMenu.goToContactPage();
         Assert.assertTrue(contactPage.isOpened(), "Contact page isn't open");
         contactPage.closePage();
