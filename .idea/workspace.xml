@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task3 and task4 was added">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task6 was added">
       <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task6.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task6.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/FirstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Task5">
+  <component name="RunManager" selected="Application.com.qaprosoft.carina.demo.tasks.Task3">
     <configuration name="Task5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Task5" />
       <module name="MyCarinaTest" />
@@ -159,10 +158,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Task5" />
-        <item itemvalue="Application.Task6" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task4" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task3" />
+        <item itemvalue="Application.Task6" />
+        <item itemvalue="Application.Task5" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task4" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task2" />
       </list>
     </recent_temporary>
@@ -512,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662028922556</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="task6 was added">
+      <created>1662125551086</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1662125551086</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -549,7 +555,8 @@
     <MESSAGE value="second solution of 1 task" />
     <MESSAGE value="integration with jira" />
     <MESSAGE value="task3 and task4 was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="task3 and task4 was added" />
+    <MESSAGE value="task6 was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task6 was added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

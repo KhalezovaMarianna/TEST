@@ -2,9 +2,11 @@ package com.qaprosoft.carina.demo.tasks;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.joda.time.LocalDate;
 
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.stream.Collectors;
 
 import static java.util.Map.entry;
 
@@ -35,15 +37,19 @@ public class Task6 {
                         entry("mobile web", Map.ofEntries(entry("uniques", 198403), entry("pageviews", 336195)))))
         );
         Set<Integer> res = new HashSet<>();
-        test1.entrySet().forEach(f -> {
-            f.getValue().entrySet().forEach(e -> {
-                e.getValue().entrySet().stream()
-                        .filter(k->k.getKey().equals("pageviews"))
-                        .forEach(r -> res.add(r.getValue()));
-            });
-        });
+        test1.entrySet()
+                .stream().filter(q -> test1.entrySet().stream()
+                        .map(f -> LocalDate.parse(f.getKey()))
+                        .sorted(Comparator.reverseOrder())
+                        .limit(2)
+                        .collect(Collectors.toList()).contains(LocalDate.parse(q.getKey())))
+                .forEach(f -> f.getValue().entrySet().forEach(e -> {
+                    e.getValue().entrySet().stream()
+                            .filter(k -> k.getKey().equals("pageviews"))
+                            .forEach(r -> res.add(r.getValue()));
+                }));
         AtomicInteger i = new AtomicInteger();
-        res.stream().forEach(f-> i.addAndGet(f.intValue()));
+        res.stream().forEach(f -> i.addAndGet(f.intValue()));
         System.out.println(i);
 
 
