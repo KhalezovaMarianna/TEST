@@ -12,8 +12,8 @@ import static java.lang.Integer.parseInt;
 import static java.lang.String.valueOf;
 
 
-public class Task1 {
-    static final Logger LOGGER = LogManager.getLogger(Task1.class);
+public class OpeningBrackets {
+    static final Logger LOGGER = LogManager.getLogger(OpeningBrackets.class);
     public static void main(String[] args) {
         String firstStr = "3[ab2[df]]";
         while (StringUtils.countMatches(firstStr, "]") > 0) {

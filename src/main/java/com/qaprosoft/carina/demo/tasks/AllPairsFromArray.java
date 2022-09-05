@@ -3,8 +3,8 @@ package com.qaprosoft.carina.demo.tasks;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class Task2 {
-    static final Logger LOGGER = LogManager.getLogger(Task2.class);
+public class AllPairsFromArray {
+    static final Logger LOGGER = LogManager.getLogger(AllPairsFromArray.class);
 
     public static void main(String[] args) {
         int[] arr = {1, 8, 3, 4, 6, 5, 25};

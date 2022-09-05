@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 
 import static java.util.Map.entry;
 
-public class Task6 {
-    static final Logger LOGGER = LogManager.getLogger(Task5.class);
+public class MapFromMap {
+    static final Logger LOGGER = LogManager.getLogger(ClosedBracketsOrNo.class);
 
     public static void main(String[] args) {
         Map<String, Map<String, Map<String, Integer>>> test1 = Map.ofEntries(

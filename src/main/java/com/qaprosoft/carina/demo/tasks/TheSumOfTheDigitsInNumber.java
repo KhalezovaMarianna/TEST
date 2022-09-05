@@ -6,8 +6,8 @@ import org.apache.logging.log4j.Logger;
 import java.util.Scanner;
 
 
-public class Task3 {
-    static final Logger LOGGER = LogManager.getLogger(Task3.class);
+public class TheSumOfTheDigitsInNumber {
+    static final Logger LOGGER = LogManager.getLogger(TheSumOfTheDigitsInNumber.class);
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

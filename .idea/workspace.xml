@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task6 was added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/ClosedBracketsOrNo.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/OpeningBrackets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/AllPairsFromArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/TheSumOfTheDigitsInNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/FizzBuzz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Task6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/MapFromMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/FirstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,9 +87,9 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.qaprosoft.carina.demo.tasks.Task3">
-    <configuration name="Task5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Task5" />
+  <component name="RunManager" selected="Application.ClosedBracketsOrNo">
+    <configuration name="AllPairsFromArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -97,8 +101,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Task6" />
+    <configuration name="ClosedBracketsOrNo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ClosedBracketsOrNo" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -110,8 +114,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.Task2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Task2" />
+    <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.FizzBuzz" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -123,8 +127,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.Task3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Task3" />
+    <configuration name="com.qaprosoft.carina.demo.tasks.MapFromMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.MapFromMap" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -136,8 +140,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.Task4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Task4" />
+    <configuration name="com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -150,19 +154,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Task5" />
-      <item itemvalue="Application.Task6" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task2" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task3" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task4" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
+      <item itemvalue="Application.ClosedBracketsOrNo" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.FizzBuzz" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.MapFromMap" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task3" />
-        <item itemvalue="Application.Task6" />
-        <item itemvalue="Application.Task5" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task4" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Task2" />
+        <item itemvalue="Application.ClosedBracketsOrNo" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.MapFromMap" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.FizzBuzz" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
       </list>
     </recent_temporary>
   </component>
@@ -174,13 +178,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00001" summary="correct structure of project">
-      <created>1659089459387</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1659089459387</updated>
     </task>
     <task id="LOCAL-00002" summary="add web test Sliding window">
       <created>1659347110805</created>
@@ -518,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662125551086</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="task6 was added">
+      <created>1662141177457</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1662141177457</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

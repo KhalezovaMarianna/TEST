@@ -3,10 +3,8 @@ package com.qaprosoft.carina.demo.tasks;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.Scanner;
-
-public class Task4 {
-    static final Logger LOGGER = LogManager.getLogger(Task4.class);
+public class FizzBuzz {
+    static final Logger LOGGER = LogManager.getLogger(FizzBuzz.class);
 
     public static void main(String[] args) {
 

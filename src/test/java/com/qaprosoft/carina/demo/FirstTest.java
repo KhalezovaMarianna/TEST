@@ -34,9 +34,6 @@ public void setUp() {
     Zephyr.setJiraProjectKey("QAL");
 }
     @Test()
-    @ZephyrTestCaseKey("QAL-61")
-//    @XrayTestKey("QAL-61")
-
     @TestRailCaseId("C44")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
