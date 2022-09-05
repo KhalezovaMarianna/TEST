@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;Closed Bracket or no&quot; was added">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;LetterInWord&quot; was added">
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -80,9 +80,9 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LetterInWord">
-    <configuration name="ClosedBracketsOrNo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ClosedBracketsOrNo" />
+  <component name="RunManager" selected="Application.Anograms">
+    <configuration name="Anograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Anograms" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -94,8 +94,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FizzBuzz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.FizzBuzz" />
+    <configuration name="ClosedBracketsOrNo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ClosedBracketsOrNo" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -147,19 +147,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Anograms" />
       <item itemvalue="Application.ClosedBracketsOrNo" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.FizzBuzz" />
       <item itemvalue="Application.LetterInWord" />
       <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.MapFromMap" />
       <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Anograms" />
         <item itemvalue="Application.LetterInWord" />
         <item itemvalue="Application.ClosedBracketsOrNo" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.MapFromMap" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.FizzBuzz" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00003" summary="add web test signUp and add product to cart">
-      <created>1659364712817</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1659364712817</updated>
     </task>
     <task id="LOCAL-00004" summary="add test login">
       <created>1659421645550</created>
@@ -515,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662367382528</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="task &quot;LetterInWord&quot; was added">
+      <created>1662372012211</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1662372012211</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,7 +554,8 @@
     <MESSAGE value="task3 and task4 was added" />
     <MESSAGE value="task6 was added" />
     <MESSAGE value="task &quot;Closed Bracket or no&quot; was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="task &quot;Closed Bracket or no&quot; was added" />
+    <MESSAGE value="task &quot;LetterInWord&quot; was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task &quot;LetterInWord&quot; was added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
