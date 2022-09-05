@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;LetterInWord&quot; was added">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;Anorgams&quot; was added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/SplitString.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -60,17 +61,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/mkhalezova/IdeaProjects/untitled&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/mkhalezova/IdeaProjects/untitled",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/testng_suites" />
@@ -80,7 +82,7 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Anograms">
+  <component name="RunManager" selected="Application.SplitString">
     <configuration name="Anograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Anograms" />
       <module name="MyCarinaTest" />
@@ -120,8 +122,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.MapFromMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.MapFromMap" />
+    <configuration name="SplitString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.SplitString" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -150,16 +152,16 @@
       <item itemvalue="Application.Anograms" />
       <item itemvalue="Application.ClosedBracketsOrNo" />
       <item itemvalue="Application.LetterInWord" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.MapFromMap" />
+      <item itemvalue="Application.SplitString" />
       <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SplitString" />
         <item itemvalue="Application.Anograms" />
         <item itemvalue="Application.LetterInWord" />
         <item itemvalue="Application.ClosedBracketsOrNo" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.MapFromMap" />
       </list>
     </recent_temporary>
   </component>
@@ -171,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00004" summary="add test login">
-      <created>1659421645550</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1659421645550</updated>
     </task>
     <task id="LOCAL-00005" summary="fixing bugs">
       <created>1659435025638</created>
@@ -515,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662372012211</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="task &quot;Anorgams&quot; was added">
+      <created>1662377469462</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1662377469462</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -530,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correct structure of project" />
     <MESSAGE value="add web test Menu Buttons Work Correctly" />
     <MESSAGE value="add web test Sliding window" />
     <MESSAGE value="add web test signUp and add product to cart" />
@@ -555,7 +556,8 @@
     <MESSAGE value="task6 was added" />
     <MESSAGE value="task &quot;Closed Bracket or no&quot; was added" />
     <MESSAGE value="task &quot;LetterInWord&quot; was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="task &quot;LetterInWord&quot; was added" />
+    <MESSAGE value="task &quot;Anorgams&quot; was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task &quot;Anorgams&quot; was added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
