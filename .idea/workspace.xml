@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;Anorgams&quot; was added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/SplitString.java" afterDir="false" />
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;SplitString&quot; was added">
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/MapFromMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/MapFromMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/SplitString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/SplitString.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,18 +62,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/mkhalezova/IdeaProjects/untitled",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mkhalezova/IdeaProjects/untitled&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/testng_suites" />
@@ -82,8 +83,21 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SplitString">
-    <configuration name="Anograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.com.qaprosoft.carina.demo.tasks.Menu">
+    <configuration name="AllPairsFromArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.qaprosoft.carina.demo.tasks.Anograms" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Anograms" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -96,20 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ClosedBracketsOrNo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ClosedBracketsOrNo" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LetterInWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.qaprosoft.carina.demo.tasks.LetterInWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.LetterInWord" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -122,7 +123,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SplitString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="com.qaprosoft.carina.demo.tasks.Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Menu" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.qaprosoft.carina.demo.tasks.SplitString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.SplitString" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -135,33 +149,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Anograms" />
-      <item itemvalue="Application.ClosedBracketsOrNo" />
-      <item itemvalue="Application.LetterInWord" />
-      <item itemvalue="Application.SplitString" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
+      <item itemvalue="Application.AllPairsFromArray" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Anograms" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.LetterInWord" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Menu" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.SplitString" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SplitString" />
-        <item itemvalue="Application.Anograms" />
-        <item itemvalue="Application.LetterInWord" />
-        <item itemvalue="Application.ClosedBracketsOrNo" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.TheSumOfTheDigitsInNumber" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Menu" />
+        <item itemvalue="Application.AllPairsFromArray" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.SplitString" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Anograms" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.LetterInWord" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +174,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00005" summary="fixing bugs">
-      <created>1659435025638</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659435025638</updated>
     </task>
     <task id="LOCAL-00006" summary="fixing bugs">
       <created>1659444464841</created>
@@ -517,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662377469462</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="task &quot;SplitString&quot; was added">
+      <created>1662383134534</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1662383134534</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +533,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add web test Menu Buttons Work Correctly" />
     <MESSAGE value="add web test Sliding window" />
     <MESSAGE value="add web test signUp and add product to cart" />
     <MESSAGE value="add test login" />
@@ -557,7 +557,8 @@
     <MESSAGE value="task &quot;Closed Bracket or no&quot; was added" />
     <MESSAGE value="task &quot;LetterInWord&quot; was added" />
     <MESSAGE value="task &quot;Anorgams&quot; was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="task &quot;Anorgams&quot; was added" />
+    <MESSAGE value="task &quot;SplitString&quot; was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task &quot;SplitString&quot; was added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

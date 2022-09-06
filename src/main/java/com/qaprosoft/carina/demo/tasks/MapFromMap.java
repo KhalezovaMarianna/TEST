@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import static java.util.Map.entry;
 
 public class MapFromMap {
-    static final Logger LOGGER = LogManager.getLogger(ClosedBracketsOrNo.class);
+    static final Logger LOGGER = LogManager.getLogger(MapFromMap.class);
 
     public static void main(String[] args) {
         Map<String, Map<String, Map<String, Integer>>> test1 = Map.ofEntries(
@@ -50,7 +50,7 @@ public class MapFromMap {
                 }));
         AtomicInteger i = new AtomicInteger();
         res.stream().forEach(f -> i.addAndGet(f.intValue()));
-        System.out.println(i);
+        LOGGER.info(i);
 
 
     }
