@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.tasks;
+package com.qaprosoft.carina.demo.tasks.menu;
 
 
 public class Products implements Comparable<Products> {
