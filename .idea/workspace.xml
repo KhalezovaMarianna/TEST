@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;Palindrome&quot; was added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Rectangle.java" afterDir="false" />
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added">
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Rectangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,52 +83,13 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Matrix">
-    <configuration name="Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Matrix" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.com.qaprosoft.carina.demo.tasks.matrix.Matrix">
     <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.menu.Menu" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.menu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Palindrome" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ReverseString" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -148,19 +110,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.qaprosoft.carina.demo.tasks.Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Palindrome" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.matrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.qaprosoft.carina.demo.tasks.ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ReverseString" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.matrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.qaprosoft.carina.demo.tasks.matrix.Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.matrix.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Matrix" />
-      <item itemvalue="Application.Palindrome" />
-      <item itemvalue="Application.ReverseString" />
+      <item itemvalue="Application.Menu" />
       <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Menu" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Palindrome" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.ReverseString" />
+      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Matrix" />
-        <item itemvalue="Application.ReverseString" />
-        <item itemvalue="Application.Palindrome" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Menu" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.ReverseString" />
+        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Palindrome" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
       </list>
     </recent_temporary>
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00008" summary="fixing bugs">
-      <created>1659508002933</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1659508002933</updated>
     </task>
     <task id="LOCAL-00009" summary="added components">
       <created>1659511807816</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662544444780</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added">
+      <created>1662558976004</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1662558976004</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +532,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add test login" />
     <MESSAGE value="added components" />
     <MESSAGE value="fixing bugs, change method comparison" />
     <MESSAGE value="created services" />
@@ -557,7 +556,8 @@
     <MESSAGE value="task &quot;SplitString&quot; was added" />
     <MESSAGE value="task &quot;Menu&quot; was added" />
     <MESSAGE value="task &quot;Palindrome&quot; was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="task &quot;Palindrome&quot; was added" />
+    <MESSAGE value="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

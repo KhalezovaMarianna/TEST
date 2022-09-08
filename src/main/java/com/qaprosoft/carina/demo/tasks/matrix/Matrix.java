@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.tasks;
+package com.qaprosoft.carina.demo.tasks.matrix;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -15,8 +15,8 @@ public class Matrix {
 
         int[][] image = new int[][]{
                 {2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-                {2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0},
-                {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0},
+                {2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 2},
+                {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 2},
                 {0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
                 {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -87,12 +87,11 @@ public class Matrix {
         for (int[] ints : image) {
             for (int j = 0; j < image[0].length; j++) {
                 if (ints[j] != 0) {
-                    System.out.print("\u001B[34m" + " " + ints[j] + " " + "\033[0m");
+                    LOGGER.info("\u001B[34m" + " " + ints[j] + " " + "\033[0m");
                 } else {
-                    System.out.print(" " + ints[j] + " ");
+                    LOGGER.info(" " + ints[j] + " ");
                 }
             }
-            System.out.println();
         }
     }
 

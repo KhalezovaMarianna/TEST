@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.tasks;
+package com.qaprosoft.carina.demo.tasks.matrix;
 
 public class Rectangle {
     private int x1;
