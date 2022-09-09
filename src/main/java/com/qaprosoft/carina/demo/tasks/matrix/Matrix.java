@@ -87,13 +87,12 @@ public class Matrix {
         for (int[] ints : image) {
             for (int j = 0; j < image[0].length; j++) {
                 if (ints[j] != 0) {
-                    LOGGER.info("\u001B[34m" + " " + ints[j] + " " + "\033[0m");
+                    System.out.print("\u001B[34m" + " " + ints[j] + " " + "\033[0m");
                 } else {
-                    LOGGER.info(" " + ints[j] + " ");
+                    System.out.print(" " + ints[j] + " ");
                 }
             }
+            System.out.println();
         }
     }
-
-
 }

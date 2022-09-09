@@ -8,8 +8,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +82,13 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.com.qaprosoft.carina.demo.tasks.matrix.Matrix">
-    <configuration name="Menu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.menu.Menu" />
+  <component name="RunManager" selected="Application.TextFile">
+    <configuration name="TextFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.TextFile" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.menu.*" />
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,7 +149,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Menu" />
+      <item itemvalue="Application.TextFile" />
       <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
       <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Palindrome" />
       <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.ReverseString" />
@@ -158,6 +157,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TextFile" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.ReverseString" />
         <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Palindrome" />
@@ -173,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added components">
-      <created>1659511807816</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1659511807816</updated>
     </task>
     <task id="LOCAL-00010" summary="added components">
       <created>1659511868646</created>
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662558976004</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added">
+      <created>1662629236733</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1662629236733</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
