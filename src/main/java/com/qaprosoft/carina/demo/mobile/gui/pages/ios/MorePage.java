@@ -5,6 +5,7 @@ import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.LoginPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.PopUpResetPageBase;
 import org.openqa.selenium.WebDriver;
@@ -18,10 +19,15 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     ExtendedWebElement openCart;
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Catalog-tab-item\"`]")
     ExtendedWebElement catalogBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Drawing-menu-item\"`]")
     ExtendedWebElement drawingBtn;
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"ResetAppState-menu-item\"`]")
     ExtendedWebElement resetBtn;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"LogOut-menu-item\"`]")
+    ExtendedWebElement loginBtn;
+
 
     public MorePage(WebDriver driver) {
         super(driver);
@@ -52,5 +58,11 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     public HomePage clickCatalogBtn() {
         catalogBtn.click();
         return new HomePage(getDriver());
+    }
+
+    @Override
+    public LoginPageBase clickLoginBtn() {
+        loginBtn.click();
+        return initPage(getDriver(),LoginPageBase.class);
     }
 }

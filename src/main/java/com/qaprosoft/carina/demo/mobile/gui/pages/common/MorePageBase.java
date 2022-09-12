@@ -9,8 +9,8 @@ public abstract class MorePageBase extends AbstractPage {
     }
     public abstract boolean isMorePageOpen();
     public abstract BasketPageBase openCart();
-
     public abstract PopUpResetPageBase resetApp();
     public abstract AboutPageBase clickAboutBtn();
     public abstract HomePageBase clickCatalogBtn();
+    public abstract LoginPageBase clickLoginBtn();
 }

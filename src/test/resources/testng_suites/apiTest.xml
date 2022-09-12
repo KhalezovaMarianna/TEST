@@ -9,7 +9,7 @@
 
     <test name="Api test">
         <classes>
-            <class name="com.qaprosoft.carina.demo.ApiTest" />
+            <class name="com.qaprosoft.carina.demo.api.ApiTest" />
         </classes>
     </test>
 

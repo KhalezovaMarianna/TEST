@@ -9,7 +9,7 @@
 
     <test name="First test">
         <classes>
-            <class name="com.qaprosoft.carina.demo.FirstTest" />
+            <class name="com.qaprosoft.carina.demo.web.FirstTest" />
         </classes>
     </test>
 
