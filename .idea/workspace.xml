@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;TextFile&quot; was added">
       <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +65,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last.edited.regexp&quot;: &quot;Sample Text&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/mkhalezova/IdeaProjects/untitled&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -82,7 +82,46 @@
       <recent name="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TextFile">
+  <component name="RunManager" selected="Application.UserTask">
+    <configuration name="MapFromMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.MapFromMap" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ReverseString" />
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TextFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.TextFile" />
       <module name="MyCarinaTest" />
@@ -96,51 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.AllPairsFromArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
+    <configuration name="UserTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.UserTask" />
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.menu.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.Palindrome" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.matrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.ReverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.ReverseString" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.matrix.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.qaprosoft.carina.demo.tasks.matrix.Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.matrix.*" />
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,19 +149,17 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Matrix" />
+      <item itemvalue="Application.ReverseString" />
+      <item itemvalue="Application.MapFromMap" />
+      <item itemvalue="Application.UserTask" />
       <item itemvalue="Application.TextFile" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Palindrome" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.ReverseString" />
-      <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UserTask" />
+        <item itemvalue="Application.MapFromMap" />
         <item itemvalue="Application.TextFile" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.ReverseString" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.Palindrome" />
-        <item itemvalue="Application.com.qaprosoft.carina.demo.tasks.AllPairsFromArray" />
       </list>
     </recent_temporary>
   </component>
@@ -173,13 +171,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added components">
-      <created>1659511868646</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1659511868646</updated>
     </task>
     <task id="LOCAL-00011" summary="created services">
       <created>1659527752523</created>
@@ -517,7 +508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662629236733</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="task &quot;TextFile&quot; was added">
+      <created>1662704029211</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1662704029211</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -532,7 +530,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added components" />
     <MESSAGE value="fixing bugs, change method comparison" />
     <MESSAGE value="created services" />
     <MESSAGE value="added realization product container" />
@@ -557,7 +554,8 @@
     <MESSAGE value="task &quot;Menu&quot; was added" />
     <MESSAGE value="task &quot;Palindrome&quot; was added" />
     <MESSAGE value="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added" />
+    <MESSAGE value="task &quot;TextFile&quot; was added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task &quot;TextFile&quot; was added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
