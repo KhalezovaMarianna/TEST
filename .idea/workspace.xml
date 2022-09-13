@@ -4,27 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="task &quot;User task&quot; was added">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mda-1.0.13-15.apk" afterDir="false" />
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added tests implementations for testcases &quot;login&quot; and &quot;login negative scenario&quot;">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CheckoutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CheckoutPageBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CheckoutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/services/AddOneProductToCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/AboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/BasketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MorePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/BasketPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CartPageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/HomePageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/HomePageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/LoginPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/LoginPageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MorePageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MorePageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ProductPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ProductPageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/AboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/BasketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/MorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/MorePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/tasks/matrix/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/PopUpResetPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/PopUpResetPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/AndroidOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/AndroidOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/api/ApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/FirstTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/MyWebTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/TestsDemoMobileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/TestsDemoMobileApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/paralell.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/paralell.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/android.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/android.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/apiTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/apiTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/firstTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/firstTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/ios.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/ios.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/MobileTests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/MobileTests2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/TestsDemoMobileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/TestsDemoMobileApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +112,7 @@
       <recent name="com.qaprosoft.carina.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MobileTests2.testLoginNegative">
+  <component name="RunManager" selected="TestNG.MobileTests2.checkCheckoutWithoutData">
     <configuration name="Matrix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.matrix.Matrix" />
       <module name="MyCarinaTest" />
@@ -118,28 +126,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.TextFile" />
+    <configuration name="MobileTests2.checkCheckoutWithoutData" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
+      <option name="METHOD_NAME" value="checkCheckoutWithoutData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.tasks.UserTask" />
+    <configuration name="MobileTests2.testLabelsIsPresent" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.tasks.*" />
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
+      <option name="METHOD_NAME" value="testLabelsIsPresent" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -182,18 +200,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Matrix" />
-      <item itemvalue="Application.UserTask" />
-      <item itemvalue="Application.TextFile" />
+      <item itemvalue="TestNG.MobileTests2.checkCheckoutWithoutData" />
+      <item itemvalue="TestNG.MobileTests2.testLabelsIsPresent" />
       <item itemvalue="TestNG.MobileTests2.testLoginNegative" />
       <item itemvalue="TestNG.MobileTests2.testOpenPages" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MobileTests2.checkCheckoutWithoutData" />
+        <item itemvalue="TestNG.MobileTests2.testLabelsIsPresent" />
         <item itemvalue="TestNG.MobileTests2.testLoginNegative" />
         <item itemvalue="TestNG.MobileTests2.testOpenPages" />
         <item itemvalue="Application.Matrix" />
-        <item itemvalue="Application.TextFile" />
-        <item itemvalue="Application.UserTask" />
       </list>
     </recent_temporary>
   </component>
@@ -205,13 +223,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00012" summary="created services">
-      <created>1659527766349</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1659527766349</updated>
     </task>
     <task id="LOCAL-00013" summary="added realization product container">
       <created>1659542810174</created>
@@ -549,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662965944237</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="added tests implementations for testcases &quot;login&quot; and &quot;login negative scenario&quot;">
+      <created>1662985819198</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1662985819199</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -564,7 +582,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="created services" />
     <MESSAGE value="added realization product container" />
     <MESSAGE value="added tests" />
     <MESSAGE value="added tests and components" />
@@ -589,7 +606,8 @@
     <MESSAGE value="task &quot;Reverse string&quot; and &quot;Matrix&quot; was added" />
     <MESSAGE value="task &quot;TextFile&quot; was added" />
     <MESSAGE value="task &quot;User task&quot; was added" />
-    <option name="LAST_COMMIT_MESSAGE" value="task &quot;User task&quot; was added" />
+    <MESSAGE value="added tests implementations for testcases &quot;login&quot; and &quot;login negative scenario&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests implementations for testcases &quot;login&quot; and &quot;login negative scenario&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

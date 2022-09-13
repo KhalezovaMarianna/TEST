@@ -20,4 +20,8 @@ public abstract class LoginPageBase extends AbstractPage {
     public abstract boolean failedTextIsPresent();
 
     public abstract void typePassword(String password);
+
+    public abstract void fillAutoForms();
+
+    public abstract CheckoutPageBase clickLoginBtnForCheckout();
 }

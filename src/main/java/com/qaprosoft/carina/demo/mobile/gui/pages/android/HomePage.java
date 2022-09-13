@@ -4,7 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.HomePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ProductPageBase;
@@ -15,15 +15,28 @@ import org.openqa.selenium.support.FindBy;
 public class HomePage extends HomePageBase implements IMobileUtils {
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/productTV")
-    ExtendedWebElement catalog;
+    private ExtendedWebElement catalog;
+
     @ExtendedFindBy(accessibilityId = "Displays number of items in your cart")
-    ExtendedWebElement basketBtn;
+    private ExtendedWebElement basketBtn;
+
+    @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Twitter\"]")
+    private ExtendedWebElement twitterLabel;
+
+    @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"LinkedIn\"]")
+    private ExtendedWebElement lnLabel;
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/menuIV")
-    ExtendedWebElement moreBtn;
+    private ExtendedWebElement moreBtn;
 
     public HomePage(WebDriver driver) {
         super(driver);
+    }
+
+    @Override
+    public boolean scrollHomePage() {
+        twitterLabel.scrollTo();
+        return twitterLabel.isElementPresent();
     }
 
     @Override
@@ -34,13 +47,13 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     @Override
     public MorePageBase clickMoreBtn() {
         moreBtn.click();
-        return initPage(getDriver(),MorePageBase.class);
+        return initPage(getDriver(), MorePageBase.class);
     }
 
     @Override
-    public BasketPageBase clickBasketBtn() {
+    public CartPageBase clickBasketBtn() {
         basketBtn.click();
-        return new BasketPage(getDriver());
+        return new CartPage(getDriver());
     }
 
     @Override
@@ -57,6 +70,11 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     public ProductPageBase clickRandomProduct(String title) {
 
         return initPage(getDriver(), ProductPageBase.class);
+    }
+
+    @Override
+    public boolean lnLabelIsPresent() {
+        return lnLabel.isElementPresent();
     }
 
 }

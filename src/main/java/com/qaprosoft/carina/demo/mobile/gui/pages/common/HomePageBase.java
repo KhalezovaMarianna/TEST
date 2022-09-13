@@ -8,11 +8,18 @@ public abstract class HomePageBase extends AbstractPage {
         super(driver);
     }
 
+    public abstract boolean scrollHomePage();
+
     public abstract boolean isHomePageOpen();
+
     public abstract MorePageBase clickMoreBtn();
-    public abstract BasketPageBase clickBasketBtn();
+
+    public abstract CartPageBase clickBasketBtn();
+
     public abstract ProductPageBase clickProductImg(String a);
+
     public abstract ProductPageBase clickProductByIndex(String a);
 
     public abstract ProductPageBase clickRandomProduct(String title);
+    public abstract boolean lnLabelIsPresent();
 }

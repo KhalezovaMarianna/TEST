@@ -4,36 +4,49 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.LoginPageBase;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = BasketPageBase.class)
-public class BasketPage extends BasketPageBase implements IMobileUtils {
+@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = CartPageBase.class)
+public class CartPage extends CartPageBase implements IMobileUtils {
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label CONTAINS \"$ \"`]")
-    ExtendedWebElement productCost;
-    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Remove Item\"`]")
-    ExtendedWebElement removeItemBtn;
-    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Go Shopping\"`]")
-    ExtendedWebElement goShoppingBtn;
-    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label CONTAINS \"$\"`]")
-    ExtendedWebElement finalSum;
-    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label == \"1\"`][1]")
-    ExtendedWebElement oneElement;
+    private ExtendedWebElement productCost;
 
-    public BasketPage(WebDriver driver) {
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Remove Item\"`]")
+    private ExtendedWebElement removeItemBtn;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Go Shopping\"`]")
+    private ExtendedWebElement goShoppingBtn;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label CONTAINS \"$\"`]")
+    private ExtendedWebElement finalSum;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label == \"1\"`][1]")
+    private ExtendedWebElement oneElement;
+
+    @FindBy(id = "**/XCUIElementTypeStaticText[`label == \"My Cart\"`]")
+    private ExtendedWebElement myCartText;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Proceed To Checkout\"`]")
+    private ExtendedWebElement proceedToCheckoutBtn;
+
+    public CartPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public boolean isBasketPageOpened() {
-        return goShoppingBtn.isElementPresent();
+    public boolean isCartPageOpened() {
+        return goShoppingBtn.isElementPresent() || myCartText.isElementPresent();
     }
-    @Override
-    public boolean oneProductInCart() {
-        return oneElement.isElementPresent();
-    }
+
+//    @Override
+//    public boolean oneProductInCart() {
+//        return oneElement.isElementPresent();
+//    }
 
     @Override
     public boolean isBasketEmpty() {
@@ -57,13 +70,13 @@ public class BasketPage extends BasketPageBase implements IMobileUtils {
         return;
     }
 
-    public BasketPageBase clickGoShoppingBtn() {
+    public CartPageBase clickGoShoppingBtn() {
         goShoppingBtn.click();
-        return initPage(getDriver(), BasketPageBase.class);
+        return initPage(getDriver(), CartPageBase.class);
     }
 
     @Override
-    public BasketPageBase goToCart() {
+    public CartPageBase goToCart() {
         return null;
     }
 
@@ -72,4 +85,20 @@ public class BasketPage extends BasketPageBase implements IMobileUtils {
         goShoppingBtn.isElementPresent();
         return true;
     }
-}
+
+    @Override
+    public boolean checkOneProductOnCart() {
+        if (Integer.parseInt((oneElement.getAttribute("name"))) == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+        @Override
+        public LoginPageBase clickProcessedToCheckoutBtn () {
+        proceedToCheckoutBtn.click();
+            return initPage(getDriver(),LoginPageBase.class);
+        }
+    }
+

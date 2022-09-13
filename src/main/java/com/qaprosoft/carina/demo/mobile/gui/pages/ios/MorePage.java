@@ -4,7 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.LoginPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.PopUpResetPageBase;
@@ -14,19 +14,23 @@ import org.openqa.selenium.WebDriver;
 public class MorePage extends MorePageBase implements IMobileUtils {
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"About-menu-item\"`]")
-    ExtendedWebElement aboutBtn;
+    private ExtendedWebElement aboutBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Cart-tab-item\"`]")
-    ExtendedWebElement openCart;
+    private ExtendedWebElement openCart;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Catalog-tab-item\"`]")
-    ExtendedWebElement catalogBtn;
+    private ExtendedWebElement catalogBtn;
+
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Drawing-menu-item\"`]")
-    ExtendedWebElement drawingBtn;
+    private ExtendedWebElement drawingBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"ResetAppState-menu-item\"`]")
-    ExtendedWebElement resetBtn;
+    private ExtendedWebElement resetBtn;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"LogOut-menu-item\"`]")
-    ExtendedWebElement loginBtn;
+    private ExtendedWebElement loginBtn;
 
 
     public MorePage(WebDriver driver) {
@@ -39,9 +43,9 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     }
 
     @Override
-    public BasketPageBase openCart() {
+    public CartPageBase openCart() {
         openCart.click();
-        return initPage(getDriver(), BasketPageBase.class);
+        return initPage(getDriver(), CartPageBase.class);
     }
 
     @Override

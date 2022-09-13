@@ -11,13 +11,13 @@ import org.openqa.selenium.WebDriver;
 public class PopUpResetPage extends PopUpResetPageBase {
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"RESET APP\"`]")
-    ExtendedWebElement resetBtn;
+    private ExtendedWebElement resetBtn;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"CANCEL\"`]")
-    ExtendedWebElement continueBtn;
+    private ExtendedWebElement continueBtn;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"OK\"`]")
-    ExtendedWebElement okBtn;
+    private ExtendedWebElement okBtn;
 
     public PopUpResetPage(WebDriver driver) {
         super(driver);

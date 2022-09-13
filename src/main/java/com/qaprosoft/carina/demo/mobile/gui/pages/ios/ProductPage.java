@@ -3,7 +3,7 @@ package com.qaprosoft.carina.demo.mobile.gui.pages.ios;
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ProductPageBase;
 import org.openqa.selenium.WebDriver;
@@ -13,28 +13,38 @@ public class ProductPage extends ProductPageBase {
 
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"AddPlus Icons\"`]")
-    ExtendedWebElement plusBtn;
+    private ExtendedWebElement plusBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Cart-tab-item\"`]")
-    ExtendedWebElement basketBtn;
+    private ExtendedWebElement basketBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Add To Cart\"`]")
-    ExtendedWebElement addToCartBtn;
+    private ExtendedWebElement addToCartBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"OK\"`]")
-    ExtendedWebElement popUpOkBtn;
+    private ExtendedWebElement popUpOkBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"StarSelected Icons\"`][1]")
-    ExtendedWebElement firstStar;
+    private ExtendedWebElement firstStar;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"StarUnSelected Icons\"`][1]")
-    ExtendedWebElement starBtn;
+    private ExtendedWebElement starBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"StarUnSelected Icons\"`]")
-    ExtendedWebElement finalStarBtn;
+    private ExtendedWebElement finalStarBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeOther[`name == \"ProductDetails-screen\"`]/XCUIElementTypeOther[1]/XCUIElementTypeOther/XCUIElementTypeButton")
-    ExtendedWebElement backBtn;
+    private ExtendedWebElement backBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"More-tab-item\"`]")
-    ExtendedWebElement moreBtn;
+    private ExtendedWebElement moreBtn;
+
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label CONTAINS \"1\"`]")
-    ExtendedWebElement amountProducts;
+    private ExtendedWebElement amountProducts;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"SubtractMinus Icons\"`]")
-    ExtendedWebElement minusBtn;
+    private ExtendedWebElement minusBtn;
 
 
     public ProductPage(WebDriver driver) {
@@ -53,9 +63,9 @@ public class ProductPage extends ProductPageBase {
     }
 
     @Override
-    public BasketPageBase goToCart() {
+    public CartPageBase goToCart() {
         basketBtn.click();
-        return initPage(getDriver(), BasketPageBase.class);
+        return initPage(getDriver(), CartPageBase.class);
     }
 
     public void deleteSeveralProducts(int count) {

@@ -19,10 +19,10 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
     @TestLabel(name = "feature", value = {"mobile", "regression"})
     public void testOpenPages() {
         HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        BasketPageBase basketPage = homePage.clickBasketBtn();
-        Assert.assertTrue(basketPage.isBasketPageOpened(),
+        CartPageBase cartPage = homePage.clickBasketBtn();
+        Assert.assertTrue(cartPage.isCartPageOpened(),
                 "Page isn't opened");
-        basketPage.clickGoShoppingBtn();
+        cartPage.clickGoShoppingBtn();
         Assert.assertTrue(homePage.isHomePageOpen(),
                 "homePage isn't open");
         MorePageBase morePage = homePage.clickMoreBtn();
@@ -80,9 +80,9 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         int amount = (int) (Math.random() * 10);
         productPage.addSeveralProducts(amount);
         productPage.addToCart();
-        BasketPageBase basketPage = productPage.goToCart();
-        double teoreticFinalCost = amount * basketPage.costOfProduct();
-        Assert.assertEquals(teoreticFinalCost, basketPage.endSumComparison(), "Sum isn't increase");
+        CartPageBase cartPage = productPage.goToCart();
+        double teoreticFinalCost = amount * cartPage.costOfProduct();
+        Assert.assertEquals(teoreticFinalCost, cartPage.endSumComparison(), "Sum isn't increase");
 
     }
 
@@ -107,9 +107,9 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         int amount = (int) (Math.random() * 10);
         productPage.addSeveralProducts(amount);
         productPage.addToCart();
-        BasketPageBase basketPage = productPage.goToCart();
-        basketPage.removeItemFromCart();
-        Assert.assertTrue(basketPage.isCartEmpty(), "Cart isn't empty");
+        CartPageBase cartPage = productPage.goToCart();
+        cartPage.removeItemFromCart();
+        Assert.assertTrue(cartPage.isCartEmpty(), "Cart isn't empty");
     }
 
     @Test
@@ -135,8 +135,8 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         PopUpResetPageBase resetPage = morePage.resetApp();
         resetPage.clickResetBtn();
         Assert.assertTrue(morePage.isMorePageOpen(), "morePage isn't open");
-        BasketPageBase basketPage = morePage.openCart();
-        Assert.assertTrue(basketPage.isBasketEmpty());
+        CartPageBase cartPage = morePage.openCart();
+        Assert.assertTrue(cartPage.isBasketEmpty());
 
 
     }
@@ -163,8 +163,8 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         productPage.addSeveralProducts(amount);
         productPage.deleteSeveralProducts(amount);
         productPage.addToCart();
-        BasketPageBase basketPageBase = productPage.goToCart();
-        Assert.assertTrue(basketPageBase.oneProductInCart(), "cart hasn't one product");
+        CartPageBase cartPageBase = productPage.goToCart();
+        Assert.assertTrue(cartPageBase.checkOneProductOnCart(), "cart hasn't one product");
 
 
     }

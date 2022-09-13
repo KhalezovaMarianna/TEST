@@ -4,6 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.CheckoutPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.HomePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.LoginPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.PopUpResetPageBase;
@@ -13,19 +14,19 @@ import org.openqa.selenium.support.FindBy;
 @DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = LoginPageBase.class)
 public class LoginPage extends LoginPageBase implements IMobileUtils {
     @ExtendedFindBy(iosPredicate = "type == \"XCUIElementTypeTextField\"")
-    ExtendedWebElement usernameForm;
+    private ExtendedWebElement usernameForm;
 
     @ExtendedFindBy(iosPredicate = "type == \"XCUIElementTypeSecureTextField\"")
-    ExtendedWebElement passwordForm;
+    private ExtendedWebElement passwordForm;
 
-    @FindBy(xpath = "//XCUIElementTypeButton[@name=\"Login\"]")
-    ExtendedWebElement loginBtn;
+    @ExtendedFindBy(iosPredicate = "label == \"Login\" AND name == \"Login\" AND type == \"XCUIElementTypeButton\"")
+    private ExtendedWebElement loginBtn;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label == \"bob@example.com\"`]")
-    ExtendedWebElement autoFillBtn;
+    private ExtendedWebElement autoFillBtn;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label == \"Username is required\"`]")
-    ExtendedWebElement popUpFailedNameForm;
+    private ExtendedWebElement popUpFailedNameForm;
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -62,6 +63,19 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
     public void typePassword(String password) {
         passwordForm.type(password);
     }
+
+    @Override
+    public void fillAutoForms() {
+        autoFillBtn.click();
+    }
+
+    @Override
+    public CheckoutPageBase clickLoginBtnForCheckout() {
+       loginBtn.click();
+        return initPage(getDriver(),CheckoutPageBase.class);
+    }
+
+
 
 
 }

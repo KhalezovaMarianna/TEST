@@ -14,13 +14,13 @@ import org.openqa.selenium.support.FindBy;
 public class MorePage extends MorePageBase implements IMobileUtils {
 
     @ExtendedFindBy(accessibilityId = "Displays available colors of selected product")
-    ExtendedWebElement product;
+    private ExtendedWebElement product;
 
     @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[7]/android.widget.TextView")
-    ExtendedWebElement resetBtn;
+    private ExtendedWebElement resetBtn;
 
     @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView//android.view.ViewGroup[12]/android.widget.TextView")
-    ExtendedWebElement loginBtn;
+    private ExtendedWebElement loginBtn;
 
     public MorePage(WebDriver driver) {
         super(driver);
@@ -32,7 +32,7 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     }
 
     @Override
-    public BasketPageBase openCart() {
+    public CartPageBase openCart() {
         return null;
     }
 

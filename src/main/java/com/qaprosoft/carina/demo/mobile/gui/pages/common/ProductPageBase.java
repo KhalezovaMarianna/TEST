@@ -12,7 +12,7 @@ public abstract class ProductPageBase extends AbstractPage {
     public abstract void addProduct();
     public abstract void deleteSeveralProducts(int title);
 
-    public abstract BasketPageBase goToCart();
+    public abstract CartPageBase goToCart();
 
     public abstract boolean rateProduct();
 

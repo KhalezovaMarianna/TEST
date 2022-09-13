@@ -11,10 +11,10 @@ import org.openqa.selenium.support.FindBy;
 public class AboutPage extends AboutPageBase {
 
     @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[6]/android.widget.TextView")
-    ExtendedWebElement aboutPicture;
+    private ExtendedWebElement aboutPicture;
 
     @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[1]/android.widget.TextView[2]")
-    ExtendedWebElement catalogBtn;
+    private ExtendedWebElement catalogBtn;
 
     public AboutPage(WebDriver driver) {
         super(driver);

@@ -3,7 +3,7 @@ package com.qaprosoft.carina.demo.mobile.gui.pages.android;
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ProductPageBase;
 import org.openqa.selenium.WebDriver;
@@ -14,21 +14,22 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
 
 
     @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Increase item quantity\"]")
-    ExtendedWebElement plusBtn;
+    private ExtendedWebElement plusBtn;
 
     @FindBy(xpath = "//android.widget.RelativeLayout[@content-desc=\"View cart\"]")
-    ExtendedWebElement basketBtn;
+    private ExtendedWebElement basketBtn;
 
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"Tap to add product to cart\"]")
-    ExtendedWebElement addToCartBtn;
+    private ExtendedWebElement addToCartBtn;
 
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"Closes review dialog\"]")
-    ExtendedWebElement popUpContinueBtn;
+    private ExtendedWebElement popUpContinueBtn;
 
     @FindBy(xpath = "//android.widget.ImageView[@index=\"%s\" and contains(@resource-id,\"star\")]")
-    ExtendedWebElement starBtn;
+    private ExtendedWebElement starBtn;
+
     @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"View menu\"]")
-    ExtendedWebElement menuBtn;
+    private ExtendedWebElement menuBtn;
 
     public ProductPage(WebDriver driver) {
         super(driver);
@@ -43,7 +44,6 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
     public void addProduct() {
         plusBtn.click();
         addToCartBtn.click();
-        return ;
     }
 
     @Override
@@ -52,9 +52,9 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
     }
 
     @Override
-    public BasketPageBase goToCart() {
+    public CartPageBase goToCart() {
         basketBtn.click();
-        return initPage(getDriver(), BasketPageBase.class);
+        return initPage(getDriver(), CartPageBase.class);
     }
 
     public void addSeveralProducts(int amount) {
@@ -80,7 +80,7 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
     }
 
     public void rateProduct(String str) {
-        for (int i = 0; i <= 4; i++) {
+        for (int i = 0; i <= 4 ; i++) {
             if (starBtn.format(String.valueOf(i)).isElementPresent()) {
                 starBtn.click();
                 popUpContinueBtn.clickIfPresent();

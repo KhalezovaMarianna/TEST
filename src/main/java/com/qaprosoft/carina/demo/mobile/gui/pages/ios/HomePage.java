@@ -4,7 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.BasketPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.HomePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ProductPageBase;
 import org.openqa.selenium.WebDriver;
@@ -17,17 +17,34 @@ public class HomePage extends HomePageBase implements IMobileUtils {
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeOther[`name == 'Catalog-screen`]/XCUIElementTypeOther[3]")
     private ExtendedWebElement catalog;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Cart-tab-item\"`]")
     private ExtendedWebElement basketBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"More-tab-item\"`]")
     private ExtendedWebElement moreBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeOther[`name == \"ProductItem\"`][%S]/XCUIElementTypeImage")
     private ExtendedWebElement product;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label contains \"%s\"`]")
     private ExtendedWebElement randomProduct;
 
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Linkedin Icons\"`]")
+    private ExtendedWebElement lnLabel;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Twitter Icons\"`]")
+    private ExtendedWebElement twitterLabel;
+
+
     public HomePage(WebDriver driver) {
         super(driver);
+    }
+
+    @Override
+    public boolean scrollHomePage() {
+        twitterLabel.scrollTo();
+        return twitterLabel.isElementPresent();
     }
 
     @Override
@@ -36,9 +53,9 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     }
 
     @Override
-    public BasketPageBase clickBasketBtn() {
+    public CartPageBase clickBasketBtn() {
         basketBtn.click();
-        return initPage(getDriver(), BasketPageBase.class);
+        return initPage(getDriver(), CartPageBase.class);
 
     }
 
@@ -47,8 +64,12 @@ public class HomePage extends HomePageBase implements IMobileUtils {
         if (swipe(randomProduct.format(title), 10)) {
             randomProduct.format(title).click();
         }
-        //return initPage(getDriver(), ProductPageBase.class);
         return initPage(getDriver(), ProductPageBase.class);
+    }
+
+    @Override
+    public boolean lnLabelIsPresent() {
+        return lnLabel.isElementPresent();
     }
 
     public ProductPage clickProductByIndex(String title) {
