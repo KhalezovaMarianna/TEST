@@ -13,4 +13,5 @@ public abstract class MorePageBase extends AbstractPage {
     public abstract AboutPageBase clickAboutBtn();
     public abstract HomePageBase clickCatalogBtn();
     public abstract LoginPageBase clickLoginBtn();
+    public abstract ReportBugPageBase clickReportBugBtn();
 }

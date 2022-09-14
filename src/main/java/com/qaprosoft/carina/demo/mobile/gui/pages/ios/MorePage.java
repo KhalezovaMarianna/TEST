@@ -4,10 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.LoginPageBase;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.PopUpResetPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.*;
 import org.openqa.selenium.WebDriver;
 
 @DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = MorePageBase.class)
@@ -32,7 +29,8 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"LogOut-menu-item\"`]")
     private ExtendedWebElement loginBtn;
 
-
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[5]/XCUIElementTypeButton[1]")
+    private ExtendedWebElement reportBugBtn;
     public MorePage(WebDriver driver) {
         super(driver);
     }
@@ -68,5 +66,11 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     public LoginPageBase clickLoginBtn() {
         loginBtn.click();
         return initPage(getDriver(),LoginPageBase.class);
+    }
+
+    @Override
+    public ReportBugPageBase clickReportBugBtn() {
+        reportBugBtn.click();
+        return initPage(getDriver(),ReportBugPageBase.class);
     }
 }

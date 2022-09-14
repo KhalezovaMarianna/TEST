@@ -31,4 +31,23 @@ public class AddOneProductToCart extends AbstractTest implements IDriverPool {
         productPage.addToCart();
         return productPage.initPage(getDriver(), ProductPageBase.class);
     }
+    public ProductPageBase addSeveralProductToCart() {
+        List<String> products = new ArrayList<>();
+        products.add("Sauce Lab Back Packs");
+        products.add("Sauce Lab Bike Light");
+        products.add("Sauce Lab Bolt T-Shirt");
+        products.add("Sauce Lab Fleece T-Shirt");
+        products.add("Sauce Lab Onesie");
+        products.add("Test");
+        var random = new SecureRandom();
+        int randomIndex = random.nextInt(products.size());
+        String title = String.valueOf(products.get(randomIndex));
+        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        ProductPageBase productPage = homePage.clickRandomProduct(title);
+        Assert.assertTrue(productPage.isProductPageOpen(), "Product isn't open");
+        productPage.addSeveralProducts(150);
+        productPage.addToCart();
+        return productPage.initPage(getDriver(), ProductPageBase.class);
+    }
 }
