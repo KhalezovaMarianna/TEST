@@ -34,6 +34,12 @@ public class CartPage extends CartPageBase implements IMobileUtils {
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Proceed To Checkout\"`]")
     private ExtendedWebElement proceedToCheckoutBtn;
 
+//    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label == \"101\"`][2]")
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[21]")
+    private ExtendedWebElement countOfProductImage;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[5]")
+    private ExtendedWebElement totalCountOfProduct;
     public CartPage(WebDriver driver) {
         super(driver);
     }
@@ -100,5 +106,15 @@ public class CartPage extends CartPageBase implements IMobileUtils {
         proceedToCheckoutBtn.click();
             return initPage(getDriver(),LoginPageBase.class);
         }
+
+    @Override
+    public boolean checkTotalCountEqualCountImage() {
+        String str = totalCountOfProduct.getAttribute("name").replaceAll("\\D", "");
+        if (countOfProductImage.getAttribute("name").equals(str)) {
+            return true;
+        } else {
+            return false;
+        }
     }
+}
 

@@ -18,4 +18,5 @@ public abstract class CartPageBase extends AbstractPage {
     public abstract boolean isCartEmpty();
     public abstract boolean checkOneProductOnCart();
     public abstract LoginPageBase clickProcessedToCheckoutBtn();
+    public abstract boolean checkTotalCountEqualCountImage();
 }

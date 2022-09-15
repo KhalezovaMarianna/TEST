@@ -12,14 +12,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
-@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass =CheckoutPageBase.class)
-public class CheckoutPage extends CheckoutPageBase implements IMobileUtils{
+
+import java.util.List;
+
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = CheckoutPageBase.class)
+public class CheckoutPage extends CheckoutPageBase implements IMobileUtils {
     static final Logger LOGGER = LogManager.getLogger(CheckoutPage.class);
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/checkoutTitleTV")
     private ExtendedWebElement checkoutLabel;
-
-    @FindBy(id = "com.saucelabs.mydemoapp.android:id/enterShippingAddressTV")
-    private ExtendedWebElement emptyPlace;
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/paymentBtn")
     private ExtendedWebElement paymentBtn;
@@ -27,6 +27,8 @@ public class CheckoutPage extends CheckoutPageBase implements IMobileUtils{
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/fullNameET")
     private ExtendedWebElement nameForm;
 
+    @FindBy(id = "com.saucelabs.mydemoapp.android:id/zipET")
+    private ExtendedWebElement zipCodeForm;
 
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/fullNameErrorTV")
@@ -65,18 +67,23 @@ public class CheckoutPage extends CheckoutPageBase implements IMobileUtils{
     @Override
     public KeyboardBase getKeyboard() {
         Keyboard keyboard = new Keyboard(getDriver());
-        keyboard.getKeys().stream().forEach(f-> LOGGER.info(f));
-        return initPage(getDriver(),KeyboardBase.class);
+        keyboard.getKeys().stream().forEach(f -> LOGGER.info(f));
+        return initPage(getDriver(), KeyboardBase.class);
     }
 
     @Override
     public void closeKeyboard() {
-
-
+        getDriver().navigate().back();
     }
 
     @Override
     public boolean fillZipForm(String zipCode) {
-        return false;
+        zipCodeForm.type(zipCode);
+        List<String> splitZipCode = List.of(zipCode.split(""));
+        if (splitZipCode.size() == 5) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

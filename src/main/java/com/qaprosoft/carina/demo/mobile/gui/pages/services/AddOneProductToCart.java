@@ -46,8 +46,10 @@ public class AddOneProductToCart extends AbstractTest implements IDriverPool {
         Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
         ProductPageBase productPage = homePage.clickRandomProduct(title);
         Assert.assertTrue(productPage.isProductPageOpen(), "Product isn't open");
-        productPage.addSeveralProducts(150);
+        productPage.addSeveralProducts(12);
         productPage.addToCart();
         return productPage.initPage(getDriver(), ProductPageBase.class);
     }
+
+
 }

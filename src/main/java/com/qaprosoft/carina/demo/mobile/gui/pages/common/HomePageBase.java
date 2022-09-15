@@ -12,6 +12,10 @@ public abstract class HomePageBase extends AbstractPage {
 
     public abstract boolean isHomePageOpen();
 
+    public abstract SortByPopUpPageBase clickSortBtn();
+
+    public abstract String getFirstSortedProduct();
+
     public abstract MorePageBase clickMoreBtn();
 
     public abstract CartPageBase clickBasketBtn();

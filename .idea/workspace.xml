@@ -4,19 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added tests implementations for testcases">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added tests implementations for testcases for ios">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MorePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CheckoutPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CheckoutPageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MorePageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MorePageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CartPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CartPageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/HomePageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/HomePageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/MorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/MorePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/services/AddOneProductToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/services/AddOneProductToCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/_testdata.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_testdata.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/MobileTests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/MobileTests2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -97,8 +99,8 @@
       <recent name="com.qaprosoft.carina.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MobileTests2.checkIsCorrectZipCodeNegative">
-    <configuration name="MobileTests2.checkCheckoutIsNotReal" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.MobileTests2.testSortProducts">
+    <configuration name="MobileTests2.CheckCartAmountEqualImageCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -108,7 +110,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="checkCheckoutIsNotReal" />
+      <option name="METHOD_NAME" value="CheckCartAmountEqualImageCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -152,24 +154,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileTests2.reportingABugIsWorking" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="reportingABugIsWorking" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MobileTests2.reportingABugIsWorkingNegative" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
@@ -188,20 +172,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MobileTests2.testSortProducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
+      <option name="METHOD_NAME" value="testSortProducts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="TestNG.MobileTests2.checkCheckoutIsNotReal" />
+      <item itemvalue="TestNG.MobileTests2.CheckCartAmountEqualImageCart" />
+      <item itemvalue="TestNG.MobileTests2.testSortProducts" />
       <item itemvalue="TestNG.MobileTests2.checkIsCorrectZipCode" />
       <item itemvalue="TestNG.MobileTests2.checkIsCorrectZipCodeNegative" />
-      <item itemvalue="TestNG.MobileTests2.reportingABugIsWorking" />
       <item itemvalue="TestNG.MobileTests2.reportingABugIsWorkingNegative" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MobileTests2.testSortProducts" />
+        <item itemvalue="TestNG.MobileTests2.CheckCartAmountEqualImageCart" />
         <item itemvalue="TestNG.MobileTests2.checkIsCorrectZipCodeNegative" />
         <item itemvalue="TestNG.MobileTests2.checkIsCorrectZipCode" />
         <item itemvalue="TestNG.MobileTests2.reportingABugIsWorkingNegative" />
-        <item itemvalue="TestNG.MobileTests2.reportingABugIsWorking" />
-        <item itemvalue="TestNG.MobileTests2.checkCheckoutIsNotReal" />
       </list>
     </recent_temporary>
   </component>
@@ -213,13 +215,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added tests">
-      <created>1659604330985</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1659604330985</updated>
     </task>
     <task id="LOCAL-00015" summary="added tests and components">
       <created>1659615143754</created>
@@ -557,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663066745665</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="added tests implementations for testcases for ios">
+      <created>1663165402670</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1663165402670</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -572,7 +574,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added tests" />
     <MESSAGE value="added tests and components" />
     <MESSAGE value="rename methods" />
     <MESSAGE value="fixing bugs" />
@@ -597,7 +598,8 @@
     <MESSAGE value="task &quot;User task&quot; was added" />
     <MESSAGE value="added tests implementations for testcases &quot;login&quot; and &quot;login negative scenario&quot;" />
     <MESSAGE value="added tests implementations for testcases" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests implementations for testcases" />
+    <MESSAGE value="added tests implementations for testcases for ios" />
+    <option name="LAST_COMMIT_MESSAGE" value="added tests implementations for testcases for ios" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

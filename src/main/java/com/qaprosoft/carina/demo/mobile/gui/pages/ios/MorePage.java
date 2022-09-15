@@ -19,6 +19,8 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Catalog-tab-item\"`]")
     private ExtendedWebElement catalogBtn;
 
+    @ExtendedFindBy(accessibilityId = "Webview-menu-item")
+    private ExtendedWebElement webviewBtn;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Drawing-menu-item\"`]")
     private ExtendedWebElement drawingBtn;

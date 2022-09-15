@@ -7,6 +7,7 @@ import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.HomePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ProductPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.SortByPopUpPageBase;
 import org.openqa.selenium.WebDriver;
 
 @DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = HomePageBase.class)
@@ -15,8 +16,14 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeOther[`name == \"Catalog-screen\"`]/XCUIElementTypeOther[1]")
     private ExtendedWebElement title;
 
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Button\"`]")
+    private ExtendedWebElement sortBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeOther[`name == 'Catalog-screen`]/XCUIElementTypeOther[3]")
     private ExtendedWebElement catalog;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label CONTAINS \" \"`][4]")
+    private ExtendedWebElement firstSortedProduct;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`name == \"Cart-tab-item\"`]")
     private ExtendedWebElement basketBtn;
@@ -58,6 +65,17 @@ public class HomePage extends HomePageBase implements IMobileUtils {
         return initPage(getDriver(), CartPageBase.class);
 
     }
+    @Override
+    public SortByPopUpPageBase clickSortBtn() {
+        sortBtn.click();
+        return initPage(getDriver(), SortByPopUpPageBase.class);
+    }
+
+    @Override
+    public String getFirstSortedProduct() {
+        return firstSortedProduct.getAttribute("label");
+    }
+
 
     @Override
     public ProductPageBase clickRandomProduct(String title) {

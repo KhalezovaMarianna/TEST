@@ -4,10 +4,19 @@ import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.*;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.enums.SortBy;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.utils.DataLoader;
+import com.qaprosoft.carina.demo.mobile.gui.pages.services.AddOneProductToCart;
 import com.qaprosoft.carina.demo.mobile.gui.pages.services.GoToCheckOutPage;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import java.util.Collection;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.SortedMap;
 
 public class MobileTests2 extends BaseTest implements IMobileUtils {
     @Test
@@ -129,7 +138,7 @@ public class MobileTests2 extends BaseTest implements IMobileUtils {
     @TestLabel(name = "feature", value = {"mobile", "regression"})
     public void checkIsCorrectZipCode() {
         CheckoutPageBase checkoutPage = goToCheckOutPage.goToCheckoutPageWithManyProducts();
-        Assert.assertTrue(checkoutPage.fillZipForm(R.TESTDATA.get("TEST_ZIPCODE")),"zipcode isn't correct");
+        Assert.assertTrue(checkoutPage.fillZipForm(R.TESTDATA.get("TEST_ZIPCODE")), "zipcode isn't correct");
     }
 
     @Test
@@ -137,7 +146,60 @@ public class MobileTests2 extends BaseTest implements IMobileUtils {
     @TestLabel(name = "feature", value = {"mobile", "regression"})
     public void checkIsCorrectZipCodeNegative() {
         CheckoutPageBase checkoutPage = goToCheckOutPage.goToCheckoutPageWithManyProducts();
-        Assert.assertFalse(checkoutPage.fillZipForm(R.TESTDATA.get("TEST_UNCORRECTZIPCODE")),"zipCode is correct");
+        Assert.assertFalse(checkoutPage.fillZipForm(R.TESTDATA.get("TEST_UNCORRECTZIPCODE")), "zipCode is correct");
+    }
+
+    @Test
+    @MethodOwner(owner = "Marianna")
+    @TestLabel(name = "feature", value = {"mobile", "regression"})
+    public void CheckCartAmountEqualImageCart() {
+        ProductPageBase productPage = addOneProductToCart.addSeveralProductToCart();
+        CartPageBase cartPage = productPage.goToCart();
+        Assert.assertTrue(cartPage.checkTotalCountEqualCountImage(), "The picture does not match the quantity");
+
+    }
+
+    @Test()
+    @MethodOwner(owner = "Marianna")
+    @TestLabel(name = "feature", value = {"mobile", "regression"})
+    public void testSortProducts() {
+        SortedMap<String, Double> productMap = DataLoader.getMapOfProducts();
+        Collection<Double> prices = productMap.values();
+        Double minPrice = prices
+                .stream()
+                .min(Comparator.comparingDouble(Double::doubleValue))
+                .get();
+        Double maxPrice = prices
+                .stream()
+                .max(Comparator.comparingDouble(Double::doubleValue))
+                .get();
+        String minPriceTitle = productMap.entrySet()
+                .stream()
+                .filter(entry -> minPrice.equals(entry.getValue()))
+                .map(Map.Entry::getKey)
+                .findFirst()
+                .get();
+        String maxPriceTitle = productMap.entrySet()
+                .stream()
+                .filter(entry -> maxPrice.equals(entry.getValue()))
+                .map(Map.Entry::getKey)
+                .findFirst()
+                .get();
+        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        Assert.assertTrue(homePage.isHomePageOpen(), "App Home page isn't opened.");
+        SortByPopUpPageBase sortByPopUp = homePage.clickSortBtn();
+        Assert.assertTrue(sortByPopUp.isTitlePresent(), "Sort Pop-up page isn't opened.");
+        homePage = sortByPopUp.clickSortingMethodBtn(SortBy.NAME_DESK);
+        Assert.assertEquals(homePage.getFirstSortedProduct(), productMap.lastKey(), "Product sorting is wrong.");
+        sortByPopUp = homePage.clickSortBtn();
+        Assert.assertTrue(sortByPopUp.isTitlePresent(), "Sort Pop-up page isn't opened.");
+        homePage = sortByPopUp.clickSortingMethodBtn(SortBy.PRICE_ASC);
+        Assert.assertNotEquals(homePage.getFirstSortedProduct(), minPriceTitle, "Product sorting is wrong.");
+        sortByPopUp = homePage.clickSortBtn();
+        Assert.assertTrue(sortByPopUp.isTitlePresent(), "Sort Pop-up page isn't opened.");
+        homePage = sortByPopUp.clickSortingMethodBtn(SortBy.PRICE_DESC);
+        Assert.assertNotEquals(homePage.getFirstSortedProduct(), maxPriceTitle, "Product sorting is wrong.");
+
     }
 
 }

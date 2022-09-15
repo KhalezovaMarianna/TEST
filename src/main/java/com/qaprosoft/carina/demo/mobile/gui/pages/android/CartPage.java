@@ -12,17 +12,23 @@ import org.openqa.selenium.support.FindBy;
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = CartPageBase.class)
 public class CartPage extends CartPageBase implements IMobileUtils {
 
-    @FindBy(id ="com.saucelabs.mydemoapp.android:id/shoppingBt")
+    @FindBy(id = "com.saucelabs.mydemoapp.android:id/shoppingBt")
     private ExtendedWebElement goShoppingBtn;
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/productTV")
     private ExtendedWebElement myCartText;
 
-    @FindBy(xpath= "//android.widget.TextView[@content-desc=\"Removes product from cart\"]")
+    @FindBy(xpath = "//android.widget.TextView[@content-desc=\"Removes product from cart\"]")
     private ExtendedWebElement removeItemBtn;
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/priceTV")
     private ExtendedWebElement productCost;
+
+    @FindBy(id = "com.saucelabs.mydemoapp.android:id/itemsTV")
+    private ExtendedWebElement totalCountOfProduct;
+
+    @FindBy(id = "com.saucelabs.mydemoapp.android:id/cartTV")
+    private ExtendedWebElement countOfProductImage;
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/totalPriceTV")
     private ExtendedWebElement finalSum;
@@ -43,13 +49,14 @@ public class CartPage extends CartPageBase implements IMobileUtils {
         double sum = Double.parseDouble(StringUtils.substring((productCost.format().getAttribute("value")), 1));
         return sum;
     }
-//    @Override
+
+    //    @Override
 //    public boolean oneProductInCart() {
 //        return false;
 //    }
     @Override
     public boolean isCartPageOpened() {
-        return goShoppingBtn.isElementPresent()|| myCartText.isElementPresent();
+        return goShoppingBtn.isElementPresent() || myCartText.isElementPresent();
     }
 
     @Override
@@ -59,14 +66,14 @@ public class CartPage extends CartPageBase implements IMobileUtils {
 
     @Override
     public CartPageBase clickGoShoppingBtn() {
-       goShoppingBtn.click();
+        goShoppingBtn.click();
         return new CartPage(getDriver()) {
             @Override
             public boolean isCartPageOpened() {
                 return false;
             }
         };
-   }
+    }
 
     @Override
     public CartPageBase goToCart() {
@@ -76,30 +83,43 @@ public class CartPage extends CartPageBase implements IMobileUtils {
     @Override
     public Double endSumComparison() {
         double sum = Double.parseDouble(StringUtils.substring((finalSum.format("$39.96").getAttribute("value")), 1));
-       return sum;
+        return sum;
     }
 
     @Override
     public void removeItemFromCart() {
         clickGoShoppingBtn();
-        return ;
+        return;
     }
-    public boolean isCartEmpty(){
+
+    public boolean isCartEmpty() {
         goShoppingBtn.isElementPresent();
         return true;
     }
+
     @Override
-    public boolean checkOneProductOnCart(){
-        if(Integer.parseInt(((countOfProduct.format().getAttribute("value"))))==1){
+    public boolean checkOneProductOnCart() {
+        if (Integer.parseInt(((countOfProduct.format().getAttribute("value")))) == 1) {
             return true;
-        }else
+        } else
             return false;
     }
 
     @Override
     public LoginPageBase clickProcessedToCheckoutBtn() {
         proceedToCheckoutBtn.click();
-        return initPage(getDriver(),LoginPageBase.class);
+        return initPage(getDriver(), LoginPageBase.class);
+    }
+
+    @Override
+    public boolean checkTotalCountEqualCountImage() {
+        String str = totalCountOfProduct.format().getText().replaceAll("\\d", "");
+        if (countOfProductImage.format().getText().equals(str)) {
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
 

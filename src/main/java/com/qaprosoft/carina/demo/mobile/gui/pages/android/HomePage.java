@@ -4,10 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.HomePageBase;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
-import com.qaprosoft.carina.demo.mobile.gui.pages.common.ProductPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -29,6 +26,13 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/menuIV")
     private ExtendedWebElement moreBtn;
 
+    @FindBy(xpath = "(//android.widget.TextView[@resource-id=\"com.saucelabs.mydemoapp.android:id/titleTV\"])[1]")
+    private ExtendedWebElement firstSortedProduct;
+
+    @ExtendedFindBy(accessibilityId = "Shows current sorting order and displays available sorting options")
+    private ExtendedWebElement sortBtn;
+
+
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -39,6 +43,15 @@ public class HomePage extends HomePageBase implements IMobileUtils {
         return twitterLabel.isElementPresent();
     }
 
+    @Override
+    public SortByPopUpPageBase clickSortBtn() {
+        sortBtn.click();
+        return initPage(getDriver(), SortByPopUpPageBase.class);
+    }
+    @Override
+    public String getFirstSortedProduct() {
+        return firstSortedProduct.getText();
+    }
     @Override
     public boolean isHomePageOpen() {
         return catalog.isElementPresent();
