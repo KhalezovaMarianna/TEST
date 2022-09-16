@@ -25,6 +25,9 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[9]")
     private ExtendedWebElement reportBugBtn;
 
+    @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[2]")
+    private ExtendedWebElement webviewBtn;
+
     public MorePage(WebDriver driver) {
         super(driver);
     }
@@ -64,6 +67,12 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     public ReportBugPageBase clickReportBugBtn() {
         reportBugBtn.click();
         return initPage(getDriver(), ReportBugPageBase.class);
+    }
+
+    @Override
+    public WebviewPageBase clickWebviewBtn() {
+        webviewBtn.click();
+        return initPage(getDriver(),WebviewPageBase.class);
     }
 
 

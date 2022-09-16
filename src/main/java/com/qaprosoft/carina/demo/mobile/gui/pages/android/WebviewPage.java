@@ -26,7 +26,13 @@ public class WebviewPage extends WebviewPageBase {
     }
 
     @Override
-    public boolean checkIsCorrectURL() {
-        return false;
+    public boolean checkIsCorrectURL(String url) {
+        urlForm.type(url);
+        String str = url.substring(0, 8);
+        if (str.equals("https://")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -14,7 +14,7 @@ public class WebviewPage extends WebviewPageBase {
     @ExtendedFindBy(accessibilityId = "Webview")
     private ExtendedWebElement title;
 
-    @FindBy(xpath = "//XCUIElementTypeOther[@name=\"Webview-screen\"]/XCUIElementTypeOther[2]/XCUIElementTypeTextField")
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeTextField")
     private ExtendedWebElement urlForm;
 
     public WebviewPage(WebDriver driver) {
@@ -27,7 +27,14 @@ public class WebviewPage extends WebviewPageBase {
     }
 
     @Override
-    public boolean checkIsCorrectURL() {
-        return false;
+    public boolean checkIsCorrectURL(String url) {
+        urlForm.type(url);
+        String str = url.substring(0, 8);
+        if (str.equals("https://")) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
+

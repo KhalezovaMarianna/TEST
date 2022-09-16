@@ -10,5 +10,5 @@ public abstract class WebviewPageBase extends AbstractPage {
 
     public abstract boolean isWebviewPageOpen();
 
-    public abstract boolean checkIsCorrectURL();
+    public abstract boolean checkIsCorrectURL(String url);
 }

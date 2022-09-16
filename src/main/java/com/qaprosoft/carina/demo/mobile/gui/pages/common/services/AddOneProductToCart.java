@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.mobile.gui.pages.services;
+package com.qaprosoft.carina.demo.mobile.gui.pages.common.services;
 
 import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.webdriver.IDriverPool;

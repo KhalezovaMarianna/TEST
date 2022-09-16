@@ -1,12 +1,9 @@
 package com.qaprosoft.carina.demo.mobile;
 
 
-import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
-import com.qaprosoft.carina.demo.gui.webPages.services.AuthenticationService;
-import com.qaprosoft.carina.demo.gui.webPages.services.OpeningService;
-import com.qaprosoft.carina.demo.mobile.gui.pages.services.AddOneProductToCart;
-import com.qaprosoft.carina.demo.mobile.gui.pages.services.GoToCheckOutPage;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.services.AddOneProductToCart;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.services.GoToCheckOutPage;
 
 public class BaseTest implements IAbstractTest {
 

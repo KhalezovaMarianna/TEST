@@ -3,15 +3,13 @@ package com.qaprosoft.carina.demo.mobile;
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
+import com.qaprosoft.carina.demo.mobile.gui.pages.android.WebviewPage;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.*;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.enums.SortBy;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.utils.DataLoader;
-import com.qaprosoft.carina.demo.mobile.gui.pages.services.AddOneProductToCart;
-import com.qaprosoft.carina.demo.mobile.gui.pages.services.GoToCheckOutPage;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import java.util.Collection;
 import java.util.Comparator;
@@ -199,6 +197,19 @@ public class MobileTests2 extends BaseTest implements IMobileUtils {
         Assert.assertTrue(sortByPopUp.isTitlePresent(), "Sort Pop-up page isn't opened.");
         homePage = sortByPopUp.clickSortingMethodBtn(SortBy.PRICE_DESC);
         Assert.assertNotEquals(homePage.getFirstSortedProduct(), maxPriceTitle, "Product sorting is wrong.");
+
+    }
+    @Test()
+    @MethodOwner(owner = "Marianna")
+    @TestLabel(name = "feature", value = {"mobile", "regression"})
+    public void checkIsCorrectURLinWebview() {
+        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        Assert.assertTrue(homePage.isHomePageOpen(),"Home page isn't opened");
+        MorePageBase morePageBase = homePage.clickMoreBtn();
+        Assert.assertTrue(morePageBase.isMorePageOpen(),"Menu isn't opened");
+        WebviewPageBase webviewPageBase =morePageBase.clickWebviewBtn();
+        Assert.assertTrue(webviewPageBase.isWebviewPageOpen(),"Webview page isn't open");
+        Assert.assertTrue(webviewPageBase.checkIsCorrectURL(R.TESTDATA.get("TEST_URL")),"URL isn't correct");
 
     }
 

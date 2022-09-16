@@ -75,4 +75,10 @@ public class MorePage extends MorePageBase implements IMobileUtils {
         reportBugBtn.click();
         return initPage(getDriver(),ReportBugPageBase.class);
     }
+
+    @Override
+    public WebviewPageBase clickWebviewBtn() {
+        webviewBtn.click();
+        return initPage(getDriver(),WebviewPageBase.class);
+    }
 }
