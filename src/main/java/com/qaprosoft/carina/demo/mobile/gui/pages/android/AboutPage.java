@@ -10,8 +10,11 @@ import org.openqa.selenium.support.FindBy;
 @DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = AboutPageBase.class)
 public class AboutPage extends AboutPageBase {
 
-    @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[6]/android.widget.TextView")
+    @FindBy(id = "com.saucelabs.mydemoapp.android:id/characterIV")
     private ExtendedWebElement aboutPicture;
+
+    @FindBy(id = "com.saucelabs.mydemoapp.android:id/aboutTV")
+    private ExtendedWebElement titleAbout;
 
     @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[1]/android.widget.TextView[2]")
     private ExtendedWebElement catalogBtn;
@@ -22,12 +25,16 @@ public class AboutPage extends AboutPageBase {
 
     @Override
     public boolean isAboutPageOpen() {
-        return aboutPicture.isElementPresent();
+        if (aboutPicture.isElementPresent() && titleAbout.isElementPresent()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
     public HomePageBase clickBackBtn() {
         catalogBtn.click();
-        return initPage(getDriver(),HomePageBase.class);
+        return initPage(getDriver(), HomePageBase.class);
     }
 }

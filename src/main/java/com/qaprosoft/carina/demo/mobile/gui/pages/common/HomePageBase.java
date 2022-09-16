@@ -8,8 +8,6 @@ public abstract class HomePageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract boolean scrollHomePage();
-
     public abstract boolean isHomePageOpen();
 
     public abstract SortByPopUpPageBase clickSortBtn();
@@ -25,5 +23,6 @@ public abstract class HomePageBase extends AbstractPage {
     public abstract ProductPageBase clickProductByIndex(String a);
 
     public abstract ProductPageBase clickRandomProduct(String title);
-    public abstract boolean lnLabelIsPresent();
+    public abstract boolean isLinkedinLogoPresent();
+    public abstract boolean isTwitterLogoPresent();
 }

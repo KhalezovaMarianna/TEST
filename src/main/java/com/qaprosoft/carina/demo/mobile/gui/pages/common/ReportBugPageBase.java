@@ -15,7 +15,10 @@ public abstract class ReportBugPageBase extends AbstractPage {
 
     public abstract void sendMessage();
 
-    public abstract void fillMessageForm(String message);
+    public abstract void clickUser(String message);
 
+    public abstract boolean closePopUpMessage();
+
+    public abstract MorePageBase clickBackBtn();
 
 }

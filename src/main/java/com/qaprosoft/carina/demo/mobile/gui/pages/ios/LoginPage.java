@@ -16,6 +16,9 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
     @ExtendedFindBy(iosPredicate = "type == \"XCUIElementTypeTextField\"")
     private ExtendedWebElement usernameForm;
 
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeStaticText[`label == \"Login\"`][1]")
+    private ExtendedWebElement title;
+
     @ExtendedFindBy(iosPredicate = "type == \"XCUIElementTypeSecureTextField\"")
     private ExtendedWebElement passwordForm;
 
@@ -34,7 +37,7 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
 
     @Override
     public boolean isLoginPageOpen() {
-        return usernameForm.isElementPresent();
+        return usernameForm.isElementPresent()&&passwordForm.isElementPresent()&&loginBtn.isElementPresent()&&title.isElementPresent();
     }
 
     public HomePageBase clickAutoBtn() {
@@ -55,7 +58,7 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean failedTextIsPresent() {
+    public boolean isFailedTextIsPresent() {
         return popUpFailedNameForm.isElementPresent();
     }
 
@@ -65,17 +68,15 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
     }
 
     @Override
-    public void fillAutoForms() {
+    public void clickUser() {
         autoFillBtn.click();
     }
 
     @Override
     public CheckoutPageBase clickLoginBtnForCheckout() {
-       loginBtn.click();
-        return initPage(getDriver(),CheckoutPageBase.class);
+        loginBtn.click();
+        return initPage(getDriver(), CheckoutPageBase.class);
     }
-
-
 
 
 }

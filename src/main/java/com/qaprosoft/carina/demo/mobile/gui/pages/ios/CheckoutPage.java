@@ -79,7 +79,7 @@ public class CheckoutPage extends CheckoutPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean fillZipForm(String zipCode) {
+    public boolean fillZipForm(String zipCode) {//getText
         zipCodeForm.type(zipCode);
         List<String> splitZipCode = List.of(zipCode.split(""));
         if (splitZipCode.size() == 5) {

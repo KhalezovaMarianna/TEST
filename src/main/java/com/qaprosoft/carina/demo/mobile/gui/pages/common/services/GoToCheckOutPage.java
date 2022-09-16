@@ -33,7 +33,7 @@ public class GoToCheckOutPage extends AbstractTest implements IDriverPool {
         Assert.assertEquals(teoreticFinalCost, cartPage.endSumComparison(), "Sum isn't increase");
         LoginPageBase loginPage = cartPage.clickProcessedToCheckoutBtn();
         Assert.assertTrue(loginPage.isLoginPageOpen());
-        loginPage.fillAutoForms();
+        loginPage.clickUser();
         CheckoutPageBase checkoutPage = loginPage.clickLoginBtnForCheckout();
         Assert.assertTrue(checkoutPage.isPageOpened());
         return initPage(getDriver(), CheckoutPageBase.class);

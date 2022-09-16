@@ -18,10 +18,10 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     private ExtendedWebElement basketBtn;
 
     @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Twitter\"]")
-    private ExtendedWebElement twitterLabel;
+    private ExtendedWebElement twitterLogo;
 
     @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"LinkedIn\"]")
-    private ExtendedWebElement lnLabel;
+    private ExtendedWebElement linkedinLogo;
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/menuIV")
     private ExtendedWebElement moreBtn;
@@ -38,20 +38,16 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean scrollHomePage() {
-        twitterLabel.scrollTo();
-        return twitterLabel.isElementPresent();
-    }
-
-    @Override
     public SortByPopUpPageBase clickSortBtn() {
         sortBtn.click();
         return initPage(getDriver(), SortByPopUpPageBase.class);
     }
+
     @Override
     public String getFirstSortedProduct() {
         return firstSortedProduct.getText();
     }
+
     @Override
     public boolean isHomePageOpen() {
         return catalog.isElementPresent();
@@ -86,8 +82,13 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean lnLabelIsPresent() {
-        return lnLabel.isElementPresent();
+    public boolean isLinkedinLogoPresent() {
+        return linkedinLogo.isElementPresent();
+    }
+
+    @Override
+    public boolean isTwitterLogoPresent() {
+        return twitterLogo.isElementPresent();
     }
 
 }

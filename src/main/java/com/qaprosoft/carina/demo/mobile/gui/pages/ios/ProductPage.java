@@ -77,7 +77,7 @@ public class ProductPage extends ProductPageBase {
     }
 
     public void addSeveralProducts(int count) {
-        for (int i = 1; i < count+1; i++) {
+        for (int i = 1; i < count + 1; i++) {
 
             plusBtn.click();
 

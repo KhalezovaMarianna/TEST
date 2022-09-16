@@ -38,21 +38,16 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     private ExtendedWebElement randomProduct;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Linkedin Icons\"`]")
-    private ExtendedWebElement lnLabel;
+    private ExtendedWebElement linkedinLogo;
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Twitter Icons\"`]")
-    private ExtendedWebElement twitterLabel;
+    private ExtendedWebElement twitterLogo;
 
 
     public HomePage(WebDriver driver) {
         super(driver);
     }
 
-    @Override
-    public boolean scrollHomePage() {
-        twitterLabel.scrollTo();
-        return twitterLabel.isElementPresent();
-    }
 
     @Override
     public boolean isHomePageOpen() {
@@ -86,8 +81,14 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean lnLabelIsPresent() {
-        return lnLabel.isElementPresent();
+    public boolean isLinkedinLogoPresent() {
+
+        return linkedinLogo.isElementPresent();//twitter
+    }
+
+    @Override
+    public boolean isTwitterLogoPresent() {
+        return false;
     }
 
     public ProductPage clickProductByIndex(String title) {
@@ -108,6 +109,7 @@ public class HomePage extends HomePageBase implements IMobileUtils {
         moreBtn.click();
         return new MorePage(getDriver());
     }
+
 
 }
 

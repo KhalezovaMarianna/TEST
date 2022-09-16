@@ -19,6 +19,9 @@ public class ReportBugPage extends ReportBugPageBase implements IMobileUtils {
     @FindBy(xpath = "//android.widget.EditText[@content-desc=\"Your email\"]")
     private ExtendedWebElement emailForm;
 
+    @FindBy(id = "android:id/message")
+    private ExtendedWebElement popUpCloseBtn;
+
     @ExtendedFindBy(accessibilityId = "Send")
     private ExtendedWebElement sendBtn;
 
@@ -47,7 +50,17 @@ public class ReportBugPage extends ReportBugPageBase implements IMobileUtils {
     }
 
     @Override
-    public void fillMessageForm(String message) {
+    public void clickUser(String message) {
         messageForm.type(message);
+    }
+
+    @Override
+    public boolean closePopUpMessage() {
+        if (popUpCloseBtn.isElementPresent()) {
+            popUpCloseBtn.clickIfPresent();
+            return true;
+        } else {
+            return false;
+        }
     }
 }

@@ -3,6 +3,7 @@ package com.qaprosoft.carina.demo.mobile.gui.pages.ios;
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ReportBugPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.WebviewPageBase;
 import org.openqa.selenium.WebDriver;
@@ -14,8 +15,14 @@ public class WebviewPage extends WebviewPageBase {
     @ExtendedFindBy(accessibilityId = "Webview")
     private ExtendedWebElement title;
 
+    @ExtendedFindBy(accessibilityId = "BackButton Icons")
+    private ExtendedWebElement backBtn;
+
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeTextField")
     private ExtendedWebElement urlForm;
+
+    @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeButton[`label == \"Go To Site\"`]")
+    private ExtendedWebElement goToSiteBtn;
 
     public WebviewPage(WebDriver driver) {
         super(driver);
@@ -23,7 +30,11 @@ public class WebviewPage extends WebviewPageBase {
 
     @Override
     public boolean isWebviewPageOpen() {
-        return title.isElementPresent();
+        if (title.isElementPresent() && goToSiteBtn.isElementPresent() && urlForm.isElementPresent()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     @Override
@@ -35,6 +46,12 @@ public class WebviewPage extends WebviewPageBase {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public MorePageBase clickBackBtn() {
+        backBtn.click();
+        return initPage(MorePageBase.class);
     }
 }
 

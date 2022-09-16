@@ -28,6 +28,9 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[2]")
     private ExtendedWebElement webviewBtn;
 
+    @FindBy(xpath = "//androidx.recyclerview.widget.RecyclerView[@content-desc=\"Recycler view for menu\"]/android.view.ViewGroup[4]")
+    private ExtendedWebElement geolocationBtn;
+
     public MorePage(WebDriver driver) {
         super(driver);
     }
@@ -72,7 +75,13 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     @Override
     public WebviewPageBase clickWebviewBtn() {
         webviewBtn.click();
-        return initPage(getDriver(),WebviewPageBase.class);
+        return initPage(getDriver(), WebviewPageBase.class);
+    }
+
+    @Override
+    public GeolocationPageBase clickGeolocationBtn() {
+        geolocationBtn.click();
+        return initPage(GeolocationPageBase.class);
     }
 
 

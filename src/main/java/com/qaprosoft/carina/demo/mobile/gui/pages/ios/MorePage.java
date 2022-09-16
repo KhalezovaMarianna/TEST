@@ -33,6 +33,11 @@ public class MorePage extends MorePageBase implements IMobileUtils {
 
     @ExtendedFindBy(iosClassChain = "**/XCUIElementTypeWindow[1]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[2]/XCUIElementTypeOther[5]/XCUIElementTypeButton[1]")
     private ExtendedWebElement reportBugBtn;
+
+    @ExtendedFindBy(accessibilityId = "GeoLocation-menu-item")
+    private ExtendedWebElement geolocationBtn;
+
+
     public MorePage(WebDriver driver) {
         super(driver);
     }
@@ -67,18 +72,25 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     @Override
     public LoginPageBase clickLoginBtn() {
         loginBtn.click();
-        return initPage(getDriver(),LoginPageBase.class);
+        return initPage(getDriver(), LoginPageBase.class);
     }
 
     @Override
     public ReportBugPageBase clickReportBugBtn() {
         reportBugBtn.click();
-        return initPage(getDriver(),ReportBugPageBase.class);
+        return initPage(getDriver(), ReportBugPageBase.class);
     }
 
     @Override
     public WebviewPageBase clickWebviewBtn() {
         webviewBtn.click();
-        return initPage(getDriver(),WebviewPageBase.class);
+        return initPage(getDriver(), WebviewPageBase.class);
     }
+
+    @Override
+    public GeolocationPageBase clickGeolocationBtn() {
+        geolocationBtn.click();
+        return initPage(GeolocationPageBase.class);
+    }
+
 }

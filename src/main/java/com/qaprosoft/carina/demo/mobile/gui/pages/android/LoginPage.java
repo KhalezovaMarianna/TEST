@@ -17,7 +17,7 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage extends LoginPageBase implements IMobileUtils {
 
     @FindBy(xpath = "//android.widget.Button[@content-desc=\"Tap to login with given credentials\"]")
-   private ExtendedWebElement loginBtn;
+    private ExtendedWebElement loginBtn;
 
     @FindBy(id = "com.saucelabs.mydemoapp.android:id/nameET")
     private ExtendedWebElement usernameForm;
@@ -64,22 +64,21 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
     }
 
     @Override
-    public void fillAutoForms() {
+    public void clickUser() {
         autoNameBtn.click();
     }
 
     @Override
     public CheckoutPageBase clickLoginBtnForCheckout() {
         loginBtn.click();
-        return initPage(getDriver(),CheckoutPageBase.class);
+        return initPage(getDriver(), CheckoutPageBase.class);
     }
 
     @Override
-    public boolean failedTextIsPresent() {
+    public boolean isFailedTextIsPresent() {
         return failedNameText.isElementPresent();
 
     }
-
 
 
 }

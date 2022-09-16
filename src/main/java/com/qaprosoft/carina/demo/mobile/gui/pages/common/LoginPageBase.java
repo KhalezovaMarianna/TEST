@@ -1,7 +1,6 @@
 package com.qaprosoft.carina.demo.mobile.gui.pages.common;
 
 import com.qaprosoft.carina.core.gui.AbstractPage;
-import com.qaprosoft.carina.demo.mobile.gui.pages.ios.HomePage;
 import org.openqa.selenium.WebDriver;
 
 public abstract class LoginPageBase extends AbstractPage {
@@ -17,11 +16,11 @@ public abstract class LoginPageBase extends AbstractPage {
 
     public abstract void typeUsernameForm(String email);
 
-    public abstract boolean failedTextIsPresent();
+    public abstract boolean isFailedTextIsPresent();
 
     public abstract void typePassword(String password);
 
-    public abstract void fillAutoForms();
+    public abstract void clickUser();
 
     public abstract CheckoutPageBase clickLoginBtnForCheckout();
 }

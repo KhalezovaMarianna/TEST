@@ -75,7 +75,6 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
 
     @Override
     public boolean rateProduct() {
-
         return false;
     }
 
