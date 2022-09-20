@@ -39,7 +39,7 @@ public class CheckoutPage extends CheckoutPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return checkoutLabel.isElementPresent();
     }
 

@@ -8,7 +8,7 @@ public abstract class HomePageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract boolean isPageOpened();
+    public abstract boolean isOpened();
 
     public abstract SortByPopUpPageBase clickSortBtn();
 

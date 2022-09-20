@@ -28,7 +28,7 @@ public class AboutPage extends AboutPageBase {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         if (aboutPicture.isElementPresent() && titleAbout.isElementPresent()) {
             return true;
         } else {

@@ -33,7 +33,7 @@ public class PopUpResetPage extends PopUpResetPageBase {
     }
 
     @Override
-    public boolean isPopUpResetPageOpen() {
+    public boolean isOpened() {
 
         return resetBtn.isElementPresent();
     }

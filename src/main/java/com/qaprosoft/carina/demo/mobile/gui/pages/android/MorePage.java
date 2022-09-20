@@ -36,7 +36,7 @@ public class MorePage extends MorePageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return product.isElementPresent();
     }
 

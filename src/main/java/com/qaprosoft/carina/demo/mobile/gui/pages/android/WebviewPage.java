@@ -22,7 +22,7 @@ public class WebviewPage extends WebviewPageBase {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return title.isElementPresent();
     }
 

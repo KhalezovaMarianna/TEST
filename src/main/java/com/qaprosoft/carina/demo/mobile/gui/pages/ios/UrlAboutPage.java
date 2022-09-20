@@ -31,7 +31,7 @@ public class UrlAboutPage extends URLAboutPageBase {
     }
 
     @Override
-    public boolean IsPageOpen() {
+    public boolean IsOpened() {
         acceptCookies.clickIfPresent();
         return title.isElementPresent();
     }

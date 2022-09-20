@@ -37,7 +37,7 @@ public class GeolocationPage extends GeolocationPageBase implements IMobileUtils
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return latitudeNumber.isElementPresent() && latitudeTitle.getText().equals("Latitude") && longitudeNumber.isElementPresent() && longitudeTitle.getText().equals("Longitude") && title.isElementPresent();
     }
 

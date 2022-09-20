@@ -50,7 +50,7 @@ public class HomePage extends HomePageBase implements IMobileUtils {
 
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return title.isElementPresent();
     }
 

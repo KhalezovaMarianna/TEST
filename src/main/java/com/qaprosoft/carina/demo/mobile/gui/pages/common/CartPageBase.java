@@ -8,7 +8,7 @@ public abstract class CartPageBase extends AbstractPage {
         super(driver);
     }
     public abstract Double costOfProduct();
-    public abstract boolean isCartPageOpened();
+    public abstract boolean isOpened();
     public abstract boolean isBasketEmpty();
 //    public abstract boolean oneProductInCart();
     public abstract CartPageBase clickGoShoppingBtn();

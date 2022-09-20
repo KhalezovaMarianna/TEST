@@ -45,7 +45,7 @@ public class CartPage extends CartPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isCartPageOpened() {
+    public boolean isOpened() {
         return goShoppingBtn.isElementPresent() || myCartText.isElementPresent();
     }
 

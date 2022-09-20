@@ -29,7 +29,7 @@ public class WebviewPage extends WebviewPageBase {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         if (title.isElementPresent() && goToSiteBtn.isElementPresent() && urlForm.isElementPresent()) {
             return true;
         } else {

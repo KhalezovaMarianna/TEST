@@ -34,7 +34,7 @@ public class ReportBugPage extends ReportBugPageBase {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return messageForm.isElementPresent() && emailForm.isElementPresent() && screenshotFill.isElementPresent() && sendBtn.isElementPresent();
     }
 

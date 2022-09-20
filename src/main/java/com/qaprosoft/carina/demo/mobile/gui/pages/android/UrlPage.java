@@ -32,7 +32,7 @@ public class UrlPage extends URLAboutPageBase {
     }
 
     @Override
-    public boolean IsPageOpen() {
+    public boolean IsOpened() {
         return title.isElementPresent();
     }
 }

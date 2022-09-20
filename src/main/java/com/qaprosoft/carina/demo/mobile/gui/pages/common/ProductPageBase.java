@@ -8,7 +8,7 @@ public abstract class ProductPageBase extends AbstractPage {
     public ProductPageBase(WebDriver driver) {
         super(driver);
     }
-    public abstract boolean isPageOpened();
+    public abstract boolean isOpened();
     public abstract void addProduct();
     public abstract void deleteSeveralProducts(int title);
 

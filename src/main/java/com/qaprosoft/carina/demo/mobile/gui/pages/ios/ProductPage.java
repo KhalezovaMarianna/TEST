@@ -66,6 +66,11 @@ public class ProductPage extends ProductPageBase {
     }
 
     @Override
+    public boolean isOpened() {
+        return false;
+    }
+
+    @Override
     public boolean isPageOpened() {
         return addToCartBtn.isElementPresent();
     }
@@ -159,7 +164,7 @@ public class ProductPage extends ProductPageBase {
         int red = clr & 0x00ff0000;
         int green = clr & 0x0000ff00;
         int blue = clr & 0x000000ff;
-        if (red > 0 && green > 8 && blue > 0) {
+        if (red > 0 && green > 0 && blue > 0) {
             LOGGER.info("Red Color value = " + red);
             LOGGER.info("Green Color value = " + green);
             LOGGER.info("Blue Color value = " + blue);

@@ -10,5 +10,5 @@ public abstract class URLAboutPageBase extends AbstractPage {
 
     public abstract boolean isCorrectUrlOpened();
 
-    public abstract boolean IsPageOpen();
+    public abstract boolean IsOpened();
 }

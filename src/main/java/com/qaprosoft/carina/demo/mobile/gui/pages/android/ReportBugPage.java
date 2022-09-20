@@ -34,7 +34,7 @@ public class ReportBugPage extends ReportBugPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return emailForm.isElementPresent() && messageForm.isElementPresent();
     }
 

@@ -27,7 +27,7 @@ public class GeolocationPage extends GeolocationPageBase implements IMobileUtils
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return title.isElementPresent()&&backBtn.isElementPresent();
     }
 

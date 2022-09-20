@@ -8,7 +8,7 @@ public abstract class CheckoutPageBase extends AbstractPage {
     public CheckoutPageBase(WebDriver driver) {
         super(driver);
     }
-    public abstract boolean isPageOpened();
+    public abstract boolean isOpened();
     public abstract void clickPaymentBtn();
     public abstract boolean checkPaymentFailed();
 public abstract void clickNameForm();

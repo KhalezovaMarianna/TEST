@@ -55,7 +55,7 @@ public class CartPage extends CartPageBase implements IMobileUtils {
 //        return false;
 //    }
     @Override
-    public boolean isCartPageOpened() {
+    public boolean isOpened() {
         return goShoppingBtn.isElementPresent() || myCartText.isElementPresent();
     }
 
@@ -69,7 +69,7 @@ public class CartPage extends CartPageBase implements IMobileUtils {
         goShoppingBtn.click();
         return new CartPage(getDriver()) {
             @Override
-            public boolean isCartPageOpened() {
+            public boolean isOpened() {
                 return false;
             }
         };

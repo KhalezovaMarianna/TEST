@@ -37,7 +37,7 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return plusBtn.isElementPresent();
     }
 

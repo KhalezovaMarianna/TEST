@@ -39,7 +39,7 @@ public class AboutPage extends AboutPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
 
         if (aboutPicture.isElementPresent() && aboutTitle.isElementPresent()) {
             return true;

@@ -8,5 +8,5 @@ public abstract class PopUpResetPageBase extends AbstractPage {
         super(driver);
     }
     public abstract MorePageBase clickResetBtn();
-    public abstract boolean isPopUpResetPageOpen();
+    public abstract boolean isOpened();
 }

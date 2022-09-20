@@ -40,7 +40,7 @@ public class CheckoutPage extends CheckoutPageBase implements IMobileUtils {
     private ExtendedWebElement zipCodeForm;
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return paymentBtn.isElementPresent();
     }
 
