@@ -16,6 +16,7 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
     @FindBy(xpath = "//android.widget.ImageView[@content-desc=\"Increase item quantity\"]")
     private ExtendedWebElement plusBtn;
 
+
     @FindBy(xpath = "//android.widget.RelativeLayout[@content-desc=\"View cart\"]")
     private ExtendedWebElement basketBtn;
 
@@ -36,7 +37,7 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isProductPageOpen() {
+    public boolean isPageOpened() {
         return plusBtn.isElementPresent();
     }
 
@@ -62,6 +63,17 @@ public class ProductPage extends ProductPageBase implements IMobileUtils {
             plusBtn.click();
         }
     }
+
+    @Override
+    public boolean checkChosenColor(String color) {
+        return false;
+    }
+
+    @Override
+    public boolean checkImageDownloading() {
+        return false;
+    }
+
     @Override
     public void addToCart() {
         addToCartBtn.click();

@@ -8,29 +8,36 @@
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/AboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/GeolocationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/GeolocationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/MorePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ReportBugPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/ReportBugPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/WebviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/android/WebviewPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/AboutPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/AboutPageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CheckoutPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/CheckoutPageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/HomePageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/HomePageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/LoginPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/LoginPageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MorePageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/MorePageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ProductPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ProductPageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ReportBugPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ReportBugPageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/WebviewPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/WebviewPageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/services/AddOneProductToCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/services/ProductsUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/services/GoToCheckOutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/services/GoToCheckOutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/services/ProductsUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/services/ProductsUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/AboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/AboutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/GeolocationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/GeolocationPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/MorePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/MorePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ReportBugPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ReportBugPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/WebviewPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/WebviewPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/AndroidOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/AndroidOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/MobileTests2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/MobileTests2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/TestsDemoMobileApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/TestsDemoMobileApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,8 +118,8 @@
       <recent name="com.qaprosoft.carina.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MobileTests2.testReportingABugIsWorking">
-    <configuration name="MobileTests2.CheckCartAmountEqualImageCart" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.MobileTests2">
+    <configuration name="MobileTests2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -122,7 +129,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="CheckCartAmountEqualImageCart" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MobileTests2.CheckAboutPageWork" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
+      <option name="METHOD_NAME" value="CheckAboutPageWork" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,7 +154,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileTests2.checkIsCorrectURLinWebview" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MobileTests2.checkIsCorrectUI" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -140,7 +164,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="checkIsCorrectURLinWebview" />
+      <option name="METHOD_NAME" value="checkIsCorrectUI" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,7 +172,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileTests2.reportingABugIsWorkingNegative" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MobileTests2.testCheckAboutPageWork" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -158,7 +182,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="reportingABugIsWorkingNegative" />
+      <option name="METHOD_NAME" value="testCheckAboutPageWork" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,7 +190,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileTests2.testReportingABugIsWorking" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MobileTests2.testFooterSocialNetworks" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -176,25 +200,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="testReportingABugIsWorking" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MobileTests2.testSortProducts" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="testSortProducts" />
+      <option name="METHOD_NAME" value="testFooterSocialNetworks" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -203,19 +209,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.MobileTests2.checkIsCorrectURLinWebview" />
-      <item itemvalue="TestNG.MobileTests2.testReportingABugIsWorking" />
-      <item itemvalue="TestNG.MobileTests2.CheckCartAmountEqualImageCart" />
-      <item itemvalue="TestNG.MobileTests2.testSortProducts" />
-      <item itemvalue="TestNG.MobileTests2.reportingABugIsWorkingNegative" />
+      <item itemvalue="TestNG.MobileTests2" />
+      <item itemvalue="TestNG.MobileTests2.CheckAboutPageWork" />
+      <item itemvalue="TestNG.MobileTests2.checkIsCorrectUI" />
+      <item itemvalue="TestNG.MobileTests2.testCheckAboutPageWork" />
+      <item itemvalue="TestNG.MobileTests2.testFooterSocialNetworks" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MobileTests2.testReportingABugIsWorking" />
-        <item itemvalue="TestNG.MobileTests2.reportingABugIsWorkingNegative" />
-        <item itemvalue="TestNG.MobileTests2.checkIsCorrectURLinWebview" />
-        <item itemvalue="TestNG.MobileTests2.testSortProducts" />
-        <item itemvalue="TestNG.MobileTests2.CheckCartAmountEqualImageCart" />
+        <item itemvalue="TestNG.MobileTests2" />
+        <item itemvalue="TestNG.MobileTests2.testFooterSocialNetworks" />
+        <item itemvalue="TestNG.MobileTests2.CheckAboutPageWork" />
+        <item itemvalue="TestNG.MobileTests2.testCheckAboutPageWork" />
+        <item itemvalue="TestNG.MobileTests2.checkIsCorrectUI" />
       </list>
     </recent_temporary>
   </component>
@@ -227,13 +233,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1659084181890</updated>
-    </task>
-    <task id="LOCAL-00017" summary="fixing bugs">
-      <created>1659682053205</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1659682053205</updated>
     </task>
     <task id="LOCAL-00018" summary="rename methods">
       <created>1659687549236</created>
@@ -571,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663309269501</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added tests implementations for testcases for ios and android">
+      <created>1663337445216</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1663337445216</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

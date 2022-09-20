@@ -7,7 +7,7 @@ public abstract class MorePageBase extends AbstractPage {
     public MorePageBase(WebDriver driver) {
         super(driver);
     }
-    public abstract boolean isMorePageOpen();
+    public abstract boolean isPageOpened();
     public abstract CartPageBase openCart();
     public abstract PopUpResetPageBase resetApp();
     public abstract AboutPageBase clickAboutBtn();

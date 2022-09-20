@@ -8,9 +8,11 @@ public abstract class WebviewPageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract boolean isWebviewPageOpen();
+    public abstract boolean isPageOpened();
 
     public abstract boolean checkIsCorrectURL(String url);
 
     public abstract MorePageBase clickBackBtn();
+
+    public abstract String checkEqualURL();
 }

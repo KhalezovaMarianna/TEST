@@ -29,7 +29,7 @@ public class WebviewPage extends WebviewPageBase {
     }
 
     @Override
-    public boolean isWebviewPageOpen() {
+    public boolean isPageOpened() {
         if (title.isElementPresent() && goToSiteBtn.isElementPresent() && urlForm.isElementPresent()) {
             return true;
         } else {
@@ -52,6 +52,11 @@ public class WebviewPage extends WebviewPageBase {
     public MorePageBase clickBackBtn() {
         backBtn.click();
         return initPage(MorePageBase.class);
+    }
+
+    @Override
+    public String checkEqualURL() {
+        return urlForm.getText();
     }
 }
 

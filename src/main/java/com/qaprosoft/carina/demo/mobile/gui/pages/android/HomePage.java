@@ -49,7 +49,7 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isHomePageOpen() {
+    public boolean isPageOpened() {
         return catalog.isElementPresent();
     }
 

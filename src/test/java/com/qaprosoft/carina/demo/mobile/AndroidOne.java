@@ -13,5 +13,5 @@ public class AndroidOne extends BaseTest {
     @TestLabel(name = "feature", value = {"mobile", "regression"})
     public void testRateProduct() {
         HomePage homePage = new HomePage(getDriver());
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
 }}

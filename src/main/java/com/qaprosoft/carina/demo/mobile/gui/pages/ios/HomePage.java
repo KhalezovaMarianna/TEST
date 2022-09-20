@@ -50,7 +50,7 @@ public class HomePage extends HomePageBase implements IMobileUtils {
 
 
     @Override
-    public boolean isHomePageOpen() {
+    public boolean isPageOpened() {
         return title.isElementPresent();
     }
 
@@ -83,7 +83,7 @@ public class HomePage extends HomePageBase implements IMobileUtils {
     @Override
     public boolean isLinkedinLogoPresent() {
 
-        return linkedinLogo.isElementPresent();//twitter
+        return linkedinLogo.isElementPresent();
     }
 
     @Override

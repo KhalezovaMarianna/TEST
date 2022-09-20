@@ -7,6 +7,10 @@ public abstract class AboutPageBase extends AbstractPage {
     public AboutPageBase(WebDriver driver) {
         super(driver);
     }
-    public abstract boolean isAboutPageOpen();
+
+    public abstract boolean isPageOpened();
+
     public abstract HomePageBase clickBackBtn();
+
+    public abstract URLAboutPageBase goToURL();
 }

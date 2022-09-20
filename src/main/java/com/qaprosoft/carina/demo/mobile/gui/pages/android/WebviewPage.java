@@ -2,6 +2,7 @@ package com.qaprosoft.carina.demo.mobile.gui.pages.android;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ReportBugPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.WebviewPageBase;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +22,7 @@ public class WebviewPage extends WebviewPageBase {
     }
 
     @Override
-    public boolean isWebviewPageOpen() {
+    public boolean isPageOpened() {
         return title.isElementPresent();
     }
 
@@ -34,5 +35,16 @@ public class WebviewPage extends WebviewPageBase {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public MorePageBase clickBackBtn() {
+        clickBackBtn();
+        return initPage(MorePageBase.class);
+    }
+
+    @Override
+    public String checkEqualURL() {
+        return null;
     }
 }

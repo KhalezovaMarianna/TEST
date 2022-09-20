@@ -4,6 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.utils.mobile.IMobileUtils;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ReportBugPageBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -25,12 +26,15 @@ public class ReportBugPage extends ReportBugPageBase implements IMobileUtils {
     @ExtendedFindBy(accessibilityId = "Send")
     private ExtendedWebElement sendBtn;
 
+    @ExtendedFindBy(accessibilityId = "Close")
+    private ExtendedWebElement backBtn;
+
     public ReportBugPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
-    public boolean isReportBugPageOpened() {
+    public boolean isPageOpened() {
         return emailForm.isElementPresent() && messageForm.isElementPresent();
     }
 
@@ -62,5 +66,16 @@ public class ReportBugPage extends ReportBugPageBase implements IMobileUtils {
         } else {
             return false;
         }
+    }
+
+    @Override
+    public MorePageBase clickBackBtn() {
+        backBtn.click();
+        return initPage(MorePageBase.class);
+    }
+
+    @Override
+    public String checkCorrectEmail() {
+        return emailForm.getText();
     }
 }

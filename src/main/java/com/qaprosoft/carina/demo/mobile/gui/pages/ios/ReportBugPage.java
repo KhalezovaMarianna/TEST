@@ -34,7 +34,7 @@ public class ReportBugPage extends ReportBugPageBase {
     }
 
     @Override
-    public boolean isReportBugPageOpened() {
+    public boolean isPageOpened() {
         return messageForm.isElementPresent() && emailForm.isElementPresent() && screenshotFill.isElementPresent() && sendBtn.isElementPresent();
     }
 
@@ -74,6 +74,11 @@ public class ReportBugPage extends ReportBugPageBase {
     public MorePageBase clickBackBtn() {
         backBtn.click();
         return initPage(MorePageBase.class);
+    }
+
+    @Override
+    public String checkCorrectEmail() {
+        return emailForm.getText();
     }
 
 }

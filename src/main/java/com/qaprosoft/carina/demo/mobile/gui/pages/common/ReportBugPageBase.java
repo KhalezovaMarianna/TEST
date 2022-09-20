@@ -9,7 +9,7 @@ public abstract class ReportBugPageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract boolean isReportBugPageOpened();
+    public abstract boolean isPageOpened();
 
     public abstract boolean fillEmailForm(String email);
 
@@ -20,5 +20,7 @@ public abstract class ReportBugPageBase extends AbstractPage {
     public abstract boolean closePopUpMessage();
 
     public abstract MorePageBase clickBackBtn();
+
+    public abstract String checkCorrectEmail();
 
 }

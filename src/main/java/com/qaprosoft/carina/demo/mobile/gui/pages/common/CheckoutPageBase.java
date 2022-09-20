@@ -15,4 +15,5 @@ public abstract void clickNameForm();
     public abstract KeyboardBase getKeyboard();
     public abstract void closeKeyboard();
     public abstract boolean fillZipForm(String zipCode);
+    public abstract String checkEqualZipcode();
 }

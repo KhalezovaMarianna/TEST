@@ -8,7 +8,7 @@ public abstract class LoginPageBase extends AbstractPage {
         super(driver);
     }
 
-    public abstract boolean isLoginPageOpen();
+    public abstract boolean isPageOpened();
 
     public abstract HomePageBase clickLoginBtn();
 

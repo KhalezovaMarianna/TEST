@@ -23,9 +23,9 @@ public class ProductsUtils extends AbstractTest implements IDriverPool {
         int randomIndex = random.nextInt(products.size());
         String title = String.valueOf(products.get(randomIndex));
         HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
         ProductPageBase productPage = homePage.clickRandomProduct(title);
-        Assert.assertTrue(productPage.isProductPageOpen(), "Product isn't open");
+        Assert.assertTrue(productPage.isPageOpened(), "Product isn't open");
         productPage.addSeveralProducts(1);
         productPage.addToCart();
         return productPage.initPage(getDriver(), ProductPageBase.class);
@@ -42,9 +42,9 @@ public class ProductsUtils extends AbstractTest implements IDriverPool {
         int randomIndex = random.nextInt(products.size());
         String title = String.valueOf(products.get(randomIndex));
         HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
         ProductPageBase productPage = homePage.clickRandomProduct(title);
-        Assert.assertTrue(productPage.isProductPageOpen(), "Product isn't open");
+        Assert.assertTrue(productPage.isPageOpened(), "Product isn't open");
         productPage.addSeveralProducts(12);
         productPage.addToCart();
         return productPage.initPage(getDriver(), ProductPageBase.class);

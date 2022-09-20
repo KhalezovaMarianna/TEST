@@ -8,7 +8,7 @@ public abstract class ProductPageBase extends AbstractPage {
     public ProductPageBase(WebDriver driver) {
         super(driver);
     }
-    public abstract boolean isProductPageOpen();
+    public abstract boolean isPageOpened();
     public abstract void addProduct();
     public abstract void deleteSeveralProducts(int title);
 
@@ -20,4 +20,8 @@ public abstract class ProductPageBase extends AbstractPage {
     public abstract MorePageBase openMorePage();
 
     public abstract void addSeveralProducts(int i);
+
+    public abstract boolean checkChosenColor(String color);
+
+    public abstract boolean checkImageDownloading();
 }

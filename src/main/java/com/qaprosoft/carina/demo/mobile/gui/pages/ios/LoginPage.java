@@ -36,8 +36,8 @@ public class LoginPage extends LoginPageBase implements IMobileUtils {
     }
 
     @Override
-    public boolean isLoginPageOpen() {
-        return usernameForm.isElementPresent()&&passwordForm.isElementPresent()&&loginBtn.isElementPresent()&&title.isElementPresent();
+    public boolean isPageOpened() {
+        return usernameForm.isElementPresent() && passwordForm.isElementPresent() && loginBtn.isElementPresent() && title.isElementPresent();
     }
 
     public HomePageBase clickAutoBtn() {

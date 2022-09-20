@@ -88,4 +88,9 @@ public class CheckoutPage extends CheckoutPageBase implements IMobileUtils {
             return false;
         }
     }
+
+    @Override
+    public String checkEqualZipcode() {
+        return zipCodeForm.getText();
+    }
 }

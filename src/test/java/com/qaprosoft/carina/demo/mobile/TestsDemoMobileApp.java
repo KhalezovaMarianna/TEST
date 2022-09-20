@@ -23,26 +23,26 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         Assert.assertTrue(cartPage.isCartPageOpened(),
                 "Page isn't opened");
         cartPage.clickGoShoppingBtn();
-        Assert.assertTrue(homePage.isHomePageOpen(),
+        Assert.assertTrue(homePage.isPageOpened(),
                 "homePage isn't open");
         MorePageBase morePage = homePage.clickMoreBtn();
-        Assert.assertTrue(morePage.isMorePageOpen(),
+        Assert.assertTrue(morePage.isPageOpened(),
                 "morePage isn't open");
         AboutPageBase aboutPage = morePage.clickAboutBtn();
-        Assert.assertTrue(aboutPage.isAboutPageOpen(),
+        Assert.assertTrue(aboutPage.isPageOpened(),
                 "aboutPage isn't open");
         aboutPage.clickBackBtn();
-        Assert.assertFalse(homePage.isHomePageOpen(),
+        Assert.assertFalse(homePage.isPageOpened(),
                 "HOMEPage is not open");
         morePage.clickCatalogBtn();
-        Assert.assertTrue(homePage.isHomePageOpen(),
+        Assert.assertTrue(homePage.isPageOpened(),
                 "Catalog isn't open");
         ProductPageBase productPage = homePage.clickProductImg("3");
         productPage.addProduct();
-        Assert.assertFalse(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertFalse(homePage.isPageOpened(), "HomePage isn't open");
         morePage.clickCatalogBtn();
         homePage.clickProductByIndex("5");
-        Assert.assertTrue(productPage.isProductPageOpen(), "something don't go");
+        Assert.assertTrue(productPage.isPageOpened(), "something don't go");
 
     }
 
@@ -51,11 +51,11 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
     @TestLabel(name = "feature", value = {"mobile", "regression"})
     public void testRateProduct() {
         HomePage homePage = new HomePage(getDriver());
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
         ProductPage productPage = homePage.clickProductImg("3");
-        Assert.assertTrue(productPage.isProductPageOpen(), "right product isn't open");
+        Assert.assertTrue(productPage.isPageOpened(), "right product isn't open");
         productPage.rateProduct();
-        Assert.assertTrue(homePage.isHomePageOpen(), "rate isn't passed");
+        Assert.assertTrue(homePage.isPageOpened(), "rate isn't passed");
 
     }
 
@@ -74,9 +74,9 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         int randomIndex = random.nextInt(products.size());
         String title = String.valueOf(products.get(randomIndex));
         HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
         ProductPageBase productPage = homePage.clickRandomProduct(title);
-        Assert.assertTrue(productPage.isProductPageOpen(), "Product isn't open");
+        Assert.assertTrue(productPage.isPageOpened(), "Product isn't open");
         int amount = (int) (Math.random() * 10);
         productPage.addSeveralProducts(amount);
         productPage.addToCart();
@@ -101,9 +101,9 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         int randomIndex = random.nextInt(products.size());
         String title = String.valueOf(products.get(randomIndex));
         HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
         ProductPageBase productPage = homePage.clickRandomProduct(title);
-        Assert.assertTrue(productPage.isProductPageOpen(), "Product isn't open");
+        Assert.assertTrue(productPage.isPageOpened(), "Product isn't open");
         int amount = (int) (Math.random() * 10);
         productPage.addSeveralProducts(amount);
         productPage.addToCart();
@@ -127,14 +127,14 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         int randomIndex = random.nextInt(products.size());
         String title = String.valueOf(products.get(randomIndex));
         HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
         ProductPageBase productPage = homePage.clickRandomProduct(title);
-        Assert.assertTrue(productPage.isProductPageOpen(), "ProductPage isn't Open");
+        Assert.assertTrue(productPage.isPageOpened(), "ProductPage isn't Open");
         productPage.addToCart();
         MorePageBase morePage = productPage.openMorePage();
         PopUpResetPageBase resetPage = morePage.resetApp();
         resetPage.clickResetBtn();
-        Assert.assertTrue(morePage.isMorePageOpen(), "morePage isn't open");
+        Assert.assertTrue(morePage.isPageOpened(), "morePage isn't open");
         CartPageBase cartPage = morePage.openCart();
         Assert.assertTrue(cartPage.isBasketEmpty());
 
@@ -156,9 +156,9 @@ public class TestsDemoMobileApp implements IAbstractTest, IMobileUtils {
         int randomIndex = random.nextInt(products.size());
         String title = String.valueOf(products.get(randomIndex));
         HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        Assert.assertTrue(homePage.isHomePageOpen(), "HomePage isn't open");
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
         ProductPageBase productPage = homePage.clickRandomProduct(title);
-        Assert.assertTrue(productPage.isProductPageOpen(), "Product isn't open");
+        Assert.assertTrue(productPage.isPageOpened(), "Product isn't open");
         int amount = (int) (Math.random() * 10);
         productPage.addSeveralProducts(amount);
         productPage.deleteSeveralProducts(amount);
