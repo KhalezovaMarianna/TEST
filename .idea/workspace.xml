@@ -4,9 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added tests implementations for testcases for ios and android">
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="Structured project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/PopUpOrderPageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/AboutUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/LogInPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/PlaceOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/PopUpOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/PopUpOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/ResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/base/BaseDemoblazePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/base/BaseDemoblazePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/FooterMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/components/Footer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/HeaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/components/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/components/ProductContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/components/ProductContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/enums/Categories.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/enums/Categories.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/OpeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/services/OpeningService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ProductPageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/common/ProductPageBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/mobile/gui/pages/ios/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/mobile/AndroidOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/MyWebTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/MyWebTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,17 +111,35 @@
       <recent name="com.qaprosoft.carina.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MobileTests2">
-    <configuration name="MobileTests2" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.MyWebTest.testProductOnTheCart">
+    <configuration name="FirstTest.testPlacingOrder" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.FirstTest" />
+      <option name="METHOD_NAME" value="testPlacingOrder" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyWebTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.MyWebTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -105,17 +147,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileTests2.CheckAboutPageWork" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyWebTest.testMenuButtonsWorkCorrectly" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="CheckAboutPageWork" />
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.MyWebTest" />
+      <option name="METHOD_NAME" value="testMenuButtonsWorkCorrectly" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -123,17 +165,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileTests2.checkIsCorrectUI" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MyWebTest.testProductOnTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="checkIsCorrectUI" />
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.MyWebTest" />
+      <option name="METHOD_NAME" value="testProductOnTheCart" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,7 +183,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MobileTests2.testCheckAboutPageWork" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductDetailsTests.testImageDownload" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -150,26 +192,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="testCheckAboutPageWork" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MobileTests2.testFooterSocialNetworks" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.mobile.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.mobile" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.MobileTests2" />
-      <option name="METHOD_NAME" value="testFooterSocialNetworks" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.mobile.ProductDetailsTests" />
+      <option name="METHOD_NAME" value="testImageDownload" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -178,19 +202,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.MobileTests2" />
-      <item itemvalue="TestNG.MobileTests2.CheckAboutPageWork" />
-      <item itemvalue="TestNG.MobileTests2.checkIsCorrectUI" />
-      <item itemvalue="TestNG.MobileTests2.testCheckAboutPageWork" />
-      <item itemvalue="TestNG.MobileTests2.testFooterSocialNetworks" />
+      <item itemvalue="TestNG.MyWebTest.testProductOnTheCart" />
+      <item itemvalue="TestNG.FirstTest.testPlacingOrder" />
+      <item itemvalue="TestNG.MyWebTest" />
+      <item itemvalue="TestNG.MyWebTest.testMenuButtonsWorkCorrectly" />
+      <item itemvalue="TestNG.ProductDetailsTests.testImageDownload" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MobileTests2" />
-        <item itemvalue="TestNG.MobileTests2.testFooterSocialNetworks" />
-        <item itemvalue="TestNG.MobileTests2.CheckAboutPageWork" />
-        <item itemvalue="TestNG.MobileTests2.testCheckAboutPageWork" />
-        <item itemvalue="TestNG.MobileTests2.checkIsCorrectUI" />
+        <item itemvalue="TestNG.MyWebTest.testProductOnTheCart" />
+        <item itemvalue="TestNG.MyWebTest.testMenuButtonsWorkCorrectly" />
+        <item itemvalue="TestNG.FirstTest.testPlacingOrder" />
+        <item itemvalue="TestNG.MyWebTest" />
+        <item itemvalue="TestNG.ProductDetailsTests.testImageDownload" />
       </list>
     </recent_temporary>
   </component>
@@ -561,7 +585,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="rename methods" />
     <MESSAGE value="fixing bugs" />
     <MESSAGE value="added deleteProductByIndex method" />
     <MESSAGE value="added enum categories" />
@@ -586,7 +609,8 @@
     <MESSAGE value="added tests implementations for testcases" />
     <MESSAGE value="added tests implementations for testcases for ios" />
     <MESSAGE value="added tests implementations for testcases for ios and android" />
-    <option name="LAST_COMMIT_MESSAGE" value="added tests implementations for testcases for ios and android" />
+    <MESSAGE value="Structured project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Structured project" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

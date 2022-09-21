@@ -1,6 +1,6 @@
 package com.qaprosoft.carina.demo.gui.webPages.enums;
 
-import com.qaprosoft.carina.demo.gui.webPages.HomePage;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.HomePage;
 import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
 
 public enum Categories {

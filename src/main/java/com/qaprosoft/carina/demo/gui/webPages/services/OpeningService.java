@@ -1,19 +1,20 @@
 package com.qaprosoft.carina.demo.gui.webPages.services;
 
+import com.qaprosoft.carina.core.foundation.utils.factory.ICustomTypePageFactory;
 import com.qaprosoft.carina.core.foundation.webdriver.IDriverPool;
-import com.qaprosoft.carina.demo.gui.webPages.HomePage;
-import com.qaprosoft.carina.demo.gui.webPages.ProductPage;
+import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.ProductPageBase;
 import org.testng.Assert;
 
-public class OpeningService implements IDriverPool {
-    public ProductPage openProductByIndex() {
-        HomePage homePage = new HomePage(getDriver());
+public class OpeningService implements IDriverPool, ICustomTypePageFactory {
+    public ProductPageBase openProductByIndex() {
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         int index = (int) (Math.random() * 10);
-        ProductPage productPage = homePage.productOpenedByIndex(index);
+        ProductPageBase productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
-        return productPage.clickAddToCartButton();
+        return  productPage.clickAddToCartButton();
     }
 
 }

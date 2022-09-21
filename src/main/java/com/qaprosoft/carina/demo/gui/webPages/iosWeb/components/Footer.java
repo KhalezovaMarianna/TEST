@@ -1,13 +1,14 @@
-package com.qaprosoft.carina.demo.gui.webPages.components;
+package com.qaprosoft.carina.demo.gui.webPages.iosWeb.components;
 
+import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.core.gui.AbstractUIObject;
-import org.openqa.selenium.SearchContext;
+import com.qaprosoft.carina.demo.gui.webPages.common.AboutUsPageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class FooterMenu extends AbstractUIObject {
-
+@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = FooterBase.class)
+public class Footer extends FooterBase {
     @FindBy(xpath = "//*[@id=\"fotcont\"]/div[1]//h4/b")
     ExtendedWebElement aboutUsText;
 
@@ -18,9 +19,10 @@ public class FooterMenu extends AbstractUIObject {
     ExtendedWebElement label;
 
 
-    public FooterMenu(WebDriver driver, SearchContext searchContext) {
-        super(driver, searchContext);
+    public Footer(WebDriver driver) {
+        super(driver);
     }
+
 
     public String getTextAboutUs() {
         return aboutUsText.getText();

@@ -4,9 +4,12 @@ import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.core.foundation.utils.tag.Priority;
 import com.qaprosoft.carina.core.foundation.utils.tag.TestPriority;
-import com.qaprosoft.carina.demo.gui.webPages.*;
-import com.qaprosoft.carina.demo.gui.webPages.components.FooterMenu;
-import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
+import com.qaprosoft.carina.demo.gui.webPages.common.*;
+import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
+import com.qaprosoft.carina.demo.gui.webPages.iosWeb.HomePage;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.agent.core.annotation.TestRailCaseId;
 import com.zebrunner.agent.core.annotation.XrayTestKey;
@@ -34,23 +37,23 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testMenuButtonsWorkCorrectly() {
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
-        HeaderMenu headerMenu = homePage.getHeader();
+        HeaderBase header = homePage.getHeaderBase();
         Assert.assertFalse(homePage.isOpened(), "Home page is not opened");
-        ContactPage contactPage = headerMenu.goToContactPage();
+        ContactPageBase contactPage = header.goToContactPage();
         Assert.assertTrue(contactPage.isOpened(), "Contact page isn't open");
         contactPage.closePage();
-        AboutUsPage aboutUsPage = headerMenu.goToAboutPage();
+        AboutUsPageBase aboutUsPage = header.goToAboutPage();
         Assert.assertTrue(aboutUsPage.isOpened(), "About page isn't opened");
         aboutUsPage.clickCloseButton();
-        CartPage cartPage = headerMenu.openCart();
+        CartPageBase cartPage = header.openCart();
         Assert.assertTrue(cartPage.isOpened(), "Cart isn't present");
         cartPage.goToHome();
-        LogInPage logInPage = headerMenu.goToLoginPage();
+        LoginPageBase logInPage = header.goToLoginPage();
         Assert.assertTrue(logInPage.isOpened(), "Login page isn't opened");
         logInPage.clickCloseButton();
-        SignUpPage signUpPage = headerMenu.goToSignUpPage();
+        SignUpPageBase signUpPage = header.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "SignUp page isn't opened");
         signUpPage.clickCloseButton();
         Assert.assertTrue(homePage.isOpened(), "home page isn't return");
@@ -65,7 +68,7 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testSlidingWindow() {
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         homePage.clickRightArrowWindow();
@@ -83,18 +86,18 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testAddProductOnTheCart() {
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         int index = (int) (Math.random() * 10);
         pause(2);
-        ProductPage productPage = homePage.productOpenedByIndex(index);
+        ProductPageBase productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
         productPage.clickAddToCartButton();
         Assert.assertEquals(getDriver().switchTo().alert().getText(), "Product added", "product added successful.");
         getDriver().switchTo().alert().accept();
-        HeaderMenu headerMenu = productPage.getHeader();
-        CartPage cartPage = headerMenu.openCart();
+        HeaderBase header = productPage.getHeaderBase();
+        CartPageBase cartPage = header.openCart();
         pause(5);
         Assert.assertEquals(cartPage.getCartTotal(), cartPage.getProductPrice(), "Product isn't true on cart");
         cartPage.deleteAllProducts();
@@ -111,11 +114,11 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testRegistrationForm() {
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        HeaderMenu headerMenu = homePage.getHeader();
-        SignUpPage signUpPage = headerMenu.goToSignUpPage();
+        HeaderBase header = homePage.getHeaderBase();
+        SignUpPageBase signUpPage = header.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "sign Up page isn't open");
         signUpPage.typeName(R.TESTDATA.get("TEST_EMAIL"));
         signUpPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
@@ -132,11 +135,11 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testLogIn() {
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        HeaderMenu headerMenu = homePage.getHeader();
-        LogInPage logInPage = headerMenu.goToLoginPage();
+        HeaderBase header = homePage.getHeaderBase();
+        LoginPageBase logInPage = header.goToLoginPage();
         logInPage.typeUsername(R.TESTDATA.get("TEST_EMAIL"));
         logInPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
         homePage = logInPage.clickLoginBtn();
@@ -171,10 +174,10 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testMessageCanBeSend(){
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
-        HeaderMenu headerMenu = homePage.getHeader();
-        ContactPage contactPage = headerMenu.goToContactPage();
+        HeaderBase header = homePage.getHeaderBase();
+        ContactPageBase contactPage = header.goToContactPage();
         Assert.assertTrue(contactPage.isOpened(),"contact page isn't open");
         contactPage.typeName(R.TESTDATA.get("TEST_NAME"));
         contactPage.typeEmail(R.TESTDATA.get("TEST_EMAIL"));
@@ -195,12 +198,12 @@ public class MyWebTest extends BaseTest {
     public void testFooterIsFull(){
         String aboutUs= "About Us";
         String getInTouch = "Get in Touch";
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = initPage(getDriver(),HomePageBase.class);
         homePage.open();
-        FooterMenu footerMenu = homePage.getFooter();
-        Assert.assertEquals(footerMenu.getTextAboutUs(), aboutUs,"about us isn't found");
-        Assert.assertEquals(footerMenu.getTextGetInTouch(), getInTouch, "get in touch isn't find");
-        Assert.assertTrue(footerMenu.getTextLabel(),"label isn't find");
+        FooterBase footer = homePage.getFooterBase();
+        Assert.assertEquals(footer.getTextAboutUs(), aboutUs,"about us isn't found");
+        Assert.assertEquals(footer.getTextGetInTouch(), getInTouch, "get in touch isn't find");
+        Assert.assertTrue(footer.getTextLabel(),"label isn't find");
 
 
     }
@@ -213,11 +216,11 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testPlacingOrderIsNotSuccessful() {
-        ProductPage productPage = openingService.openProductByIndex();
-        HeaderMenu headerMenu = productPage.getHeader();
-        CartPage cartPage = headerMenu.openCart();
+        ProductPageBase productPage = openingService.openProductByIndex();
+        HeaderBase header = productPage.getHeaderBase();
+        CartPageBase cartPage = header.openCart();
         Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
-        PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
+        PlaceOrderPageBase placeOrderPage = cartPage.clickPlaceOrderBtn();
         placeOrderPage.clickSendOrderWithEmptyForms();
         Assert.assertTrue(placeOrderPage.isOpened(),"order is successful");
     }
@@ -229,18 +232,18 @@ public class MyWebTest extends BaseTest {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testProductOnTheCart() {
-        HomePage homePage = new HomePage(getDriver());
+        HomePageBase homePage = new HomePage(getDriver());;
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         int index = (int) (Math.random() * 10);
         pause(2);
-        ProductPage productPage = homePage.productOpenedByIndex(index);
+        ProductPageBase productPage = homePage.productOpenedByIndex(index);
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
         productPage.clickAddToCartButton();
         Assert.assertEquals(getDriver().switchTo().alert().getText(), "Product added", "product added successful.");
         getDriver().switchTo().alert().accept();
-        HeaderMenu headerMenu = productPage.getHeader();
-        CartPage cartPage = headerMenu.openCart();
+        HeaderBase header = productPage.getHeaderBase();
+        CartPageBase cartPage = header.openCart();
         pause(5);
         Assert.assertEquals(cartPage.getCartTotal(), cartPage.getProductPrice(), "Product isn't true on cart");
         cartPage.deleteProductByIndex("1");

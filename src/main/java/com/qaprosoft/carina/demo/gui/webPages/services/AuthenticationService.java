@@ -2,10 +2,12 @@ package com.qaprosoft.carina.demo.gui.webPages.services;
 
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.webdriver.IDriverPool;
-import com.qaprosoft.carina.demo.gui.webPages.HomePage;
-import com.qaprosoft.carina.demo.gui.webPages.LogInPage;
-import com.qaprosoft.carina.demo.gui.webPages.SignUpPage;
-import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
+import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.LoginPageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.SignUpPageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.HomePage;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
 import org.testng.Assert;
 
 public class AuthenticationService implements IDriverPool {
@@ -18,19 +20,19 @@ public class AuthenticationService implements IDriverPool {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        HeaderMenu headerMenu = homePage.getHeader();
-        SignUpPage signUpPage = headerMenu.goToSignUpPage();
+        HeaderBase header = homePage.getHeaderBase();
+        SignUpPageBase signUpPage = header.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "sign Up page isn't open");
         signUpPage.typeName(USERNAME);
         signUpPage.typePassword(PASSWORD);
     }
 
-    public HomePage login() {
+    public HomePageBase login() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        HeaderMenu headerMenu = homePage.getHeader();
-        LogInPage logInPage = headerMenu.goToLoginPage();
+        HeaderBase header = homePage.getHeaderBase();
+        LoginPageBase logInPage = header.goToLoginPage();
         logInPage.typeUsername(USERNAME);
         logInPage.typePassword(PASSWORD);
         return logInPage.clickLoginBtn();

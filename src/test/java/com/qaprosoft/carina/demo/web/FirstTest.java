@@ -4,8 +4,9 @@ import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.qaprosoft.carina.core.foundation.utils.tag.Priority;
 import com.qaprosoft.carina.core.foundation.utils.tag.TestPriority;
-import com.qaprosoft.carina.demo.gui.webPages.*;
-import com.qaprosoft.carina.demo.gui.webPages.components.HeaderMenu;
+import com.qaprosoft.carina.demo.gui.webPages.common.*;
+import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.agent.core.annotation.TestRailCaseId;
 import com.zebrunner.agent.core.registrar.Zephyr;
@@ -35,18 +36,18 @@ public void setUp() {
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testPlacingOrder() {
-        ProductPage productPage = openingService.openProductByIndex();
-        HeaderMenu headerMenu = productPage.getHeader();
-        CartPage cartPage = headerMenu.openCart();
+        ProductPageBase productPage = openingService.openProductByIndex();
+        HeaderBase header = productPage.getHeaderBase();
+        CartPageBase cartPage = header.openCart();
         Assert.assertFalse(cartPage.isOpened(), "cart isn't open");
-        PlaceOrderPage placeOrderPage = cartPage.clickPlaceOrderBtn();
+        PlaceOrderPageBase placeOrderPage = cartPage.clickPlaceOrderBtn();
         placeOrderPage.filledNameForm(R.TESTDATA.get("TEST_NAME"));
         placeOrderPage.filledCartForm(R.TESTDATA.get("TEST_CARD"));
-        PopUpOrderPage popUpOrderPage = placeOrderPage.clickSendOrderButton();
+        PopUpOrderPageBase popUpOrderPage = placeOrderPage.clickSendOrderButton();
         Assert.assertTrue(popUpOrderPage.isOpened(), "Order isn't successful");
-        HomePage homePage = popUpOrderPage.closePage();
+        HomePageBase homePage = popUpOrderPage.closePage();
         Assert.assertTrue(homePage.isOpened(),"home page isn't open");
-        headerMenu.openCart();
+        header.openCart();
         Assert.assertTrue(cartPage.isCartEmpty(),"cart isn't empty");
 
     }

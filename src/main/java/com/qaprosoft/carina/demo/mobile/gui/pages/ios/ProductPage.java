@@ -6,16 +6,12 @@ import com.qaprosoft.carina.core.foundation.webdriver.locator.ExtendedFindBy;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.CartPageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.MorePageBase;
 import com.qaprosoft.carina.demo.mobile.gui.pages.common.ProductPageBase;
+import com.qaprosoft.carina.demo.mobile.gui.pages.common.utils.ColorUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 @DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = ProductPageBase.class)
 public class ProductPage extends ProductPageBase {
@@ -65,13 +61,9 @@ public class ProductPage extends ProductPageBase {
         super(driver);
     }
 
-    @Override
-    public boolean isOpened() {
-        return false;
-    }
 
     @Override
-    public boolean isPageOpened() {
+    public boolean isOpened() {
         return addToCartBtn.isElementPresent();
     }
 
@@ -147,30 +139,15 @@ public class ProductPage extends ProductPageBase {
     }
 
 
+    public ExtendedWebElement getImage() {
+        return image;
+    }
+
     @Override
     public boolean checkImageDownloading() {
-        int centerx = 173;
-        int centerY = 356;
-
-        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-        BufferedImage image = null;
-        try {
-            image = ImageIO.read(scrFile);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        int clr = image.getRGB(centerx, centerY);
-        int red = clr & 0x00ff0000;
-        int green = clr & 0x0000ff00;
-        int blue = clr & 0x000000ff;
-        if (red > 0 && green > 0 && blue > 0) {
-            LOGGER.info("Red Color value = " + red);
-            LOGGER.info("Green Color value = " + green);
-            LOGGER.info("Blue Color value = " + blue);
+        if (ColorUtils.colorOptions(getDriver(), image)) {
             return true;
         } else {
-            LOGGER.info("Image isn't download");
             return false;
         }
     }

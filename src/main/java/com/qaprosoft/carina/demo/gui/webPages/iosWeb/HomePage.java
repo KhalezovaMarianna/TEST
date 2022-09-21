@@ -1,15 +1,25 @@
-package com.qaprosoft.carina.demo.gui.webPages;
+package com.qaprosoft.carina.demo.gui.webPages.iosWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.R;
+import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
+import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.ProductPageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePage extends BaseDemoblazePage {
-
-    @FindBy(xpath = "//*[@id=\"cat\"]")
+@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = HomePageBase.class)
+public class HomePage extends HomePageBase {
+    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul")
+    private Header header;
+    @FindBy(xpath = "//*[@id=\"footc\"]")
+    private Footer footer;
+    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"CATEGORIES\"]")
     ExtendedWebElement categories;
 
     @FindBy(css = ".list-group-item")
@@ -29,7 +39,6 @@ public class HomePage extends BaseDemoblazePage {
 
     @FindBy(xpath = "//a[text()=\"Welcome %s\"]")
     ExtendedWebElement welcomeText;
-
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -39,31 +48,39 @@ public class HomePage extends BaseDemoblazePage {
         return categories.isElementPresent();
     }
 
+    @Override
     public void clickRightArrowWindow() {
         rightArrow.click();
     }
 
+    @Override
     public void clickLeftArrowWindow() {
         leftArrow.click();
     }
 
+    @Override
     public boolean isImageShow(int index) {
         return slideImg.format(index).isElementPresent();
     }
 
-    public ProductPage productOpenedByIndex(int index) {
+    @Override
+    public ProductPageBase productOpenedByIndex(int index) {
         product.format(String.valueOf(index)).click();
-        return new ProductPage(getDriver());
+        return initPage(getDriver(), ProductPageBase.class);
     }
 
+    @Override
     public String getUserName() {
         return StringUtils.substringAfter(welcomeText.format(R.TESTDATA.get("TEST_EMAIL")).getText(), " ");
     }
 
-    public ResultPage searchCategories() {
-        categories.getText();
-        return new ResultPage(getDriver());
+    @Override
+    public HeaderBase getHeaderBase() {
+        return header;
+    }
+
+    @Override
+    public FooterBase getFooterBase() {
+        return footer;
     }
 }
-
-
