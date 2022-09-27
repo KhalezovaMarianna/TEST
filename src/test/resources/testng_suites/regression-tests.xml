@@ -1,0 +1,46 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="web tests" parallel="tests">
+
+    <parameter name="suiteOwner" value="marianna"/>
+    <parameter name="jenkinsJobType" value="web"/>
+    <parameter name="jenkinsEnvironments" value="DEMO"/>
+    <parameter name="jenkinsJobExecutionMode" value="continue"/>
+
+    <test name="Other mobile tests">
+        <classes>
+            <class name="com.qaprosoft.carina.demo.web.OtherTests">
+                <methods>
+                    <include name="testSlidingWindow"/>
+                    <include name="testMessageCanBeSend"/>
+                    <include name="testFooterIsFull"/>
+                    <include name="testMenuButtonsWorkCorrectly"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Cart mobile tests">
+        <classes>
+            <class name="com.qaprosoft.carina.demo.web.CartTests">
+                <methods>
+                    <include name="testPlacingOrderNegative"/>
+                    <include name="testPlacingOrder"/>
+                    <include name="testProductOnTheCart"/>
+                    <include name="testAddProductOnTheCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Authorization tests">
+        <classes>
+            <class name="com.qaprosoft.carina.demo.web.AuthorizationTests">
+                <methods>
+                    <include name="testRegistrationForm"/>
+                    <include name="testLogIn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
