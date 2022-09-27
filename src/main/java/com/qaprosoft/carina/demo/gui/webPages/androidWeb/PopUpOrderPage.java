@@ -1,41 +1,36 @@
-package com.qaprosoft.carina.demo.gui.webPages.iosWeb;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.demo.gui.webPages.common.AboutUsPageBase;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Header;
 import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
+import com.qaprosoft.carina.demo.gui.webPages.common.PopUpOrderPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = AboutUsPageBase.class)
-
-public class AboutUsPage extends AboutUsPageBase {
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = PopUpOrderPageBase.class)
+public class PopUpOrderPage extends PopUpOrderPageBase{
 
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
-
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
-    @FindBy(xpath = "//*[@id=\"videoModalLabel\"]")
-    ExtendedWebElement aboutUsPage;
+    @FindBy(xpath = "/html/body/div[10]/div[7]/div/button")
+    ExtendedWebElement okBtn;
 
-    @FindBy(xpath = "//*[@id=\"videoModal\"]/div/div/div/button")
-    ExtendedWebElement closeBtn;
+    @FindBy(xpath = "//div[10]/h2")
+    ExtendedWebElement title;
 
-    public AboutUsPage(WebDriver driver) {
+    public PopUpOrderPage(WebDriver driver) {
         super(driver);
     }
 
-
     @Override
     public boolean isOpened() {
-        return aboutUsPage.isElementPresent();
+        return title.isElementPresent();
     }
 
     @Override
@@ -49,8 +44,8 @@ public class AboutUsPage extends AboutUsPageBase {
     }
 
     @Override
-    public HomePageBase clickCloseButton() {
-        closeBtn.click();
+    public HomePageBase closePage() {
+        okBtn.click();
         return initPage(getDriver(), HomePageBase.class);
     }
 }

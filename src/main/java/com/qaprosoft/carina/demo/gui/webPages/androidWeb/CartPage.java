@@ -1,20 +1,18 @@
-package com.qaprosoft.carina.demo.gui.webPages.iosWeb;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Header;
 import com.qaprosoft.carina.demo.gui.webPages.common.CartPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.PlaceOrderPageBase;
-import com.qaprosoft.carina.demo.gui.webPages.common.SignUpPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = CartPageBase.class)
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = CartPageBase.class)
 public class CartPage extends CartPageBase {
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
@@ -101,3 +99,4 @@ public class CartPage extends CartPageBase {
         return initPage(getDriver(), PlaceOrderPageBase.class);
     }
 }
+

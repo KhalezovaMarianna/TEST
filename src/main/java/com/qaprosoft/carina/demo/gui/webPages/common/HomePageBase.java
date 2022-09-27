@@ -1,13 +1,11 @@
 package com.qaprosoft.carina.demo.gui.webPages.common;
 
-import com.qaprosoft.carina.core.foundation.utils.factory.ICustomTypePageFactory;
-import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
-import org.openqa.selenium.SearchContext;
+import com.qaprosoft.carina.demo.gui.webPages.common.base.BaseDemoblazePage;
 import org.openqa.selenium.WebDriver;
 
-public abstract class HomePageBase extends BaseDemoblazePage implements ICustomTypePageFactory {
-    public HomePageBase(WebDriver driver, SearchContext searchContext) {
-        super(driver, searchContext);
+public abstract class HomePageBase extends BaseDemoblazePage  {
+    public HomePageBase(WebDriver driver) {
+        super(driver);
     }
 
     @Override

@@ -1,48 +1,46 @@
-package com.qaprosoft.carina.demo.gui.webPages.iosWeb;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Header;
 import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
-import com.qaprosoft.carina.demo.gui.webPages.common.LoginPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.SignUpPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = LoginPageBase.class)
-public class LoginPage extends LoginPageBase{
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = SignUpPageBase.class)
+public class SignUpPage extends SignUpPageBase {
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
+
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
-    @FindBy(xpath = "//*[@id=\"logInModalLabel\"]")
-    ExtendedWebElement loginPage;
 
-    @FindBy(xpath = "//*[@id=\"logInModal\"]/div/div/div[1]/button")
-    ExtendedWebElement closeBtn;
+    @FindBy(xpath = "//*[@id=\"signInModalLabel\"]")
+    ExtendedWebElement signUpPage;
 
-    @FindBy(xpath = "//*[@id=\"loginusername\"]")
+    @FindBy(xpath = "//*[@id=\"sign-username\"]")
     ExtendedWebElement usernameForm;
 
-    @FindBy(xpath = "//*[@id=\"loginpassword\"]")
+    @FindBy(xpath = "//*[@id=\"sign-password\"]")
     ExtendedWebElement passwordForm;
 
-    @FindBy(xpath = "//*[@id=\"logInModal\"]//button[2]")
-    ExtendedWebElement loginBtn;
+    @FindBy(xpath = "//*[@id=\"signInModal\"]/div/div/div[3]/button[2]")
+    ExtendedWebElement signUpBtn;
 
-    public LoginPage(WebDriver driver) {
+    @FindBy(xpath = "//*[@id=\"signInModal\"]//div[1]/button")
+    ExtendedWebElement closeBtn;
+
+    public SignUpPage(WebDriver driver) {
         super(driver);
     }
 
-
-
     @Override
     public boolean isOpened() {
-        return loginPage.isElementPresent();
+        return signUpPage.isElementPresent();
     }
 
     @Override
@@ -62,7 +60,7 @@ public class LoginPage extends LoginPageBase{
     }
 
     @Override
-    public void typeUsername(String email) {
+    public void typeName(String email) {
         usernameForm.type(email);
     }
 
@@ -72,8 +70,9 @@ public class LoginPage extends LoginPageBase{
     }
 
     @Override
-    public HomePageBase clickLoginBtn() {
-        loginBtn.click();
-        return initPage(getDriver(), HomePageBase.class);
+    public void clickSignUpBtn() {
+        signUpBtn.click();
     }
+
 }
+

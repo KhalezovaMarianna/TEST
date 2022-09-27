@@ -1,14 +1,13 @@
-package com.qaprosoft.carina.demo.gui.webPages.iosWeb.components;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb.components;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.demo.gui.webPages.common.AboutUsPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = FooterBase.class)
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = FooterBase.class)
 public class Footer extends FooterBase {
     @FindBy(xpath = "//*[@id=\"fotcont\"]/div[1]//h4/b")
     ExtendedWebElement aboutUsText;
@@ -40,3 +39,4 @@ public class Footer extends FooterBase {
     }
 
 }
+

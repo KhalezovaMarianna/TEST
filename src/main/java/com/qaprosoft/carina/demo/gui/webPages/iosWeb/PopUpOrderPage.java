@@ -6,14 +6,15 @@ import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.PopUpOrderPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
+
+import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = PopUpOrderPageBase.class)
 public class PopUpOrderPage extends PopUpOrderPageBase{
-    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul")
+    @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
@@ -28,18 +29,18 @@ public class PopUpOrderPage extends PopUpOrderPageBase{
     }
 
     @Override
-    public HeaderBase getHeaderBase() {
+    public boolean isOpened() {
+        return title.isElementPresent();
+    }
+
+    @Override
+    public HeaderBase getHeader() {
         return header;
     }
 
     @Override
-    public FooterBase getFooterBase() {
+    public FooterBase getFooter() {
         return footer;
-    }
-
-    @Override
-    public boolean isOpened() {
-        return title.isElementPresent();
     }
 
     @Override

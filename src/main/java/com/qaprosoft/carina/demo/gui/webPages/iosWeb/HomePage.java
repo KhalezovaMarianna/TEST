@@ -7,19 +7,21 @@ import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.ProductPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
+
+import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = HomePageBase.class)
 public class HomePage extends HomePageBase {
-    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul")
+    @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
+
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
-    @FindBy(xpath = "//XCUIElementTypeStaticText[@name=\"CATEGORIES\"]")
+    @FindBy(xpath = "//*[@id=\"cat\"]")
     ExtendedWebElement categories;
 
     @FindBy(css = ".list-group-item")
@@ -45,7 +47,17 @@ public class HomePage extends HomePageBase {
 
     @Override
     public boolean isOpened() {
-        return categories.isElementPresent();
+        return categoryNameTitle.isElementPresent();
+    }
+
+    @Override
+    public HeaderBase getHeader() {
+        return header;
+    }
+
+    @Override
+    public FooterBase getFooter() {
+        return footer;
     }
 
     @Override
@@ -74,13 +86,5 @@ public class HomePage extends HomePageBase {
         return StringUtils.substringAfter(welcomeText.format(R.TESTDATA.get("TEST_EMAIL")).getText(), " ");
     }
 
-    @Override
-    public HeaderBase getHeaderBase() {
-        return header;
-    }
 
-    @Override
-    public FooterBase getFooterBase() {
-        return footer;
-    }
 }

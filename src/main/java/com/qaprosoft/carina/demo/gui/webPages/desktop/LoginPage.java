@@ -1,19 +1,17 @@
-package com.qaprosoft.carina.demo.gui.webPages.iosWeb;
+package com.qaprosoft.carina.demo.gui.webPages.desktop;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.LoginPageBase;
-import com.qaprosoft.carina.demo.gui.webPages.common.SignUpPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = LoginPageBase.class)
+@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = LoginPageBase.class)
 public class LoginPage extends LoginPageBase{
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;

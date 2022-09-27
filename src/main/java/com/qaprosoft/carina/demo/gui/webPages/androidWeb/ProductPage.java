@@ -1,19 +1,18 @@
-package com.qaprosoft.carina.demo.gui.webPages.iosWeb;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Header;
 import com.qaprosoft.carina.demo.gui.webPages.common.ProductPageBase;
-import com.qaprosoft.carina.demo.gui.webPages.common.SignUpPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = ProductPageBase.class)
-public class ProductPage extends ProductPageBase{
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = ProductPageBase.class)
+public class ProductPage extends ProductPageBase {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
     @FindBy(xpath = "//*[@id=\"footc\"]")

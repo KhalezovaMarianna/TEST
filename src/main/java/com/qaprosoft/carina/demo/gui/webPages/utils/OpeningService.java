@@ -1,4 +1,4 @@
-package com.qaprosoft.carina.demo.gui.webPages.services;
+package com.qaprosoft.carina.demo.gui.webPages.utils;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.ICustomTypePageFactory;
 import com.qaprosoft.carina.core.foundation.webdriver.IDriverPool;

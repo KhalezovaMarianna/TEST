@@ -1,12 +1,11 @@
 package com.qaprosoft.carina.demo.gui.webPages.common;
 
-import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
-import org.openqa.selenium.SearchContext;
+import com.qaprosoft.carina.demo.gui.webPages.common.base.BaseDemoblazePage;
 import org.openqa.selenium.WebDriver;
 
 public abstract class PlaceOrderPageBase extends BaseDemoblazePage {
-    public PlaceOrderPageBase(WebDriver driver, SearchContext searchContext) {
-        super(driver, searchContext);
+    public PlaceOrderPageBase(WebDriver driver) {
+        super(driver);
     }
 
     @Override

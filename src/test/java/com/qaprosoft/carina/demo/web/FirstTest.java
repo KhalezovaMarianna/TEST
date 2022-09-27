@@ -6,7 +6,7 @@ import com.qaprosoft.carina.core.foundation.utils.tag.Priority;
 import com.qaprosoft.carina.core.foundation.utils.tag.TestPriority;
 import com.qaprosoft.carina.demo.gui.webPages.common.*;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
+import com.qaprosoft.carina.demo.gui.webPages.utils.MobileUtils;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import com.zebrunner.agent.core.annotation.TestRailCaseId;
 import com.zebrunner.agent.core.registrar.Zephyr;
@@ -15,7 +15,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class FirstTest extends BaseTest {
-//    @BeforeSuite
+    //    @BeforeSuite
 //    public void setUp() {
 //        TestRail.setSuiteId("S17");
 //        TestRail.setRunName("Best run ever");
@@ -25,31 +25,41 @@ public class FirstTest extends BaseTest {
 //public void setUp() {
 //    Xray.setExecutionKey("QAL-60");
 //}
-@BeforeSuite
-public void setUp() {
-    Zephyr.setTestCycleKey("QAL-60");
-    Zephyr.setJiraProjectKey("QAL");
-}
+    @BeforeSuite
+    public void setUp() {
+        Zephyr.setTestCycleKey("QAL-60");
+        Zephyr.setJiraProjectKey("QAL");
+    }
+
     @Test()
     @TestRailCaseId("C44")
     @MethodOwner(owner = "marianna_khalezova")
     @TestPriority(Priority.P1)
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testPlacingOrder() {
-        ProductPageBase productPage = openingService.openProductByIndex();
-        HeaderBase header = productPage.getHeaderBase();
+        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        homePage.open();
+        Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
+        int index = (int) (Math.random() * 10);
+        ProductPageBase productPage = homePage.productOpenedByIndex(index);
+        Assert.assertTrue(productPage.isOpened(), "product isn't opened");
+        productPage.clickAddToCartButton();
+        HeaderBase header = productPage.getHeader();
         CartPageBase cartPage = header.openCart();
-        Assert.assertFalse(cartPage.isOpened(), "cart isn't open");
+        Assert.assertTrue(cartPage.isOpened(), "cart isn't open");
         PlaceOrderPageBase placeOrderPage = cartPage.clickPlaceOrderBtn();
         placeOrderPage.filledNameForm(R.TESTDATA.get("TEST_NAME"));
         placeOrderPage.filledCartForm(R.TESTDATA.get("TEST_CARD"));
         PopUpOrderPageBase popUpOrderPage = placeOrderPage.clickSendOrderButton();
         Assert.assertTrue(popUpOrderPage.isOpened(), "Order isn't successful");
-        HomePageBase homePage = popUpOrderPage.closePage();
-        Assert.assertTrue(homePage.isOpened(),"home page isn't open");
-        header.openCart();
-        Assert.assertTrue(cartPage.isCartEmpty(),"cart isn't empty");
-
+        popUpOrderPage.closePage();
+        if (MobileUtils.isIOS()) {
+            popUpOrderPage.isOpened();
+        } else {
+            Assert.assertFalse(homePage.isOpened(), "home page isn't open");
+            header.openCart();
+            Assert.assertTrue(cartPage.isCartEmpty(), "cart isn't empty");
+        }
     }
 
 }

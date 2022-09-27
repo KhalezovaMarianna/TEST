@@ -4,6 +4,7 @@ import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.demo.gui.webPages.common.*;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
+import com.qaprosoft.carina.demo.gui.webPages.iosWeb.*;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -26,33 +27,42 @@ public class Header extends HeaderBase {
     ExtendedWebElement cartBtn;
 
 
-    public Header(WebDriver driver, SearchContext searchContext) {
-        super(driver, searchContext);
+    public Header(WebDriver driver,SearchContext searchContext) {
+        super(driver,searchContext);
     }
 
 
     public CartPageBase openCart() {
         cartBtn.click();
-        return initPage(getDriver(), CartPageBase.class);
+        return initPage(getDriver(),CartPageBase.class);
     }
 
+    @Override
+    public boolean headerIsPresented() {
+        return signUpBtn.isElementPresent();
+    }
+
+    @Override
     public AboutUsPageBase goToAboutPage() {
         aboutUsBtn.click();
-        return initPage(getDriver(), AboutUsPageBase.class);
+        return initPage(getDriver(),AboutUsPageBase.class);
     }
 
+    @Override
     public ContactPageBase goToContactPage() {
         contactBtn.click();
-        return initPage(getDriver(), ContactPageBase.class);
+        return initPage(getDriver(),ContactPageBase.class);
     }
 
+    @Override
     public LoginPageBase goToLoginPage() {
         loginBtn.click();
-        return initPage(getDriver(), LoginPageBase.class);
+        return initPage(getDriver(),LoginPageBase.class);
     }
 
+    @Override
     public SignUpPageBase goToSignUpPage() {
         signUpBtn.click();
-        return initPage(getDriver(), SignUpPageBase.class);
+        return initPage(getDriver(),SignUpPageBase.class);
     }
 }

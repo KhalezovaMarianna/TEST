@@ -1,19 +1,19 @@
-package com.qaprosoft.carina.demo.gui.webPages.desktop;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Header;
 import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.ProductPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = HomePageBase.class)
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = HomePageBase.class)
 public class HomePage extends HomePageBase {
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
@@ -40,6 +40,7 @@ public class HomePage extends HomePageBase {
 
     @FindBy(xpath = "//a[text()=\"Welcome %s\"]")
     ExtendedWebElement welcomeText;
+
     public HomePage(WebDriver driver) {
         super(driver);
     }

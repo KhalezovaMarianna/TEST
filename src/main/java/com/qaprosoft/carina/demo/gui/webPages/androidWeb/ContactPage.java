@@ -1,20 +1,19 @@
-package com.qaprosoft.carina.demo.gui.webPages.iosWeb;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Header;
 import com.qaprosoft.carina.demo.gui.webPages.common.ContactPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
-import com.qaprosoft.carina.demo.gui.webPages.common.SignUpPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.iosWeb.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.IOS_PHONE, parentClass = ContactPageBase.class)
-public class ContactPage extends ContactPageBase{
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = ContactPageBase.class)
+public class ContactPage extends ContactPageBase {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
 
@@ -61,7 +60,7 @@ public class ContactPage extends ContactPageBase{
     @Override
     public HomePageBase closePage() {
         closeBtn.click();
-        return initPage(getDriver(),HomePageBase.class);
+        return initPage(getDriver(), HomePageBase.class);
     }
 
     @Override
@@ -82,6 +81,6 @@ public class ContactPage extends ContactPageBase{
     @Override
     public HomePageBase clickSendMessageButton() {
         sendBtn.click();
-        return initPage(getDriver(),HomePageBase.class);
+        return initPage(getDriver(), HomePageBase.class);
     }
 }

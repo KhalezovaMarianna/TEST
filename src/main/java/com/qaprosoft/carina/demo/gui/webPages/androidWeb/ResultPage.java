@@ -1,32 +1,35 @@
-package com.qaprosoft.carina.demo.gui.webPages.desktop;
+package com.qaprosoft.carina.demo.gui.webPages.androidWeb;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.demo.gui.webPages.common.ProductPageBase;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Footer;
+import com.qaprosoft.carina.demo.gui.webPages.androidWeb.components.Header;
+import com.qaprosoft.carina.demo.gui.webPages.common.ResultPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
-
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Footer;
-import com.qaprosoft.carina.demo.gui.webPages.desktop.components.Header;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
-@DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = ProductPageBase.class)
-public class ProductPage extends ProductPageBase{
+@DeviceType(pageType = DeviceType.Type.ANDROID_PHONE, parentClass = ResultPageBase.class)
+public class ResultPage extends ResultPageBase{
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
+
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
-    @FindBy(xpath = "//*[@id=\"tbodyid\"]//a")
-    ExtendedWebElement addToCartBtn;
 
-    public ProductPage(WebDriver driver) {
+    @FindBy(xpath = "//*[@id=\"cat\"]")
+    private ExtendedWebElement categories;
+
+
+    public ResultPage(WebDriver driver) {
         super(driver);
     }
 
     @Override
     public boolean isOpened() {
-        return addToCartBtn.isElementPresent();
+        return categories.isElementPresent();
     }
 
     @Override
@@ -39,10 +42,6 @@ public class ProductPage extends ProductPageBase{
         return footer;
     }
 
-    @Override
-    public ProductPageBase clickAddToCartButton() {
-        addToCartBtn.click();
-        return initPage(getDriver(), ProductPageBase.class);
-    }
+
 
 }
