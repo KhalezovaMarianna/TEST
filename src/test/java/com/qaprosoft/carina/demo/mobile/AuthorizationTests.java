@@ -11,7 +11,7 @@ import com.zebrunner.agent.core.annotation.TestLabel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class SignInTests extends BaseTest implements IMobileUtils {
+public class AuthorizationTests extends BaseTest implements IMobileUtils {
     @Test
     @MethodOwner(owner = "Marianna")
     @TestLabel(name = "feature", value = {"mobile", "regression"})
@@ -43,7 +43,6 @@ public class SignInTests extends BaseTest implements IMobileUtils {
             loginPage.typeUsernameForm(R.TESTDATA.get("TEST_EMAIL"));
             loginPage.typePassword(R.TESTDATA.get("TEST_PASSWORD"));
             loginPage.clickLoginBtn();
-
         }
         Assert.assertTrue(homePage.isOpened());
     }

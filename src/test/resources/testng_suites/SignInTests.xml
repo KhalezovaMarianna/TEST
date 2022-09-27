@@ -9,7 +9,7 @@
 
     <test name="SignIn Tests">
         <classes>
-            <class name="com.qaprosoft.carina.demo.mobile.SignInTests" />
+            <class name="com.qaprosoft.carina.demo.mobile.AuthorizationTests" />
         </classes>
     </test>
 

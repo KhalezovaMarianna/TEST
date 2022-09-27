@@ -36,7 +36,6 @@ public class CartTests extends BaseTest implements IMobileUtils {
         productPage.addToCart();
         CartPageBase cartPage = productPage.goToCart();
         Assert.assertTrue(cartPage.checkTotalCountEqualCountImage(), "The picture does not match the quantity");
-
     }
 
     @Test
@@ -97,7 +96,6 @@ public class CartTests extends BaseTest implements IMobileUtils {
         checkoutPage.clickNameForm();
         checkoutPage.closeKeyboard();
         Assert.assertFalse(checkoutPage.isOpened(), "Keyboard is closed");
-
     }
 
     @Test
@@ -127,8 +125,6 @@ public class CartTests extends BaseTest implements IMobileUtils {
         Assert.assertTrue(checkoutPage.isOpened(), "Checkout page isn't open");
         checkoutPage.clickPaymentBtn();
         Assert.assertTrue(checkoutPage.checkPaymentFailed(), "Payment is success");
-
-
     }
 
     @Test
@@ -155,8 +151,9 @@ public class CartTests extends BaseTest implements IMobileUtils {
         CartPageBase cartPage = productPage.goToCart();
         double teoreticFinalCost = amount * cartPage.costOfProduct();
         Assert.assertEquals(teoreticFinalCost, cartPage.endSumComparison(), "Sum isn't increase");
-
     }
+
+
     @Test
     @MethodOwner(owner = "qpsdemo")
     @TestLabel(name = "feature", value = {"mobile", "regression"})
@@ -182,9 +179,9 @@ public class CartTests extends BaseTest implements IMobileUtils {
         Assert.assertTrue(morePage.isPageOpened(), "morePage isn't open");
         CartPageBase cartPage = morePage.openCart();
         Assert.assertTrue(cartPage.isBasketEmpty());
-
-
     }
+
+
     @Test
     @MethodOwner(owner = "qpsdemo")
     @TestLabel(name = "feature", value = {"mobile", "regression"})
@@ -209,7 +206,31 @@ public class CartTests extends BaseTest implements IMobileUtils {
         productPage.addToCart();
         CartPageBase cartPageBase = productPage.goToCart();
         Assert.assertTrue(cartPageBase.checkOneProductOnCart(), "cart hasn't one product");
+    }
 
-
+    @Test
+    @MethodOwner(owner = "qpsdemo")
+    @TestLabel(name = "feature", value = {"mobile", "regression"})
+    public void testRemoveItemFromCart() {
+        List<String> products = new ArrayList<>();
+        products.add("Sauce Lab Back Packs");
+        products.add("Sauce Lab Bike Light");
+        products.add("Sauce Lab Bolt T-Shirt");
+        products.add("Sauce Lab Fleece T-Shirt");
+        products.add("Sauce Lab Onesie");
+        products.add("Test");
+        var random = new SecureRandom();
+        int randomIndex = random.nextInt(products.size());
+        String title = String.valueOf(products.get(randomIndex));
+        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        Assert.assertTrue(homePage.isPageOpened(), "HomePage isn't open");
+        ProductPageBase productPage = homePage.clickRandomProduct(title);
+        Assert.assertTrue(productPage.isPageOpened(), "Product isn't open");
+        int amount = (int) (Math.random() * 10);
+        productPage.addSeveralProducts(amount);
+        productPage.addToCart();
+        CartPageBase cartPage = productPage.goToCart();
+        cartPage.removeItemFromCart();
+        Assert.assertTrue(cartPage.isCartEmpty(), "Cart isn't empty");
     }
 }

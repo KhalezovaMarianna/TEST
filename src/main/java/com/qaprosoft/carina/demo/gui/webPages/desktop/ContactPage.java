@@ -2,7 +2,6 @@ package com.qaprosoft.carina.demo.gui.webPages.desktop;
 
 import com.qaprosoft.carina.core.foundation.utils.factory.DeviceType;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
-import com.qaprosoft.carina.demo.gui.webPages.base.BaseDemoblazePage;
 import com.qaprosoft.carina.demo.gui.webPages.common.ContactPageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.HomePageBase;
 import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
@@ -13,11 +12,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 @DeviceType(pageType = DeviceType.Type.DESKTOP, parentClass = ContactPageBase.class)
-public class ContactPage extends ContactPageBase {
-    @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul")
+public class ContactPage extends ContactPageBase{
+    @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
+
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
+
     @FindBy(xpath = "//*[@id=\"exampleModalLabel\"]")
     ExtendedWebElement newMessageForm;
 
@@ -40,20 +41,20 @@ public class ContactPage extends ContactPageBase {
         super(driver);
     }
 
-    @Override
-    public HeaderBase getHeaderBase() {
-        return header;
-    }
-
-    @Override
-    public FooterBase getFooterBase() {
-        return footer;
-    }
-
 
     @Override
     public boolean isOpened() {
         return newMessageForm.isElementPresent();
+    }
+
+    @Override
+    public HeaderBase getHeader() {
+        return header;
+    }
+
+    @Override
+    public FooterBase getFooter() {
+        return footer;
     }
 
     @Override

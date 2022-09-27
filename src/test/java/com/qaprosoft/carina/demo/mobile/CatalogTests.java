@@ -20,7 +20,6 @@ public class CatalogTests extends BaseTest implements IMobileUtils {
         Assert.assertTrue(aboutPage.isOpened(), "About page isn't download");
         URLAboutPageBase urlAboutPage = aboutPage.goToURL();
         Assert.assertTrue(urlAboutPage.isCorrectUrlOpened(), "open not correct adress");
-
     }
 
     @Test()
@@ -45,23 +44,8 @@ public class CatalogTests extends BaseTest implements IMobileUtils {
         geolocationPage.clickBackBtn();
         LoginPageBase loginPage = morePage.clickLoginBtn();
         Assert.assertTrue(loginPage.isOpened(), "Login page isn't opened");
-
     }
 
-    @Test()
-    @MethodOwner(owner = "Marianna")
-    @TestLabel(name = "feature", value = {"mobile", "regression"})
-    public void checkIsCorrectURLinWebview() {
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
-        Assert.assertTrue(homePage.isOpened(), "Home page isn't opened");
-        MorePageBase morePageBase = homePage.clickMoreBtn();
-        Assert.assertTrue(morePageBase.isOpened(), "Menu isn't opened");
-        WebviewPageBase webviewPageBase = morePageBase.clickWebviewBtn();
-        Assert.assertTrue(webviewPageBase.isOpened(), "Webview page isn't open");
-        Assert.assertTrue(webviewPageBase.checkIsCorrectURL(R.TESTDATA.get("TEST_URL")), "URL isn't correct");
-        Assert.assertEquals(R.TESTDATA.get("TEST_URL"), webviewPageBase.checkEqualURL(), "Data is correct");
-
-    }
 
     @Test
     @MethodOwner(owner = "Marianna")
@@ -76,25 +60,8 @@ public class CatalogTests extends BaseTest implements IMobileUtils {
         reportBugPageBase.clickUser(R.TESTDATA.get("TEST_MESSAGE"));
         reportBugPageBase.sendMessage();
         Assert.assertTrue(reportBugPageBase.closePopUpMessage());
-
     }
 
-    @Test
-    @MethodOwner(owner = "Marianna")
-    @TestLabel(name = "feature", value = {"mobile", "regression"})
-    public void testReportingABugIsWorking() {
-        HomePageBase homePage = initPage(HomePageBase.class);
-        MorePageBase morePage = homePage.clickMoreBtn();
-        Assert.assertTrue(morePage.isOpened(), "more page isn't opened");
-        ReportBugPageBase reportBugPageBase = morePage.clickReportBugBtn();
-        Assert.assertTrue(reportBugPageBase.isOpened(), "reporting a bug isn't opened");
-        Assert.assertTrue(reportBugPageBase.fillEmailForm(R.TESTDATA.get("TEST_EMAIL")), "email isn't correct");
-        Assert.assertEquals(R.TESTDATA.get("TEST_EMAIL"), reportBugPageBase.checkCorrectEmail());
-        reportBugPageBase.clickUser(R.TESTDATA.get("TEST_MESSAGE"));
-        reportBugPageBase.sendMessage();
-        Assert.assertFalse(reportBugPageBase.closePopUpMessage());
-
-    }
 
     @Test
     @MethodOwner(owner = "qpsdemo")
@@ -125,7 +92,16 @@ public class CatalogTests extends BaseTest implements IMobileUtils {
         morePage.clickCatalogBtn();
         homePage.clickProductByIndex("5");
         Assert.assertTrue(productPage.isPageOpened(), "something don't go");
+    }
 
+    @Test
+    @MethodOwner(owner = "Marianna")
+    @TestLabel(name = "feature", value = {"mobile", "regression"})
+    public void testFooterSocialNetworks() {
+        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        Assert.assertTrue(homePage.isOpened());
+        Assert.assertTrue(homePage.isLinkedinLogoPresent());
+        Assert.assertTrue(homePage.isTwitterLogoPresent());
     }
 
 }
