@@ -1,8 +1,8 @@
 package com.qaprosoft.carina.demo.web;
 
 import com.qaprosoft.carina.core.foundation.AbstractTest;
-import com.qaprosoft.carina.demo.gui.webPages.utils.AuthenticationService;
-import com.qaprosoft.carina.demo.gui.webPages.utils.OpeningService;
+import com.qaprosoft.carina.demo.web.gui.webPages.utils.AuthenticationService;
+import com.qaprosoft.carina.demo.web.gui.webPages.utils.OpeningService;
 
 public class BaseTest extends AbstractTest {
 

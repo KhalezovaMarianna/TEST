@@ -10,7 +10,6 @@
         <classes>
             <class name="com.qaprosoft.carina.demo.web.OtherTests">
                 <methods>
-                    <include name="testSlidingWindow"/>
                     <include name="testMessageCanBeSend"/>
                     <include name="testFooterIsFull"/>
                     <include name="testMenuButtonsWorkCorrectly"/>

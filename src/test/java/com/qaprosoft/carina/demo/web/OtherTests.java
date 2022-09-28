@@ -2,11 +2,11 @@ package com.qaprosoft.carina.demo.web;
 
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
-import com.qaprosoft.carina.demo.gui.webPages.common.*;
-import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.FooterBase;
-import com.qaprosoft.carina.demo.gui.webPages.common.componentsBase.HeaderBase;
 
-import com.qaprosoft.carina.demo.gui.webPages.utils.MobileUtils;
+import com.qaprosoft.carina.demo.web.gui.webPages.components.Footer;
+import com.qaprosoft.carina.demo.web.gui.webPages.components.Header;
+import com.qaprosoft.carina.demo.web.gui.webPages.pages.*;
+import com.qaprosoft.carina.demo.web.gui.webPages.utils.MobileUtils;
 import com.zebrunner.agent.core.annotation.TestLabel;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,23 +18,23 @@ public class OtherTests extends BaseTest {
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testMenuButtonsWorkCorrectly() {
 
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
-        HeaderBase header = homePage.getHeader();
+        Header header = homePage.getHeader();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
-        ContactPageBase contactPage = header.goToContactPage();
+        ContactPage contactPage = header.goToContactPage();
         Assert.assertTrue(contactPage.isOpened(), "Contact page isn't open");
         contactPage.closePage();
-        AboutUsPageBase aboutUsPage = header.goToAboutPage();
+        AboutUsPage aboutUsPage = header.goToAboutPage();
         Assert.assertTrue(aboutUsPage.isOpened(), "About page isn't opened");
         aboutUsPage.clickCloseButton();
-        CartPageBase cartPage = header.openCart();
+        CartPage cartPage = header.openCart();
         Assert.assertTrue(cartPage.isOpened(), "Cart isn't present");
         cartPage.goToHome();
-        LoginPageBase logInPage = header.goToLoginPage();
+        LoginPage logInPage = header.goToLoginPage();
         Assert.assertTrue(logInPage.isOpened(), "Login page isn't opened");
         logInPage.clickCloseButton();
-        SignUpPageBase signUpPage = header.goToSignUpPage();
+        SignUpPage signUpPage = header.goToSignUpPage();
         Assert.assertTrue(signUpPage.isOpened(), "SignUp page isn't opened");
         signUpPage.clickCloseButton();
         Assert.assertTrue(homePage.isOpened(), "home page isn't return");
@@ -44,7 +44,7 @@ public class OtherTests extends BaseTest {
     @MethodOwner(owner = "marianna_khalezova")
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testSlidingWindow() {
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         homePage.clickRightArrowWindow();
@@ -62,10 +62,10 @@ public class OtherTests extends BaseTest {
     @MethodOwner(owner = "marianna_khalezova")
     @TestLabel(name = "feature", value = {"web", "acceptance"})
     public void testMessageCanBeSend() {
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
-        HeaderBase header = homePage.getHeader();
-        ContactPageBase contactPage = header.goToContactPage();
+        Header header = homePage.getHeader();
+        ContactPage contactPage = header.goToContactPage();
         Assert.assertTrue(contactPage.isOpened(), "contact page isn't open");
         contactPage.typeName(R.TESTDATA.get("TEST_NAME"));
         contactPage.typeEmail(R.TESTDATA.get("TEST_EMAIL"));
@@ -86,9 +86,9 @@ public class OtherTests extends BaseTest {
     public void testFooterIsFull() {
         String aboutUs = "About Us";
         String getInTouch = "Get in Touch";
-        HomePageBase homePage = initPage(getDriver(), HomePageBase.class);
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
-        FooterBase footer = homePage.getFooter();
+        Footer footer = homePage.getFooter();
         Assert.assertEquals(footer.getTextAboutUs(), aboutUs, "about us isn't found");
         Assert.assertEquals(footer.getTextGetInTouch(), getInTouch, "get in touch isn't find");
         Assert.assertTrue(footer.checkTitleIsPresented(), "label isn't find");
