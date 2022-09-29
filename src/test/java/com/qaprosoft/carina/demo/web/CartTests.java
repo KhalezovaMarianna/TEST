@@ -106,5 +106,4 @@ public class CartTests extends BaseTest {
         cartPage.goToHome();
         Assert.assertTrue(homePage.isOpened(), "Home page isn't opened");
     }
-
 }

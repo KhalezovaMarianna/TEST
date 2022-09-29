@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 public class OpeningService implements IDriverPool, ICustomTypePageFactory {
     public ProductPage openProductByIndex() {
-        HomePage homePage = initPage(getDriver(),HomePage.class);
+        HomePage homePage = new HomePage(getDriver());
         homePage.open();
         Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
         int index = (int) (Math.random() * 10);
@@ -17,5 +17,4 @@ public class OpeningService implements IDriverPool, ICustomTypePageFactory {
         Assert.assertTrue(productPage.isOpened(), "product isn't opened");
         return  productPage.clickAddToCartButton();
     }
-
 }

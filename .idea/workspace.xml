@@ -4,74 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="structured project, added xml files(suits)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/ResultPage.java" afterDir="false" />
+    <list default="true" id="f6627d7b-016f-4b88-8e91-1fcbfe75de42" name="Changes" comment="added implementation for android, ios and web">
       <change beforePath="$PROJECT_DIR$/../carina" beforeDir="false" afterPath="$PROJECT_DIR$/../carina" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/AboutUsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/CartPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/ContactPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/PlaceOrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/PopUpOrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/ProductPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/ResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/SignUpPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/components/Footer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/androidWeb/components/Header.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/AboutUsPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/CartPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/ContactPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/HomePageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/LoginPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/PlaceOrderPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/PopUpOrderPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/ProductPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/ResultPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/SignUpPageBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/base/BaseDemoblazePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/componentsBase/FooterBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/common/componentsBase/HeaderBase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/AboutUsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/CartPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/ContactPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/PlaceOrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/PopUpOrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/ProductPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/ResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/SignUpPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/components/Footer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/desktop/components/Header.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/AboutUsPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/CartPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/ContactPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/LoginPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/PlaceOrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/PopUpOrderPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/ProductPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/ResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/SignUpPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/components/Footer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/iosWeb/components/Header.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/utils/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/utils/AuthenticationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/utils/MobileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/utils/MobileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/gui/webPages/utils/OpeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/utils/OpeningService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/testsPagesForWeb/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/testsPagesForWeb/components/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/components/Footer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/testsPagesForWeb/components/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/components/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/components/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/components/Footer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/components/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/components/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/AboutUsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/AboutUsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/CartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/ContactPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/ContactPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/PlaceOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/PlaceOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/PopUpOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/PopUpOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/ResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/ResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/SignUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/pages/SignUpPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/utils/OpeningService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qaprosoft/carina/demo/web/gui/webPages/utils/OpeningService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/ExperimentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/AuthorizationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/AuthorizationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/CartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/CartTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/NewTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/OtherTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qaprosoft/carina/demo/web/OtherTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/ios.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/proxy.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testng_suites/regression-tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng_suites/regression-tests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,60 +104,8 @@
       <recent name="com.qaprosoft.carina.demo" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG./Users/mkhalezova/IdeaProjects/untitled/src/test/resources/testng_suites/regression-tests.xml">
-    <configuration name="AuthorizationTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.AuthorizationTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.CartTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartTests.testAddProductOnTheCart" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="MyCarinaTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
-      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.CartTests" />
-      <option name="METHOD_NAME" value="testAddProductOnTheCart" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OtherTests" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.OtherTests.testNextAndPreviousBtnWork">
+    <configuration name="OtherTests.testCheckImageIsDownload" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MyCarinaTest" />
       <extension name="coverage">
         <pattern>
@@ -216,7 +115,62 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
       <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.OtherTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testCheckImageIsDownload" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtherTests.testCheckVideoIsDownload" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.OtherTests" />
+      <option name="METHOD_NAME" value="testCheckVideoIsDownload" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtherTests.testMessageCanBeSend" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.OtherTests" />
+      <option name="METHOD_NAME" value="testMessageCanBeSend" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OtherTests.testNextAndPreviousBtnWork" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="MyCarinaTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qaprosoft.carina.demo.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.qaprosoft.carina.demo.web" />
+      <option name="MAIN_CLASS_NAME" value="com.qaprosoft.carina.demo.web.OtherTests" />
+      <option name="METHOD_NAME" value="testNextAndPreviousBtnWork" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -235,18 +189,18 @@
     </configuration>
     <list>
       <item itemvalue="TestNG./Users/mkhalezova/IdeaProjects/untitled/src/test/resources/testng_suites/regression-tests.xml" />
-      <item itemvalue="TestNG.AuthorizationTests" />
-      <item itemvalue="TestNG.CartTests" />
-      <item itemvalue="TestNG.CartTests.testAddProductOnTheCart" />
-      <item itemvalue="TestNG.OtherTests" />
+      <item itemvalue="TestNG.OtherTests.testCheckImageIsDownload" />
+      <item itemvalue="TestNG.OtherTests.testCheckVideoIsDownload" />
+      <item itemvalue="TestNG.OtherTests.testMessageCanBeSend" />
+      <item itemvalue="TestNG.OtherTests.testNextAndPreviousBtnWork" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.OtherTests.testNextAndPreviousBtnWork" />
+        <item itemvalue="TestNG.OtherTests.testMessageCanBeSend" />
+        <item itemvalue="TestNG.OtherTests.testCheckVideoIsDownload" />
+        <item itemvalue="TestNG.OtherTests.testCheckImageIsDownload" />
         <item itemvalue="TestNG./Users/mkhalezova/IdeaProjects/untitled/src/test/resources/testng_suites/regression-tests.xml" />
-        <item itemvalue="TestNG.CartTests.testAddProductOnTheCart" />
-        <item itemvalue="TestNG.CartTests" />
-        <item itemvalue="TestNG.OtherTests" />
-        <item itemvalue="TestNG.AuthorizationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -617,7 +571,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added api tests" />
     <MESSAGE value="dockerfile, docker-compose and working with docker" />
     <MESSAGE value="Working with config.properties" />
     <MESSAGE value="solving task1" />
@@ -642,7 +595,8 @@
     <MESSAGE value="added page object for ios and android" />
     <MESSAGE value="structured project" />
     <MESSAGE value="structured project, added xml files(suits)" />
-    <option name="LAST_COMMIT_MESSAGE" value="structured project, added xml files(suits)" />
+    <MESSAGE value="added implementation for android, ios and web" />
+    <option name="LAST_COMMIT_MESSAGE" value="added implementation for android, ios and web" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

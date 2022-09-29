@@ -11,33 +11,44 @@ import com.qaprosoft.carina.demo.web.gui.webPages.components.Header;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
 
 public class HomePage extends AbstractPage implements ICustomTypePageFactory, IMobileUtils {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
 
     @FindBy(xpath = "//*[@id=\"cat\"]")
-    ExtendedWebElement categories;
+    private ExtendedWebElement categories;
 
     @FindBy(xpath = "//*[@id=\"cat\"]")
-    ExtendedWebElement categoryNameTitle;
+    private ExtendedWebElement categoryNameTitle;
 
     @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/a[2]/span[1]")
-    ExtendedWebElement rightArrow;
+    private ExtendedWebElement rightArrow;
 
     @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/a[1]/span[1]")
-    ExtendedWebElement leftArrow;
+    private ExtendedWebElement leftArrow;
 
     @FindBy(xpath = "//*[@id=\"carouselExampleIndicators\"]/div/div[%s]/img")
-    ExtendedWebElement slideImg;
+    private ExtendedWebElement slideImg;
 
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/div[%S]/div/div/h4/a")
-    ExtendedWebElement product;
+    private ExtendedWebElement product;
 
     @FindBy(xpath = "//a[text()=\"Welcome %s\"]")
-    ExtendedWebElement welcomeText;
+    private ExtendedWebElement welcomeText;
+
+    @FindBy(xpath = "//*[@id=\"tbodyid\"]/div[1]/div/div//a")
+    private ExtendedWebElement firstProduct;
+
+    @FindBy(xpath = "//*[@id=\"frm\"]//li[2]")
+    private ExtendedWebElement nextBtn;
+
+    @FindBy(xpath = "//*[@id=\"frm\"]//li[1]")
+    private ExtendedWebElement previousBtn;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -82,6 +93,18 @@ public class HomePage extends AbstractPage implements ICustomTypePageFactory, IM
 
     public String getUserName() {
         return StringUtils.substringAfter(welcomeText.format(R.TESTDATA.get("TEST_EMAIL")).getText(), " ");
+    }
+
+    public void clickNextButton() {
+        nextBtn.click();
+    }
+
+    public String getNameOfFirstProduct() {
+        return firstProduct.getText();
+    }
+
+    public void clickPreviousBtn() {
+        previousBtn.click();
     }
 
 

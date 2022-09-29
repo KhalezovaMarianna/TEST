@@ -11,15 +11,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class PopUpOrderPage extends AbstractPage implements ICustomTypePageFactory, IMobileUtils {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
+
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
+
     @FindBy(xpath = "/html/body/div[10]/div[7]/div/button")
-    ExtendedWebElement okBtn;
+    private ExtendedWebElement okBtn;
 
     @FindBy(xpath = "//div[10]/h2")
-    ExtendedWebElement title;
+    private ExtendedWebElement title;
 
     public PopUpOrderPage(WebDriver driver) {
         super(driver);
@@ -30,16 +33,13 @@ public class PopUpOrderPage extends AbstractPage implements ICustomTypePageFacto
         return title.isElementPresent();
     }
 
-
     public Header getHeader() {
         return header;
     }
 
-
     public Footer getFooter() {
         return footer;
     }
-
 
     public HomePage closePage() {
         okBtn.click();

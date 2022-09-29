@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends AbstractPage implements ICustomTypePageFactory, IMobileUtils {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
 
@@ -18,69 +19,61 @@ public class CartPage extends AbstractPage implements ICustomTypePageFactory, IM
     private Footer footer;
 
     @FindBy(xpath = "//*[@id=\"page-wrapper\"]")
-    ExtendedWebElement cartPage;
+    private ExtendedWebElement cartPage;
 
     @FindBy(xpath = "//*[@id=\"tbodyid\"]/tr[%S]/td[4]/a")
-    ExtendedWebElement deleteBtn;
+    private ExtendedWebElement deleteBtn;
 
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[1]/a")
-    ExtendedWebElement homeBtn;
+    private ExtendedWebElement homeBtn;
 
     @FindBy(xpath = "//*[@id=\"totalp\"]")
-    ExtendedWebElement amountCart;
+    private ExtendedWebElement amountCart;
 
     @FindBy(xpath = "//*[@id=\"totalp\"]")
-    ExtendedWebElement totalPrice;
+    private ExtendedWebElement totalPrice;
 
     @FindBy(xpath = "//*[@id=\"tbodyid\"]//td[3]")
-    ExtendedWebElement productCount;
+    private ExtendedWebElement productCount;
 
     @FindBy(xpath = "//*[@id=\"page-wrapper\"]//button")
-    ExtendedWebElement placeOrderBtn;
+    private ExtendedWebElement placeOrderBtn;
+
     public CartPage(WebDriver driver) {
         super(driver);
     }
-
-
 
 
     public boolean isOpened() {
         return cartPage.isElementPresent();
     }
 
-
     public Header getHeader() {
         return header;
     }
 
-
     public Footer getFooter() {
         return footer;
     }
-
 
     public HomePage goToHome() {
         homeBtn.click();
         return new HomePage(getDriver());
     }
 
-
     public String getCartTotal() {
         return totalPrice.getText();
     }
 
-
     public String getProductPrice() {
         return productCount.getText();
     }
-
 
     public void deleteAllProducts() {
         while (deleteBtn.isElementPresent()) {
             deleteBtn.click();
         }
     }
-
 
     public void deleteProductByIndex(String index) {
         deleteBtn.format(index).click();
@@ -89,7 +82,6 @@ public class CartPage extends AbstractPage implements ICustomTypePageFactory, IM
     public boolean isCartEmpty() {
         return deleteBtn.isElementNotPresent(2);
     }
-
 
     public PlaceOrderPage clickPlaceOrderBtn() {
         placeOrderBtn.click();

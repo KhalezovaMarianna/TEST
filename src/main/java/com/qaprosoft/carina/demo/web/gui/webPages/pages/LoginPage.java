@@ -11,62 +11,56 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends AbstractPage implements ICustomTypePageFactory, IMobileUtils {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
+
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
+
     @FindBy(xpath = "//*[@id=\"logInModalLabel\"]")
-    ExtendedWebElement loginPage;
+    private ExtendedWebElement loginPage;
 
     @FindBy(xpath = "//*[@id=\"logInModal\"]/div/div/div[1]/button")
-    ExtendedWebElement closeBtn;
+    private ExtendedWebElement closeBtn;
 
     @FindBy(xpath = "//*[@id=\"loginusername\"]")
-    ExtendedWebElement usernameForm;
+    private ExtendedWebElement usernameForm;
 
     @FindBy(xpath = "//*[@id=\"loginpassword\"]")
-    ExtendedWebElement passwordForm;
+    private ExtendedWebElement passwordForm;
 
     @FindBy(xpath = "//*[@id=\"logInModal\"]//button[2]")
-    ExtendedWebElement loginBtn;
+    private ExtendedWebElement loginBtn;
 
     public LoginPage(WebDriver driver) {
         super(driver);
     }
 
-
-
-
     public boolean isOpened() {
         return loginPage.isElementPresent();
     }
-
 
     public Header getHeader() {
         return header;
     }
 
-
     public Footer getFooter() {
         return footer;
     }
-
 
     public HomePage clickCloseButton() {
         closeBtn.click();
         return new HomePage(getDriver());
     }
 
-
     public void typeUsername(String email) {
         usernameForm.type(email);
     }
 
-
     public void typePassword(String password) {
         passwordForm.type(password);
     }
-
 
     public HomePage clickLoginBtn() {
         loginBtn.click();

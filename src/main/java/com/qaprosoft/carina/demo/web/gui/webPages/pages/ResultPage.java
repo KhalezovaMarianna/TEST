@@ -11,11 +11,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class ResultPage extends AbstractPage implements ICustomTypePageFactory, IMobileUtils {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
 
     @FindBy(xpath = "//*[@id=\"footc\"]")
     private Footer footer;
+
     @FindBy(xpath = "//*[@id=\"cat\"]")
     private ExtendedWebElement categories;
 
@@ -29,15 +31,12 @@ public class ResultPage extends AbstractPage implements ICustomTypePageFactory, 
         return categories.isElementPresent();
     }
 
-
     public Header getHeader() {
         return header;
     }
 
-
     public Footer getFooter() {
         return footer;
     }
-
 
 }

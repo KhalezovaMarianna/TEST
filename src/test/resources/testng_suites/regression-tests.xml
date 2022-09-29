@@ -13,6 +13,9 @@
                     <include name="testMessageCanBeSend"/>
                     <include name="testFooterIsFull"/>
                     <include name="testMenuButtonsWorkCorrectly"/>
+                    <include name="testCheckImageIsDownload"/>
+                    <include name="testCheckVideoIsDownload"/>
+                    <include name="testNextAndPreviousBtnWork"/>
                 </methods>
             </class>
         </classes>

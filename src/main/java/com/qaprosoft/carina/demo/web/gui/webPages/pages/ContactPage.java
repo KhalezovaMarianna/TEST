@@ -11,6 +11,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class ContactPage extends AbstractPage implements ICustomTypePageFactory, IMobileUtils {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]")
     private Header header;
 
@@ -18,64 +19,56 @@ public class ContactPage extends AbstractPage implements ICustomTypePageFactory,
     private Footer footer;
 
     @FindBy(xpath = "//*[@id=\"exampleModalLabel\"]")
-    ExtendedWebElement newMessageForm;
+    private ExtendedWebElement newMessageForm;
 
     @FindBy(xpath = "//*[@id=\"exampleModal\"]/div/div/div[1]/button/span")
-    ExtendedWebElement closeBtn;
+    private ExtendedWebElement closeBtn;
 
     @FindBy(xpath = "//*[@id=\"recipient-email\"]")
-    ExtendedWebElement emailForm;
+    private ExtendedWebElement emailForm;
 
     @FindBy(xpath = "//*[@id=\"recipient-name\"]")
-    ExtendedWebElement nameForm;
+    private ExtendedWebElement nameForm;
 
     @FindBy(xpath = "//*[@id=\"message-text\"]")
-    ExtendedWebElement messageForm;
+    private ExtendedWebElement messageForm;
 
     @FindBy(xpath = "//*[@id=\"exampleModal\"]//button[2]")
-    ExtendedWebElement sendBtn;
+    private ExtendedWebElement sendBtn;
 
     public ContactPage(WebDriver driver) {
         super(driver);
     }
 
 
-
     public boolean isOpened() {
         return newMessageForm.isElementPresent();
     }
-
 
     public Header getHeader() {
         return header;
     }
 
-
     public Footer getFooter() {
         return footer;
     }
-
 
     public HomePage closePage() {
         closeBtn.click();
         return new HomePage(getDriver());
     }
 
-
     public void typeName(String name) {
         nameForm.type(name);
     }
-
 
     public void typeEmail(String email) {
         emailForm.type(email);
     }
 
-
     public void typeMessage(String message) {
         messageForm.type(message);
     }
-
 
     public HomePage clickSendMessageButton() {
         sendBtn.click();

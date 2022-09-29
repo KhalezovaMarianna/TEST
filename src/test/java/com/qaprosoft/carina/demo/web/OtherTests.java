@@ -1,8 +1,8 @@
 package com.qaprosoft.carina.demo.web;
 
+
 import com.qaprosoft.carina.core.foundation.utils.R;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
-
 import com.qaprosoft.carina.demo.web.gui.webPages.components.Footer;
 import com.qaprosoft.carina.demo.web.gui.webPages.components.Header;
 import com.qaprosoft.carina.demo.web.gui.webPages.pages.*;
@@ -71,13 +71,9 @@ public class OtherTests extends BaseTest {
         contactPage.typeEmail(R.TESTDATA.get("TEST_EMAIL"));
         contactPage.typeMessage(R.TESTDATA.get("TEST_MESSAGE"));
         contactPage.clickSendMessageButton();
-        if (MobileUtils.isAndroid()) {
-            Assert.assertEquals(getDriver().switchTo().alert().getText(), "Thanks for the message!!", "Thanks for the message!!");
-            getDriver().switchTo().alert().accept();
-            Assert.assertTrue(homePage.isOpened(), "Message isn't send");
-        } else {
-            Assert.assertTrue(homePage.isOpened(), "Message isn't send");
-        }
+        Assert.assertEquals(getDriver().switchTo().alert().getText(), "Thanks for the message!!", "Thanks for the message!!");
+        getDriver().switchTo().alert().accept();
+        Assert.assertTrue(homePage.isOpened(), "Message isn't send");
     }
 
     @Test()
@@ -94,4 +90,44 @@ public class OtherTests extends BaseTest {
         Assert.assertTrue(footer.checkTitleIsPresented(), "label isn't find");
     }
 
+
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
+    public void testCheckImageIsDownload() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
+        int index = (int) (Math.random() * 10);
+        ProductPage productPage = homePage.productOpenedByIndex(index);
+        Assert.assertTrue(productPage.isOpened(), "product isn't opened");
+        Assert.assertTrue(productPage.checkImageIsDownload(), "Image isn't download");
+    }
+
+
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
+    public void testCheckVideoIsDownload() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
+        Header header = homePage.getHeader();
+        AboutUsPage aboutUsPage = header.goToAboutPage();
+        Assert.assertTrue(aboutUsPage.isOpened(), "About us page isn't open");
+        Assert.assertTrue(aboutUsPage.checkVideoIsDownload(), "Video isn't download");
+    }
+
+    @Test()
+    @MethodOwner(owner = "marianna_khalezova")
+    @TestLabel(name = "feature", value = {"web", "acceptance"})
+    public void testNextAndPreviousBtnWork() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        Assert.assertTrue(homePage.isOpened(), "Home page is not opened");
+        homePage.clickNextButton();
+        Assert.assertNotEquals(homePage.getNameOfFirstProduct(), "Nokia lumia 1520");
+        homePage.clickPreviousBtn();
+        Assert.assertEquals(homePage.getNameOfFirstProduct(), "Nokia lumia 1520", "First product isn't right");
+    }
 }

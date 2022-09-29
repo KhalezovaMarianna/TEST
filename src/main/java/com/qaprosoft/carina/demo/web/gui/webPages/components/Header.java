@@ -11,20 +11,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class Header extends AbstractUIObject implements ICustomTypePageFactory, IMobileUtils {
+
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[2]/a")
-    ExtendedWebElement contactBtn;
+    private ExtendedWebElement contactBtn;
 
     @FindBy(xpath = "//*[@id=\"navbarExample\"]/ul/li[3]/a")
-    ExtendedWebElement aboutUsBtn;
+    private ExtendedWebElement aboutUsBtn;
 
     @FindBy(xpath = "//*[@id=\"login2\"]")
-    ExtendedWebElement loginBtn;
+    private ExtendedWebElement loginBtn;
 
     @FindBy(xpath = "//*[@id=\"signin2\"]")
-    ExtendedWebElement signUpBtn;
+    private ExtendedWebElement signUpBtn;
 
     @FindBy(xpath = "//*[@id=\"cartur\"]")
-    ExtendedWebElement cartBtn;
+    private ExtendedWebElement cartBtn;
 
 
     public Header(WebDriver driver, SearchContext searchContext) {
@@ -37,29 +38,24 @@ public class Header extends AbstractUIObject implements ICustomTypePageFactory, 
         return new CartPage(getDriver());
     }
 
-
     public boolean headerIsPresented() {
         return signUpBtn.isElementPresent();
     }
-
 
     public AboutUsPage goToAboutPage() {
         aboutUsBtn.click();
         return new AboutUsPage(getDriver());
     }
 
-
     public ContactPage goToContactPage() {
         contactBtn.click();
         return new ContactPage(getDriver());
     }
 
-
     public LoginPage goToLoginPage() {
         loginBtn.click();
         return new LoginPage(getDriver());
     }
-
 
     public SignUpPage goToSignUpPage() {
         signUpBtn.click();
